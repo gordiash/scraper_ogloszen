@@ -486,3 +486,643 @@
 2025-05-23 10:12:20,068 - __main__ - INFO - Zapisano 0/60 og³oszeñ z otodom
 2025-05-23 10:12:20,068 - __main__ - INFO - Ca³kowita liczba zapisanych og³oszeñ: 0
 2025-05-23 10:12:20,068 - __main__ - INFO - Zakoñczono scraping
+2025-05-23 11:00:06,940 - __main__ - INFO - Rozpoczynam scraping: freedom
+2025-05-23 11:00:06,940 - scrapers.freedom - INFO - Scrapujê Freedom.pl - strona 1 (Selenium)
+2025-05-23 11:00:14,899 - scrapers.freedom - INFO - Znaleziono 20 potencjalnych og³oszeñ na stronie 1
+2025-05-23 11:00:16,742 - scrapers.freedom - INFO - Scrapujê Freedom.pl - strona 2 (Selenium)
+2025-05-23 11:00:27,250 - scrapers.freedom - INFO - Znaleziono 20 potencjalnych og³oszeñ na stronie 2
+2025-05-23 11:00:29,715 - scrapers.freedom - INFO - Pobrano 40 og³oszeñ z Freedom.pl
+2025-05-23 11:00:29,716 - __main__ - INFO - Zakoñczono scraping freedom: 40 og³oszeñ
+2025-05-23 11:00:29,716 - __main__ - INFO - Rozpoczynam scraping: otodom
+2025-05-23 11:00:29,716 - scrapers.otodom - INFO - Scrapujê Otodom.pl - strona 1
+2025-05-23 11:00:40,117 - scrapers.otodom - INFO - Scrapujê Otodom.pl - strona 2
+2025-05-23 11:00:49,205 - scrapers.otodom - INFO - Pobrano 52 og³oszeñ z Otodom.pl
+2025-05-23 11:00:49,206 - __main__ - INFO - Zakoñczono scraping otodom: 52 og³oszeñ
+2025-05-23 11:00:49,207 - __main__ - INFO - Rozpoczynam scraping: metrohouse
+2025-05-23 11:00:49,207 - scrapers.metrohouse - INFO - Scrapujê Metrohouse.pl - strona 1 (Selenium)
+2025-05-23 11:00:57,312 - scrapers.metrohouse - INFO - Znaleziono 247 og³oszeñ na stronie 1
+2025-05-23 11:00:59,797 - scrapers.metrohouse - INFO - Scrapujê Metrohouse.pl - strona 2 (Selenium)
+2025-05-23 11:01:08,158 - scrapers.metrohouse - INFO - Znaleziono 247 og³oszeñ na stronie 2
+2025-05-23 11:01:11,252 - scrapers.metrohouse - INFO - Pobrano 126 og³oszeñ z Metrohouse.pl
+2025-05-23 11:01:11,253 - __main__ - INFO - Zakoñczono scraping metrohouse: 126 og³oszeñ
+2025-05-23 11:01:11,253 - __main__ - INFO - Rozpoczynam scraping: domiporta
+2025-05-23 11:01:11,253 - scrapers.domiporta - INFO - Scrapujê Domiporta.pl - strona 1 (Selenium)
+2025-05-23 11:01:20,483 - scrapers.domiporta - INFO - Znaleziono 36 og³oszeñ na stronie 1
+2025-05-23 11:01:23,332 - scrapers.domiporta - INFO - Scrapujê Domiporta.pl - strona 2 (Selenium)
+2025-05-23 11:01:33,327 - scrapers.domiporta - INFO - Znaleziono 36 og³oszeñ na stronie 2
+2025-05-23 11:01:36,436 - scrapers.domiporta - INFO - Pobrano 72 og³oszeñ z Domiporta.pl
+2025-05-23 11:01:36,437 - __main__ - INFO - Zakoñczono scraping domiporta: 72 og³oszeñ
+2025-05-23 11:01:36,438 - __main__ - INFO - Rozpoczynam scraping: gratka
+2025-05-23 11:01:36,439 - scrapers.gratka - INFO - Scrapujê Gratka.pl - strona 1 (Selenium)
+2025-05-23 11:01:43,218 - scrapers.gratka - INFO - Znaleziono 37 og³oszeñ na stronie 1
+2025-05-23 11:01:46,309 - scrapers.gratka - INFO - Scrapujê Gratka.pl - strona 2 (Selenium)
+2025-05-23 11:01:53,693 - scrapers.gratka - INFO - Znaleziono 37 og³oszeñ na stronie 2
+2025-05-23 11:01:55,209 - scrapers.gratka - INFO - Pobrano 74 og³oszeñ z Gratka.pl
+2025-05-23 11:01:55,210 - __main__ - INFO - Zakoñczono scraping gratka: 74 og³oszeñ
+2025-05-23 11:01:55,212 - __main__ - INFO - Rozpoczynam scraping: olx
+2025-05-23 11:01:55,213 - scrapers.olx - INFO - Scrapujê OLX.pl - strona 1
+2025-05-23 11:01:59,252 - scrapers.olx - INFO - Scrapujê OLX.pl - strona 2
+2025-05-23 11:02:04,109 - scrapers.olx - INFO - Pobrano 0 og³oszeñ z OLX.pl
+2025-05-23 11:02:04,110 - __main__ - INFO - Zakoñczono scraping olx: 0 og³oszeñ
+2025-05-23 11:02:04,111 - __main__ - INFO - Ca³kowita liczba pobranych og³oszeñ: 364
+2025-05-23 11:02:04,377 - __main__ - INFO -    • domiporta.pl: 69 duplikatów
+2025-05-23 11:02:04,377 - __main__ - INFO -    • freedom.pl: 28 duplikatów
+2025-05-23 11:02:04,377 - __main__ - INFO -    • metrohouse.pl: 95 duplikatów
+2025-05-23 11:02:04,377 - __main__ - INFO -    • otodom.pl: 4 duplikatów
+2025-05-23 11:02:04,378 - __main__ - INFO -    • ... (freedom.pl) - 90.8%
+2025-05-23 11:02:04,378 - __main__ - INFO -    • ... (freedom.pl) - 90.3%
+2025-05-23 11:02:04,378 - __main__ - INFO -    • ... (freedom.pl) - 100.0%
+2025-05-23 11:02:05,000 - utils - INFO -    • domiporta.pl: 27 duplikatów
+2025-05-23 11:02:05,000 - utils - INFO -    • freedom.pl: 40 duplikatów
+2025-05-23 11:02:05,000 - utils - INFO -    • metrohouse.pl: 95 duplikatów
+2025-05-23 11:02:05,000 - utils - INFO -    • otodom.pl: 4 duplikatów
+2025-05-23 11:02:05,960 - httpx - INFO - HTTP Request: GET https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia?select=%2A&url=eq.https%3A%2F%2Fwww.otodom.pl%2Fpl%2Foferta%2Flokal-inwestycyjny-ID4vwVx "HTTP/2 200 OK"
+2025-05-23 11:02:06,116 - httpx - INFO - HTTP Request: POST https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia "HTTP/2 201 Created"
+2025-05-23 11:02:06,119 - supabase_utils - INFO - Zapisano og³oszenie: lokal inwestycyjny
+2025-05-23 11:02:06,613 - httpx - INFO - HTTP Request: GET https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia?select=%2A&url=eq.https%3A%2F%2Fwww.otodom.pl%2Fpl%2Foferta%2F3-pokojowe-mieszkanie-66m2-balkon-bez-prowizji-ID4uaxb "HTTP/2 200 OK"
+2025-05-23 11:02:06,771 - httpx - INFO - HTTP Request: POST https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia "HTTP/2 201 Created"
+2025-05-23 11:02:06,774 - supabase_utils - INFO - Zapisano og³oszenie: 3-pokojowe mieszkanie 66m2 + balkon Bez Prowizji
+2025-05-23 11:02:07,307 - httpx - INFO - HTTP Request: GET https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia?select=%2A&url=eq.https%3A%2F%2Fwww.otodom.pl%2Fpl%2Foferta%2Fmieszkanie-starogard-gdanski-43-24-m2-ID4gkbM "HTTP/2 200 OK"
+2025-05-23 11:02:07,381 - httpx - INFO - HTTP Request: POST https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia "HTTP/2 201 Created"
+2025-05-23 11:02:07,394 - supabase_utils - INFO - Zapisano og³oszenie: Mieszkanie Starogard Gdañski - 43,24 m2
+2025-05-23 11:02:07,963 - httpx - INFO - HTTP Request: GET https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia?select=%2A&url=eq.https%3A%2F%2Fwww.otodom.pl%2Fpl%2Foferta%2Fos-grodki-kameralne-4-budynki-lok-60-8-m2-parter-ID4srqT "HTTP/2 200 OK"
+2025-05-23 11:02:08,049 - httpx - INFO - HTTP Request: POST https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia "HTTP/2 201 Created"
+2025-05-23 11:02:08,052 - supabase_utils - INFO - Zapisano og³oszenie: Os.Gródki KAMERALNE-4 budynki - lok.60,8 m2 parter
+2025-05-23 11:02:08,607 - httpx - INFO - HTTP Request: GET https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia?select=%2A&url=eq.https%3A%2F%2Fwww.otodom.pl%2Fpl%2Foferta%2Fczuby-poreba-4-pokoje-niski-blok-zielen-las-wawoz-od-zaraz-ID4v8BZ "HTTP/2 200 OK"
+2025-05-23 11:02:08,750 - httpx - INFO - HTTP Request: POST https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia "HTTP/2 201 Created"
+2025-05-23 11:02:08,753 - supabase_utils - INFO - Zapisano og³oszenie: Czuby_Porêba_4 pokoje_niski blok_zieleñ_las_w¹wóz_od zaraz!
+2025-05-23 11:02:09,236 - httpx - INFO - HTTP Request: GET https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia?select=%2A&url=eq.https%3A%2F%2Fwww.otodom.pl%2Fpl%2Foferta%2Fapartament-73-m-ostatnie-pietro-widok-garaz-i-wyposazenie-ID4vd46 "HTTP/2 200 OK"
+2025-05-23 11:02:09,309 - httpx - INFO - HTTP Request: POST https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia "HTTP/2 201 Created"
+2025-05-23 11:02:09,825 - httpx - INFO - HTTP Request: GET https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia?select=%2A&url=eq.https%3A%2F%2Fwww.otodom.pl%2Fpl%2Foferta%2Fnowy-halinow-iii-etap-klimatyzacja-gratis-ID4pBOV "HTTP/2 200 OK"
+2025-05-23 11:02:09,975 - httpx - INFO - HTTP Request: POST https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia "HTTP/2 201 Created"
+2025-05-23 11:02:09,978 - supabase_utils - INFO - Zapisano og³oszenie: Nowy Halinów - III Etap, klimatyzacja gratis!
+2025-05-23 11:02:10,520 - httpx - INFO - HTTP Request: GET https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia?select=%2A&url=eq.https%3A%2F%2Fwww.otodom.pl%2Fpl%2Foferta%2Flokal-o-podwyzszonym-standardzie-z-ogrodkiem-70m2-ID4tyjc "HTTP/2 200 OK"
+2025-05-23 11:02:10,597 - httpx - INFO - HTTP Request: POST https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia "HTTP/2 201 Created"
+2025-05-23 11:02:10,600 - supabase_utils - INFO - Zapisano og³oszenie: Lokal o podwy¿szonym standardzie z ogródkiem 70m2
+2025-05-23 11:02:11,088 - httpx - INFO - HTTP Request: GET https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia?select=%2A&url=eq.https%3A%2F%2Fwww.otodom.pl%2Fpl%2Foferta%2Fm4-z-ogrodkiem-do-wprowadzenia-jaworzno-ID4tOxO "HTTP/2 200 OK"
+2025-05-23 11:02:11,163 - httpx - INFO - HTTP Request: POST https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia "HTTP/2 201 Created"
+2025-05-23 11:02:11,165 - supabase_utils - INFO - Zapisano og³oszenie: M4 Z Ogródkiem Do Wprowadzenia- Jaworzno
+2025-05-23 11:02:11,659 - httpx - INFO - HTTP Request: GET https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia?select=%2A&url=eq.https%3A%2F%2Fwww.otodom.pl%2Fpl%2Foferta%2Fruczaj-apartament-z-47-metrowym-tarasem-garazem-ID4wTmG "HTTP/2 200 OK"
+2025-05-23 11:02:11,814 - httpx - INFO - HTTP Request: POST https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia "HTTP/2 201 Created"
+2025-05-23 11:02:11,817 - supabase_utils - INFO - Zapisano og³oszenie: Ruczaj Apartament Z 47 Metrowym Tarasem,Gara¿em,
+2025-05-23 11:02:12,308 - httpx - INFO - HTTP Request: GET https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia?select=%2A&url=eq.https%3A%2F%2Fwww.otodom.pl%2Fpl%2Foferta%2Fnietuzinkowy-apartament-dla-konesera-ID4sOhP "HTTP/2 200 OK"
+2025-05-23 11:02:12,389 - httpx - INFO - HTTP Request: POST https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia "HTTP/2 201 Created"
+2025-05-23 11:02:12,391 - supabase_utils - INFO - Zapisano og³oszenie: Nietuzinkowy apartament dla konesera
+2025-05-23 11:02:12,872 - httpx - INFO - HTTP Request: GET https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia?select=%2A&url=eq.https%3A%2F%2Fwww.otodom.pl%2Fpl%2Foferta%2Fruczaj-duze-3-pokojowe-balkon-taras-m-postojowe-ID4w52x "HTTP/2 200 OK"
+2025-05-23 11:02:12,970 - httpx - INFO - HTTP Request: POST https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia "HTTP/2 201 Created"
+2025-05-23 11:02:12,973 - supabase_utils - INFO - Zapisano og³oszenie: Ruczaj! Du¿e 3 pokojowe, balkon, taras,m.postojowe
+2025-05-23 11:02:13,480 - httpx - INFO - HTTP Request: GET https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia?select=%2A&url=eq.https%3A%2F%2Fwww.otodom.pl%2Fpl%2Foferta%2Fmieszkanie-wsrod-zieleni-balkon-piwnica-ID4vpME "HTTP/2 200 OK"
+2025-05-23 11:02:13,576 - httpx - INFO - HTTP Request: POST https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia "HTTP/2 201 Created"
+2025-05-23 11:02:13,578 - supabase_utils - INFO - Zapisano og³oszenie: Mieszkanie wœród zieleni | balkon | piwnica
+2025-05-23 11:02:14,063 - httpx - INFO - HTTP Request: GET https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia?select=%2A&url=eq.https%3A%2F%2Fwww.otodom.pl%2Fpl%2Foferta%2F3-pokoje-kuchnia-z-jadalnia-balkon-piastow-ID4vv1y "HTTP/2 200 OK"
+2025-05-23 11:02:14,149 - httpx - INFO - HTTP Request: POST https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia "HTTP/2 201 Created"
+2025-05-23 11:02:14,153 - supabase_utils - INFO - Zapisano og³oszenie: 3 pokoje, kuchnia z jadalni¹, balkon. Piastów.
+2025-05-23 11:02:14,672 - httpx - INFO - HTTP Request: GET https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia?select=%2A&url=eq.https%3A%2F%2Fwww.otodom.pl%2Fpl%2Foferta%2Fmieszkanie-inwestycyjne-wysoka-rentownosc-ID4vhMz "HTTP/2 200 OK"
+2025-05-23 11:02:14,822 - httpx - INFO - HTTP Request: POST https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia "HTTP/2 201 Created"
+2025-05-23 11:02:14,824 - supabase_utils - INFO - Zapisano og³oszenie: Mieszkanie inwestycyjne, wysoka rentownoœæ
+2025-05-23 11:02:15,316 - httpx - INFO - HTTP Request: GET https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia?select=%2A&url=eq.https%3A%2F%2Fwww.otodom.pl%2Fpl%2Foferta%2Flazienka-z-oknem-2-pokoje-wykonczone-gotowe-do-montazu-mebli-ID4vv1x "HTTP/2 200 OK"
+2025-05-23 11:02:15,463 - httpx - INFO - HTTP Request: POST https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia "HTTP/2 201 Created"
+2025-05-23 11:02:15,466 - supabase_utils - INFO - Zapisano og³oszenie: £AZIENKA Z OKNEM - 2 pokoje, wykoñczone, gotowe do monta¿u mebli !!!
+2025-05-23 11:02:15,981 - httpx - INFO - HTTP Request: GET https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia?select=%2A&url=eq.https%3A%2F%2Fwww.otodom.pl%2Fpl%2Foferta%2Fprzedsprzedaz-z-opcja-personalizacji-harmony-park-ID4vv0u "HTTP/2 200 OK"
+2025-05-23 11:02:16,055 - httpx - INFO - HTTP Request: POST https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia "HTTP/2 201 Created"
+2025-05-23 11:02:16,055 - supabase_utils - INFO - Zapisano og³oszenie: PRZEDSPRZEDA¯ z opcj¹ personalizacji - Harmony Park
+2025-05-23 11:02:16,639 - httpx - INFO - HTTP Request: GET https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia?select=%2A&url=eq.https%3A%2F%2Fwww.otodom.pl%2Fpl%2Foferta%2Fscisle-centrum-swietny-rozklad-wysoki-parter-ID4vhsa "HTTP/2 200 OK"
+2025-05-23 11:02:16,777 - httpx - INFO - HTTP Request: POST https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia "HTTP/2 201 Created"
+2025-05-23 11:02:16,778 - supabase_utils - INFO - Zapisano og³oszenie: Œcis³e centrum/Œwietny rozk³ad/Wysoki Parter
+2025-05-23 11:02:17,336 - httpx - INFO - HTTP Request: GET https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia?select=%2A&url=eq.https%3A%2F%2Fwww.otodom.pl%2Fpl%2Foferta%2Ftrzypokojowy-apartament-z-ogrodem-i-parkingiem-ID4vv1t "HTTP/2 200 OK"
+2025-05-23 11:02:17,478 - httpx - INFO - HTTP Request: POST https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia "HTTP/2 201 Created"
+2025-05-23 11:02:17,479 - supabase_utils - INFO - Zapisano og³oszenie: Trzypokojowy apartament z ogrodem i parkingiem
+2025-05-23 11:02:17,954 - httpx - INFO - HTTP Request: GET https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia?select=%2A&url=eq.https%3A%2F%2Fwww.otodom.pl%2Fpl%2Foferta%2Fzupelnie-nowe-bez-2-pcc-i-prowizji-ID4wwci "HTTP/2 200 OK"
+2025-05-23 11:02:18,035 - httpx - INFO - HTTP Request: POST https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia "HTTP/2 201 Created"
+2025-05-23 11:02:18,037 - supabase_utils - INFO - Zapisano og³oszenie: Zupe³nie nowe bez 2% PCC i prowizji
+2025-05-23 11:02:18,590 - httpx - INFO - HTTP Request: GET https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia?select=%2A&url=eq.https%3A%2F%2Fwww.otodom.pl%2Fpl%2Foferta%2Fapartament-w-wilanowie-komfort-i-prestiz-ID4uuXN "HTTP/2 200 OK"
+2025-05-23 11:02:18,671 - httpx - INFO - HTTP Request: POST https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia "HTTP/2 201 Created"
+2025-05-23 11:02:18,672 - supabase_utils - INFO - Zapisano og³oszenie: Apartament w Wilanowie | komfort i presti¿
+2025-05-23 11:02:19,173 - httpx - INFO - HTTP Request: GET https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia?select=%2A&url=eq.https%3A%2F%2Fwww.otodom.pl%2Fpl%2Foferta%2Fnowe-m-3-pod-najem-scisle-centrum-ID4wKdW "HTTP/2 200 OK"
+2025-05-23 11:02:19,268 - httpx - INFO - HTTP Request: POST https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia "HTTP/2 201 Created"
+2025-05-23 11:02:19,269 - supabase_utils - INFO - Zapisano og³oszenie: Nowe|M-3|Pod Najem|Œcis³e Centrum|
+2025-05-23 11:02:19,750 - httpx - INFO - HTTP Request: GET https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia?select=%2A&url=eq.https%3A%2F%2Fwww.otodom.pl%2Fpl%2Foferta%2Fmieszkanie-dwupokojowe-gdansk-trakt-sw-wojciecha-ID4wgWT "HTTP/2 200 OK"
+2025-05-23 11:02:19,829 - httpx - INFO - HTTP Request: POST https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia "HTTP/2 201 Created"
+2025-05-23 11:02:19,830 - supabase_utils - INFO - Zapisano og³oszenie: Mieszkanie dwupokojowe Gdañsk Trakt Œw. Wojciecha
+2025-05-23 11:02:20,311 - httpx - INFO - HTTP Request: GET https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia?select=%2A&url=eq.https%3A%2F%2Fwww.otodom.pl%2Fpl%2Foferta%2Fapartament-pod-kluch-basen-spa-recepcja-ID4wM0i "HTTP/2 200 OK"
+2025-05-23 11:02:20,381 - httpx - INFO - HTTP Request: POST https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia "HTTP/2 201 Created"
+2025-05-23 11:02:20,382 - supabase_utils - INFO - Zapisano og³oszenie: Apartament pod kluch, Basen, spa, recepcja
+2025-05-23 11:02:20,947 - httpx - INFO - HTTP Request: GET https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia?select=%2A&url=eq.https%3A%2F%2Fwww.otodom.pl%2Fpl%2Foferta%2F2-pokoje-na-bugaju-36-m2-ID4vv1q "HTTP/2 200 OK"
+2025-05-23 11:02:21,036 - httpx - INFO - HTTP Request: POST https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia "HTTP/2 201 Created"
+2025-05-23 11:02:21,037 - supabase_utils - INFO - Zapisano og³oszenie: 2 pokoje na Bugaju 36 m2
+2025-05-23 11:02:21,740 - httpx - INFO - HTTP Request: GET https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia?select=%2A&url=eq.https%3A%2F%2Fwww.otodom.pl%2Fpl%2Foferta%2Fobnizka-ceny-2-pokoje-stare-miasto-ID4vjq4 "HTTP/2 200 OK"
+2025-05-23 11:02:21,813 - httpx - INFO - HTTP Request: POST https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia "HTTP/2 201 Created"
+2025-05-23 11:02:21,814 - supabase_utils - INFO - Zapisano og³oszenie: Obni¿ka Ceny! 2 pokoje, Stare Miasto!
+2025-05-23 11:02:22,500 - httpx - INFO - HTTP Request: GET https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia?select=%2A&url=eq.https%3A%2F%2Fwww.otodom.pl%2Fpl%2Foferta%2Fkoscielisko-widokowe-apartamenty-w-centrum-ID4tzrD "HTTP/2 200 OK"
+2025-05-23 11:02:22,580 - httpx - INFO - HTTP Request: POST https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia "HTTP/2 201 Created"
+2025-05-23 11:02:22,581 - supabase_utils - INFO - Zapisano og³oszenie: Koœcielisko, widokowe apartamenty w centrum
+2025-05-23 11:02:23,241 - httpx - INFO - HTTP Request: GET https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia?select=%2A&url=eq.https%3A%2F%2Fwww.otodom.pl%2Fpl%2Foferta%2Fmieszkanie-nad-zalewem-ul-rytla-65-5m2-komorka-2-balkony-12-49m2-ID4u9od "HTTP/2 200 OK"
+2025-05-23 11:02:23,323 - httpx - INFO - HTTP Request: POST https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia "HTTP/2 201 Created"
+2025-05-23 11:02:23,325 - supabase_utils - INFO - Zapisano og³oszenie: Mieszkanie nad zalewem, ul. Rytla 65,5m2 + komórka + 2 balkony 12,49m2
+2025-05-23 11:02:24,091 - httpx - INFO - HTTP Request: GET https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia?select=%2A&url=eq.https%3A%2F%2Fwww.otodom.pl%2Fpl%2Foferta%2Fnowe-nad-zalewem-2-balkony-rabat-ID4vbTm "HTTP/2 200 OK"
+2025-05-23 11:02:24,186 - httpx - INFO - HTTP Request: POST https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia "HTTP/2 201 Created"
+2025-05-23 11:02:24,187 - supabase_utils - INFO - Zapisano og³oszenie: Nowe / nad Zalewem /2 balkony/ Rabat!
+2025-05-23 11:02:24,893 - httpx - INFO - HTTP Request: GET https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia?select=%2A&url=eq.https%3A%2F%2Fwww.otodom.pl%2Fpl%2Foferta%2Fnowy-halinow-iii-etap-parter-z-ogrodkiem-ID4pBPO "HTTP/2 200 OK"
+2025-05-23 11:02:24,980 - httpx - INFO - HTTP Request: POST https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia "HTTP/2 201 Created"
+2025-05-23 11:02:24,981 - supabase_utils - INFO - Zapisano og³oszenie: Nowy Halinów - III Etap, parter z ogródkiem!
+2025-05-23 11:02:25,674 - httpx - INFO - HTTP Request: GET https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia?select=%2A&url=eq.https%3A%2F%2Fwww.otodom.pl%2Fpl%2Foferta%2Fluksusowe-z-tarasem-i-kominkiem-ID4vmeN "HTTP/2 200 OK"
+2025-05-23 11:02:25,756 - httpx - INFO - HTTP Request: POST https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia "HTTP/2 201 Created"
+2025-05-23 11:02:25,757 - supabase_utils - INFO - Zapisano og³oszenie: Luksusowe z tarasem i kominkiem
+2025-05-23 11:02:26,431 - httpx - INFO - HTTP Request: GET https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia?select=%2A&url=eq.https%3A%2F%2Fwww.otodom.pl%2Fpl%2Foferta%2Fnowy-komfortowy-apartament-z-ogrodkiem-ID4vv1l "HTTP/2 200 OK"
+2025-05-23 11:02:26,534 - httpx - INFO - HTTP Request: POST https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia "HTTP/2 201 Created"
+2025-05-23 11:02:26,535 - supabase_utils - INFO - Zapisano og³oszenie: Nowy, komfortowy apartament z ogródkiem
+2025-05-23 11:02:27,241 - httpx - INFO - HTTP Request: GET https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia?select=%2A&url=eq.https%3A%2F%2Fwww.otodom.pl%2Fpl%2Foferta%2Fkawalerka-dla-inwestora-klucze-zaraz-12min-starowka-parking-ID4vv1k "HTTP/2 200 OK"
+2025-05-23 11:02:27,321 - httpx - INFO - HTTP Request: POST https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia "HTTP/2 201 Created"
+2025-05-23 11:02:27,323 - supabase_utils - INFO - Zapisano og³oszenie: Kawalerka dla Inwestora + Klucze ZARAZ + 12min STARÓWKA + PARKING
+2025-05-23 11:02:28,032 - httpx - INFO - HTTP Request: GET https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia?select=%2A&url=eq.https%3A%2F%2Fwww.otodom.pl%2Fpl%2Foferta%2Fkawalerka-29-m2-z-balkonem-przy-samym-metrze-ID4wM0d "HTTP/2 200 OK"
+2025-05-23 11:02:28,175 - httpx - INFO - HTTP Request: POST https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia "HTTP/2 201 Created"
+2025-05-23 11:02:28,177 - supabase_utils - INFO - Zapisano og³oszenie: Kawalerka 29 m2, z balkonem przy samym metrze
+2025-05-23 11:02:28,875 - httpx - INFO - HTTP Request: GET https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia?select=%2A&url=eq.https%3A%2F%2Fwww.otodom.pl%2Fpl%2Foferta%2F2pok-przy-galerii-mokotow-blisko-kolejka-metro-ID4vv1d "HTTP/2 200 OK"
+2025-05-23 11:02:28,947 - httpx - INFO - HTTP Request: POST https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia "HTTP/2 201 Created"
+2025-05-23 11:02:28,948 - supabase_utils - INFO - Zapisano og³oszenie: 2pok przy Galerii Mokotów_Blisko kolejka, metro
+2025-05-23 11:02:29,640 - httpx - INFO - HTTP Request: GET https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia?select=%2A&url=eq.https%3A%2F%2Fwww.otodom.pl%2Fpl%2Foferta%2Fprzepiekne-mieszkanie-60-41-m2-z-uroczym-widokiem-ID4vv1i "HTTP/2 200 OK"
+2025-05-23 11:02:29,718 - httpx - INFO - HTTP Request: POST https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia "HTTP/2 201 Created"
+2025-05-23 11:02:29,719 - supabase_utils - INFO - Zapisano og³oszenie: Przepiêkne mieszkanie 60,41 m2 z uroczym widokiem
+2025-05-23 11:02:30,393 - httpx - INFO - HTTP Request: GET https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia?select=%2A&url=eq.https%3A%2F%2Fwww.otodom.pl%2Fpl%2Foferta%2Fmieszkanie-na-sprzedaz-2-pokoje-lsm-ID4vmbv "HTTP/2 200 OK"
+2025-05-23 11:02:30,463 - httpx - INFO - HTTP Request: POST https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia "HTTP/2 201 Created"
+2025-05-23 11:02:30,464 - supabase_utils - INFO - Zapisano og³oszenie: Mieszkanie na sprzeda¿ -2 pokoje-Lsm.
+2025-05-23 11:02:31,173 - httpx - INFO - HTTP Request: GET https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia?select=%2A&url=eq.https%3A%2F%2Fwww.otodom.pl%2Fpl%2Foferta%2F3-pok-lezyca-ciesielska-nowe-parter-55-70m2-ID4vv1g "HTTP/2 200 OK"
+2025-05-23 11:02:31,307 - httpx - INFO - HTTP Request: POST https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia "HTTP/2 201 Created"
+2025-05-23 11:02:31,312 - supabase_utils - INFO - Zapisano og³oszenie: 3 Pok £ê¿yca-Ciesielska Nowe parter 55,70m2
+2025-05-23 11:02:32,001 - httpx - INFO - HTTP Request: GET https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia?select=%2A&url=eq.https%3A%2F%2Fwww.otodom.pl%2Fpl%2Foferta%2F4-pokojowy-loft-97m2-taras-bez-prowizji-ID4ujhS "HTTP/2 200 OK"
+2025-05-23 11:02:32,087 - httpx - INFO - HTTP Request: POST https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia "HTTP/2 201 Created"
+2025-05-23 11:02:32,088 - supabase_utils - INFO - Zapisano og³oszenie: 4-pokojowy loft 97m2 + taras Bez Prowizji
+2025-05-23 11:02:32,795 - httpx - INFO - HTTP Request: GET https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia?select=%2A&url=eq.https%3A%2F%2Fwww.otodom.pl%2Fpl%2Foferta%2F2-pokojowy-apartament-54m2-balkon-ID4uKSN "HTTP/2 200 OK"
+2025-05-23 11:02:32,906 - httpx - INFO - HTTP Request: POST https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia "HTTP/2 201 Created"
+2025-05-23 11:02:32,907 - supabase_utils - INFO - Zapisano og³oszenie: 2-pokojowy apartament 54m2 + balkon
+2025-05-23 11:02:33,688 - httpx - INFO - HTTP Request: GET https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia?select=%2A&url=eq.https%3A%2F%2Fwww.otodom.pl%2Fpl%2Foferta%2Fdworzysko-park-nowe-mieszkanie-b-129-ID4imeo "HTTP/2 200 OK"
+2025-05-23 11:02:33,834 - httpx - INFO - HTTP Request: POST https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia "HTTP/2 201 Created"
+2025-05-23 11:02:33,840 - supabase_utils - INFO - Zapisano og³oszenie: Dworzysko Park | nowe mieszkanie B_129
+2025-05-23 11:02:34,540 - httpx - INFO - HTTP Request: GET https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia?select=%2A&url=eq.https%3A%2F%2Fwww.otodom.pl%2Fpl%2Foferta%2F4-pokojowe-mieszkanie-88m2-ogrodek-bez-prowizji-ID4ucU4 "HTTP/2 200 OK"
+2025-05-23 11:02:34,636 - httpx - INFO - HTTP Request: POST https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia "HTTP/2 201 Created"
+2025-05-23 11:02:34,641 - supabase_utils - INFO - Zapisano og³oszenie: 4-pokojowe mieszkanie 88m2 + ogródek Bez Prowizji
+2025-05-23 11:02:35,355 - httpx - INFO - HTTP Request: GET https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia?select=%2A&url=eq.https%3A%2F%2Fwww.otodom.pl%2Fpl%2Foferta%2Funikalny-apartament-premium-w-centrum-bialki-tatrzanskiej-spa-ID4vv0Q "HTTP/2 200 OK"
+2025-05-23 11:02:35,436 - httpx - INFO - HTTP Request: POST https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia "HTTP/2 201 Created"
+2025-05-23 11:02:35,439 - supabase_utils - INFO - Zapisano og³oszenie: Unikalny Apartament premium w centrum Bia³ki Tatrzañskiej, SPA
+2025-05-23 11:02:36,152 - httpx - INFO - HTTP Request: GET https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia?select=%2A&url=eq.https%3A%2F%2Fwww.otodom.pl%2Fpl%2Foferta%2F3-pokojowy-apartament-z-widokiem-na-zielen-ID4tGZ4 "HTTP/2 200 OK"
+2025-05-23 11:02:36,242 - httpx - INFO - HTTP Request: POST https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia "HTTP/2 201 Created"
+2025-05-23 11:02:36,244 - supabase_utils - INFO - Zapisano og³oszenie: 3 pokojowy apartament z widokiem na zieleñ
+2025-05-23 11:02:36,962 - httpx - INFO - HTTP Request: GET https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia?select=%2A&url=eq.https%3A%2F%2Fwww.otodom.pl%2Fpl%2Foferta%2F2-pokoje-40-28m2-balkon-winda-dakar-karolina-ID4vv18 "HTTP/2 200 OK"
+2025-05-23 11:02:37,053 - httpx - INFO - HTTP Request: POST https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia "HTTP/2 201 Created"
+2025-05-23 11:02:37,058 - supabase_utils - INFO - Zapisano og³oszenie: 2 pokoje- 40,28m2 |Balkon |Winda |Dakar Karolina
+2025-05-23 11:02:37,773 - httpx - INFO - HTTP Request: GET https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia?select=%2A&url=eq.https%3A%2F%2Fwww.otodom.pl%2Fpl%2Foferta%2Fokazja-wysokie-mieszkanie-49-7m2-na-1-p-w-poznaniu-ID4wbkI "HTTP/2 200 OK"
+2025-05-23 11:02:37,859 - httpx - INFO - HTTP Request: POST https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia "HTTP/2 201 Created"
+2025-05-23 11:02:37,862 - supabase_utils - INFO - Zapisano og³oszenie: Okazja!Wysokie mieszkanie 49,7m2 na 1 p w Poznaniu
+2025-05-23 11:02:38,367 - httpx - INFO - HTTP Request: GET https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia?select=%2A&url=eq.https%3A%2F%2Fwww.otodom.pl%2Fpl%2Foferta%2F2-pokojowe-mieszkanie-po-remoncie-bronowice-ul-bronowicka-23-ID4vv0k "HTTP/2 200 OK"
+2025-05-23 11:02:38,459 - httpx - INFO - HTTP Request: POST https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia "HTTP/2 201 Created"
+2025-05-23 11:02:38,462 - supabase_utils - INFO - Zapisano og³oszenie: 2-pokojowe mieszkanie po remoncie | Bronowice | ul. Bronowicka 23
+2025-05-23 11:02:38,948 - httpx - INFO - HTTP Request: GET https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia?select=%2A&url=eq.https%3A%2F%2Fwww.otodom.pl%2Fhpr%2Fundefined "HTTP/2 200 OK"
+2025-05-23 11:02:39,036 - httpx - INFO - HTTP Request: POST https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia "HTTP/2 201 Created"
+2025-05-23 11:02:39,039 - supabase_utils - INFO - Zapisano og³oszenie: Murapol Osiedle Wolka
+2025-05-23 11:02:39,503 - httpx - INFO - HTTP Request: GET https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia?select=%2A&url=eq.https%3A%2F%2Fwww.domiporta.pl%2Fnieruchomosci%2Fsprzedam-mieszkanie-dwupokojowe-warszawa-mokotow-bukowinska-50m2%2F155770053 "HTTP/2 200 OK"
+2025-05-23 11:02:39,578 - httpx - INFO - HTTP Request: POST https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia "HTTP/2 201 Created"
+2025-05-23 11:02:39,582 - supabase_utils - INFO - Zapisano og³oszenie: mieszkanie na sprzeda¿ 50m2 mieszkanie Warszawa, Mokotów, bukowiñska
+2025-05-23 11:02:40,062 - httpx - INFO - HTTP Request: GET https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia?select=%2A&url=eq.https%3A%2F%2Fwww.domiporta.pl%2Fnieruchomosci%2Fsprzedam-mieszkanie-trzypokojowe-slupsk-ryczewo-lotewska-52m2%2F155483205 "HTTP/2 200 OK"
+2025-05-23 11:02:40,147 - httpx - INFO - HTTP Request: POST https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia "HTTP/2 201 Created"
+2025-05-23 11:02:40,149 - supabase_utils - INFO - Zapisano og³oszenie: mieszkanie na sprzeda¿ 52m2 mieszkanie S³upsk, Ryczewo, Nice Home, £OTEWSKA
+2025-05-23 11:02:40,642 - httpx - INFO - HTTP Request: GET https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia?select=%2A&url=eq.https%3A%2F%2Fwww.domiporta.pl%2Fnieruchomosci%2Fsprzedam-mieszkanie-dwupokojowe-warszawa-wola-pustola-38m2%2F155759782 "HTTP/2 200 OK"
+2025-05-23 11:02:40,720 - httpx - INFO - HTTP Request: POST https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia "HTTP/2 201 Created"
+2025-05-23 11:02:40,724 - supabase_utils - INFO - Zapisano og³oszenie: mieszkanie na sprzeda¿ 38m2 mieszkanie Warszawa, Wola, Wola, Pustola
+2025-05-23 11:02:41,228 - httpx - INFO - HTTP Request: GET https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia?select=%2A&url=eq.https%3A%2F%2Fwww.domiporta.pl%2Fnieruchomosci%2Fsprzedam-mieszkanie-dwupokojowe-piaseczno-albatrosow-49m2%2F155747514 "HTTP/2 200 OK"
+2025-05-23 11:02:41,306 - httpx - INFO - HTTP Request: POST https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia "HTTP/2 201 Created"
+2025-05-23 11:02:41,308 - supabase_utils - INFO - Zapisano og³oszenie: mieszkanie na sprzeda¿ 49m2 mieszkanie Piaseczno, Albatrosów
+2025-05-23 11:02:41,804 - httpx - INFO - HTTP Request: GET https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia?select=%2A&url=eq.https%3A%2F%2Fwww.domiporta.pl%2Fnieruchomosci%2Fsprzedam-mieszkanie-dwupokojowe-szczecin-niebuszewo-rugianska-46m2%2F155792443 "HTTP/2 200 OK"
+2025-05-23 11:02:41,892 - httpx - INFO - HTTP Request: POST https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia "HTTP/2 201 Created"
+2025-05-23 11:02:41,895 - supabase_utils - INFO - Zapisano og³oszenie: mieszkanie na sprzeda¿ 46m2 mieszkanie Szczecin, Niebuszewo, Rugiañska
+2025-05-23 11:02:42,393 - httpx - INFO - HTTP Request: GET https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia?select=%2A&url=eq.https%3A%2F%2Fwww.domiporta.pl%2Fnieruchomosci%2Fsprzedam-mieszkanie-poznan-centrum-ul-kolejowa-120m2%2F155805915 "HTTP/2 200 OK"
+2025-05-23 11:02:42,481 - httpx - INFO - HTTP Request: POST https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia "HTTP/2 201 Created"
+2025-05-23 11:02:42,484 - supabase_utils - INFO - Zapisano og³oszenie: mieszkanie na sprzeda¿ 120m2 mieszkanie Poznañ, Centrum, ul. Kolejowa
+2025-05-23 11:02:42,972 - httpx - INFO - HTTP Request: GET https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia?select=%2A&url=eq.https%3A%2F%2Fwww.domiporta.pl%2Fnieruchomosci%2Fsprzedam-mieszkanie-dwupokojowe-lodz-centrum-ul-lipowa-34m2%2F155805912 "HTTP/2 200 OK"
+2025-05-23 11:02:43,213 - httpx - INFO - HTTP Request: POST https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia "HTTP/2 201 Created"
+2025-05-23 11:02:43,216 - supabase_utils - INFO - Zapisano og³oszenie: mieszkanie na sprzeda¿ 34m2 mieszkanie £ódŸ, Centrum, ul. Lipowa
+2025-05-23 11:02:43,682 - httpx - INFO - HTTP Request: GET https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia?select=%2A&url=eq.https%3A%2F%2Fwww.domiporta.pl%2Fnieruchomosci%2Fsprzedam-mieszkanie-dwupokojowe-zielona-gora-centrum-park-tysiaclecia-38m2%2F155805911 "HTTP/2 200 OK"
+2025-05-23 11:02:43,770 - httpx - INFO - HTTP Request: POST https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia "HTTP/2 201 Created"
+2025-05-23 11:02:43,773 - supabase_utils - INFO - Zapisano og³oszenie: mieszkanie na sprzeda¿ 38m2 mieszkanie Zielona Góra, centrum, Park Tysi¹clecia
+2025-05-23 11:02:44,269 - httpx - INFO - HTTP Request: GET https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia?select=%2A&url=eq.https%3A%2F%2Fwww.domiporta.pl%2Fnieruchomosci%2Fsprzedam-kawalerke-poznan-centrum-31m2%2F155805910 "HTTP/2 200 OK"
+2025-05-23 11:02:44,345 - httpx - INFO - HTTP Request: POST https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia "HTTP/2 201 Created"
+2025-05-23 11:02:44,347 - supabase_utils - INFO - Zapisano og³oszenie: mieszkanie na sprzeda¿ 31m2 mieszkanie Poznañ, Centrum
+2025-05-23 11:02:44,825 - httpx - INFO - HTTP Request: GET https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia?select=%2A&url=eq.https%3A%2F%2Fwww.domiporta.pl%2Fnieruchomosci%2Fsprzedam-kawalerke-warszawa-mokotow-rabindranatha-tagore-37m2%2F155825684 "HTTP/2 200 OK"
+2025-05-23 11:02:44,923 - httpx - INFO - HTTP Request: POST https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia "HTTP/2 201 Created"
+2025-05-23 11:02:44,926 - supabase_utils - INFO - Zapisano og³oszenie: mieszkanie na sprzeda¿ 37m2 mieszkanie Warszawa, Mokotów, Rabindranatha Tagore
+2025-05-23 11:02:45,410 - httpx - INFO - HTTP Request: GET https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia?select=%2A&url=eq.https%3A%2F%2Fwww.domiporta.pl%2Fnieruchomosci%2Fsprzedam-kawalerke-warszawa-bialoleka-tarchomin-pochyla-33m2%2F155536245 "HTTP/2 200 OK"
+2025-05-23 11:02:45,491 - httpx - INFO - HTTP Request: POST https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia "HTTP/2 201 Created"
+2025-05-23 11:02:45,493 - supabase_utils - INFO - Zapisano og³oszenie: mieszkanie na sprzeda¿ 33m2 mieszkanie Warszawa, Bia³o³êka Tarchomin, Pochy³a
+2025-05-23 11:02:45,982 - httpx - INFO - HTTP Request: GET https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia?select=%2A&url=eq.https%3A%2F%2Fwww.domiporta.pl%2Fnieruchomosci%2Fsprzedam-mieszkanie-dwupokojowe-warszawa-srodmiescie-wojciecha-gorskiego-68m2%2F155526986 "HTTP/2 200 OK"
+2025-05-23 11:02:46,063 - httpx - INFO - HTTP Request: POST https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia "HTTP/2 201 Created"
+2025-05-23 11:02:46,065 - supabase_utils - INFO - Zapisano og³oszenie: mieszkanie na sprzeda¿ 68m2 mieszkanie Warszawa, Œródmieœcie, Wojciecha Górskiego
+2025-05-23 11:02:46,543 - httpx - INFO - HTTP Request: GET https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia?select=%2A&url=eq.https%3A%2F%2Fwww.domiporta.pl%2Fnieruchomosci%2Fsprzedam-mieszkanie-trzypokojowe-warszawa-wola-mirow-ogrodowa-75m2%2F155466489 "HTTP/2 200 OK"
+2025-05-23 11:02:46,621 - httpx - INFO - HTTP Request: POST https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia "HTTP/2 201 Created"
+2025-05-23 11:02:46,621 - supabase_utils - INFO - Zapisano og³oszenie: mieszkanie na sprzeda¿ 75m2 mieszkanie Warszawa, Wola Mirów, Ogrodowa
+2025-05-23 11:02:47,097 - httpx - INFO - HTTP Request: GET https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia?select=%2A&url=eq.https%3A%2F%2Fwww.domiporta.pl%2Fnieruchomosci%2Fsprzedam-mieszkanie-czteropokojowe-warszawa-wlochy-kleszczowa-120m2%2F155444780 "HTTP/2 200 OK"
+2025-05-23 11:02:47,179 - httpx - INFO - HTTP Request: POST https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia "HTTP/2 201 Created"
+2025-05-23 11:02:47,182 - supabase_utils - INFO - Zapisano og³oszenie: mieszkanie na sprzeda¿ 120m2 mieszkanie Warszawa, W³ochy, Kleszczowa
+2025-05-23 11:02:47,680 - httpx - INFO - HTTP Request: GET https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia?select=%2A&url=eq.https%3A%2F%2Fwww.domiporta.pl%2Fnieruchomosci%2Fsprzedam-mieszkanie-trzypokojowe-warszawa-bielany-williama-szekspira-51m2%2F155436028 "HTTP/2 200 OK"
+2025-05-23 11:02:47,762 - httpx - INFO - HTTP Request: POST https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia "HTTP/2 201 Created"
+2025-05-23 11:02:47,764 - supabase_utils - INFO - Zapisano og³oszenie: mieszkanie na sprzeda¿ 51m2 mieszkanie Warszawa, Bielany, Williama Szekspira
+2025-05-23 11:02:48,234 - httpx - INFO - HTTP Request: GET https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia?select=%2A&url=eq.https%3A%2F%2Fwww.domiporta.pl%2Fnieruchomosci%2Fsprzedam-mieszkanie-trzypokojowe-zegrze-plk-kazimierza-drewnowskiego-113m2%2F155429996 "HTTP/2 200 OK"
+2025-05-23 11:02:48,312 - httpx - INFO - HTTP Request: POST https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia "HTTP/2 201 Created"
+2025-05-23 11:02:48,314 - supabase_utils - INFO - Zapisano og³oszenie: mieszkanie na sprzeda¿ 113m2 mieszkanie Zegrze, p³k. Kazimierza Drewnowskiego
+2025-05-23 11:02:48,780 - httpx - INFO - HTTP Request: GET https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia?select=%2A&url=eq.https%3A%2F%2Fwww.domiporta.pl%2Fnieruchomosci%2Fsprzedam-kawalerke-zegrze-plk-kazimierza-drewnowskiego-29m2%2F155424600 "HTTP/2 200 OK"
+2025-05-23 11:02:48,856 - httpx - INFO - HTTP Request: POST https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia "HTTP/2 201 Created"
+2025-05-23 11:02:48,857 - supabase_utils - INFO - Zapisano og³oszenie: mieszkanie na sprzeda¿ 29m2 mieszkanie Zegrze, p³k. Kazimierza Drewnowskiego
+2025-05-23 11:02:49,375 - httpx - INFO - HTTP Request: GET https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia?select=%2A&url=eq.https%3A%2F%2Fwww.domiporta.pl%2Fnieruchomosci%2Fsprzedam-mieszkanie-dwupokojowe-warszawa-mokotow-aleja-gen-wladyslawa-sikorskiego-65m2%2F155367979 "HTTP/2 200 OK"
+2025-05-23 11:02:49,461 - httpx - INFO - HTTP Request: POST https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia "HTTP/2 201 Created"
+2025-05-23 11:02:49,462 - supabase_utils - INFO - Zapisano og³oszenie: mieszkanie na sprzeda¿ 65m2 mieszkanie Warszawa, Mokotów, Aleja gen. W³adys³awa Sikorskiego
+2025-05-23 11:02:49,964 - httpx - INFO - HTTP Request: GET https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia?select=%2A&url=eq.https%3A%2F%2Fwww.domiporta.pl%2Fnieruchomosci%2Fsprzedam-mieszkanie-dwupokojowe-warszawa-srodmiescie-tadeusza-boya-zelenskiego-57m2%2F155362968 "HTTP/2 200 OK"
+2025-05-23 11:02:50,062 - httpx - INFO - HTTP Request: POST https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia "HTTP/2 201 Created"
+2025-05-23 11:02:50,063 - supabase_utils - INFO - Zapisano og³oszenie: mieszkanie na sprzeda¿ 57m2 mieszkanie Warszawa, Œródmieœcie, Tadeusza Boya-¯eleñskiego
+2025-05-23 11:02:50,533 - httpx - INFO - HTTP Request: GET https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia?select=%2A&url=eq.https%3A%2F%2Fwww.domiporta.pl%2Fnieruchomosci%2Fsprzedam-mieszkanie-trzypokojowe-warszawa-srodmiescie-aleje-jerozolimskie-123m2%2F155186856 "HTTP/2 200 OK"
+2025-05-23 11:02:50,613 - httpx - INFO - HTTP Request: POST https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia "HTTP/2 201 Created"
+2025-05-23 11:02:50,614 - supabase_utils - INFO - Zapisano og³oszenie: mieszkanie na sprzeda¿ 123m2 mieszkanie Warszawa, Œródmieœcie, Aleje Jerozolimskie
+2025-05-23 11:02:51,171 - httpx - INFO - HTTP Request: GET https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia?select=%2A&url=eq.https%3A%2F%2Fwww.domiporta.pl%2Fnieruchomosci%2Fsprzedam-mieszkanie-warszawa-wola-lucka-192m2%2F155156908 "HTTP/2 200 OK"
+2025-05-23 11:02:51,307 - httpx - INFO - HTTP Request: POST https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia "HTTP/2 201 Created"
+2025-05-23 11:02:51,308 - supabase_utils - INFO - Zapisano og³oszenie: mieszkanie na sprzeda¿ 192m2 mieszkanie Warszawa, Wola, £ucka
+2025-05-23 11:02:51,773 - httpx - INFO - HTTP Request: GET https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia?select=%2A&url=eq.https%3A%2F%2Fwww.domiporta.pl%2Fnieruchomosci%2Fsprzedam-mieszkanie-dwupokojowe-warszawa-wilanow-sarmacka-45m2%2F155776437 "HTTP/2 200 OK"
+2025-05-23 11:02:51,850 - httpx - INFO - HTTP Request: POST https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia "HTTP/2 201 Created"
+2025-05-23 11:02:51,853 - supabase_utils - INFO - Zapisano og³oszenie: mieszkanie na sprzeda¿ 45m2 mieszkanie Warszawa, Wilanów, Sarmacka
+2025-05-23 11:02:52,344 - httpx - INFO - HTTP Request: GET https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia?select=%2A&url=eq.https%3A%2F%2Fwww.domiporta.pl%2Fnieruchomosci%2Fsprzedam-mieszkanie-trzypokojowe-warszawa-mokotow-sluzew-obrzezna-70m2%2F155691374 "HTTP/2 200 OK"
+2025-05-23 11:02:52,438 - httpx - INFO - HTTP Request: POST https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia "HTTP/2 201 Created"
+2025-05-23 11:02:52,440 - supabase_utils - INFO - Zapisano og³oszenie: mieszkanie na sprzeda¿ 70m2 mieszkanie Warszawa, Mokotów S³u¿ew, Obrze¿na
+2025-05-23 11:02:53,034 - httpx - INFO - HTTP Request: GET https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia?select=%2A&url=eq.https%3A%2F%2Fwww.domiporta.pl%2Fnieruchomosci%2Fsprzedam-mieszkanie-dwupokojowe-warszawa-ochota-zygmunta-glogera-84m2%2F155685324 "HTTP/2 200 OK"
+2025-05-23 11:02:53,115 - httpx - INFO - HTTP Request: POST https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia "HTTP/2 201 Created"
+2025-05-23 11:02:53,116 - supabase_utils - INFO - Zapisano og³oszenie: mieszkanie na sprzeda¿ 84m2 mieszkanie Warszawa, Ochota, Zygmunta Glogera
+2025-05-23 11:02:53,650 - httpx - INFO - HTTP Request: GET https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia?select=%2A&url=eq.https%3A%2F%2Fwww.domiporta.pl%2Fnieruchomosci%2Fsprzedam-mieszkanie-trzypokojowe-warszawa-srodmiescie-rynek-nowego-miasta-48m2%2F155677511 "HTTP/2 200 OK"
+2025-05-23 11:02:53,785 - httpx - INFO - HTTP Request: POST https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia "HTTP/2 201 Created"
+2025-05-23 11:02:53,786 - supabase_utils - INFO - Zapisano og³oszenie: mieszkanie na sprzeda¿ 48m2 mieszkanie Warszawa, Œródmieœcie, Rynek Nowego Miasta
+2025-05-23 11:02:54,466 - httpx - INFO - HTTP Request: GET https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia?select=%2A&url=eq.https%3A%2F%2Fwww.domiporta.pl%2Fnieruchomosci%2Fsprzedam-kawalerke-warszawa-mokotow-aleja-niepodleglosci-25m2%2F155676665 "HTTP/2 200 OK"
+2025-05-23 11:02:54,541 - httpx - INFO - HTTP Request: POST https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia "HTTP/2 201 Created"
+2025-05-23 11:02:54,543 - supabase_utils - INFO - Zapisano og³oszenie: mieszkanie na sprzeda¿ 25m2 mieszkanie Warszawa, Mokotów, Aleja Niepodleg³oœci
+2025-05-23 11:02:55,230 - httpx - INFO - HTTP Request: GET https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia?select=%2A&url=eq.https%3A%2F%2Fwww.domiporta.pl%2Fnieruchomosci%2Fsprzedam-mieszkanie-czteropokojowe-warszawa-bemowo-gen-tadeusza-pelczynskiego-128m2%2F155673274 "HTTP/2 200 OK"
+2025-05-23 11:02:55,324 - httpx - INFO - HTTP Request: POST https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia "HTTP/2 201 Created"
+2025-05-23 11:02:55,327 - supabase_utils - INFO - Zapisano og³oszenie: mieszkanie na sprzeda¿ 128m2 mieszkanie Warszawa, Bemowo, gen. Tadeusza Pe³czyñskiego
+2025-05-23 11:02:56,000 - httpx - INFO - HTTP Request: GET https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia?select=%2A&url=eq.https%3A%2F%2Fwww.domiporta.pl%2Fnieruchomosci%2Fsprzedam-mieszkanie-trzypokojowe-warszawa-ursynow-klobucka-63m2%2F155666407 "HTTP/2 200 OK"
+2025-05-23 11:02:56,087 - httpx - INFO - HTTP Request: POST https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia "HTTP/2 201 Created"
+2025-05-23 11:02:56,088 - supabase_utils - INFO - Zapisano og³oszenie: mieszkanie na sprzeda¿ 63m2 mieszkanie Warszawa, Ursynów, K³obucka
+2025-05-23 11:02:56,775 - httpx - INFO - HTTP Request: GET https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia?select=%2A&url=eq.https%3A%2F%2Fwww.domiporta.pl%2Fnieruchomosci%2Fsprzedam-mieszkanie-czteropokojowe-warszawa-mokotow-dywizjonu-ak-jelen-91m2%2F155563413 "HTTP/2 200 OK"
+2025-05-23 11:02:56,868 - httpx - INFO - HTTP Request: POST https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia "HTTP/2 201 Created"
+2025-05-23 11:02:56,870 - supabase_utils - INFO - Zapisano og³oszenie: mieszkanie na sprzeda¿ 91m2 mieszkanie Warszawa, Mokotów, Dywizjonu AK "Jeleñ"
+2025-05-23 11:02:57,569 - httpx - INFO - HTTP Request: GET https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia?select=%2A&url=eq.https%3A%2F%2Fwww.domiporta.pl%2Fnieruchomosci%2Fsprzedam-mieszkanie-czteropokojowe-sopot-dolny-bohaterow-monte-cassino-175m2%2F154597053 "HTTP/2 200 OK"
+2025-05-23 11:02:57,654 - httpx - INFO - HTTP Request: POST https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia "HTTP/2 201 Created"
+2025-05-23 11:02:57,655 - supabase_utils - INFO - Zapisano og³oszenie: mieszkanie na sprzeda¿ 175m2 mieszkanie Sopot, Dolny, Bohaterów Monte Cassino
+2025-05-23 11:02:58,324 - httpx - INFO - HTTP Request: GET https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia?select=%2A&url=eq.https%3A%2F%2Fwww.domiporta.pl%2Fnieruchomosci%2Fsprzedam-mieszkanie-warszawa-srodmiescie-powisle-leona-kruczkowskiego-124m2%2F154589270 "HTTP/2 200 OK"
+2025-05-23 11:02:58,475 - httpx - INFO - HTTP Request: POST https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia "HTTP/2 201 Created"
+2025-05-23 11:02:58,477 - supabase_utils - INFO - Zapisano og³oszenie: mieszkanie na sprzeda¿ 124m2 mieszkanie Warszawa, Œródmieœcie Powiœle, Leona Kruczkowskiego
+2025-05-23 11:02:59,160 - httpx - INFO - HTTP Request: GET https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia?select=%2A&url=eq.https%3A%2F%2Fwww.domiporta.pl%2Fnieruchomosci%2Fsprzedam-kawalerke-warszawa-praga-polnoc-sw-cyryla-i-metodego-12m2%2F155810117 "HTTP/2 200 OK"
+2025-05-23 11:02:59,241 - httpx - INFO - HTTP Request: POST https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia "HTTP/2 201 Created"
+2025-05-23 11:02:59,245 - supabase_utils - INFO - Zapisano og³oszenie: mieszkanie na sprzeda¿ 12m2 mieszkanie Warszawa, Praga-Pó³noc, œw. Cyryla i Metodego
+2025-05-23 11:02:59,955 - httpx - INFO - HTTP Request: GET https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia?select=%2A&url=eq.https%3A%2F%2Fwww.domiporta.pl%2Fnieruchomosci%2Fsprzedam-mieszkanie-czteropokojowe-warszawa-srodmiescie-marszalkowska-68m2%2F155789978 "HTTP/2 200 OK"
+2025-05-23 11:03:00,032 - httpx - INFO - HTTP Request: POST https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia "HTTP/2 201 Created"
+2025-05-23 11:03:00,032 - supabase_utils - INFO - Zapisano og³oszenie: mieszkanie na sprzeda¿ 68m2 mieszkanie Warszawa, Œródmieœcie, Œródmieœcie Pó³nocne, Marsza³kowska
+2025-05-23 11:03:00,713 - httpx - INFO - HTTP Request: GET https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia?select=%2A&url=eq.https%3A%2F%2Fwww.domiporta.pl%2Fnieruchomosci%2Fsprzedam-mieszkanie-trzypokojowe-warszawa-zoliborz-adama-mickiewicza-100m2%2F155439619 "HTTP/2 200 OK"
+2025-05-23 11:03:00,795 - httpx - INFO - HTTP Request: POST https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia "HTTP/2 201 Created"
+2025-05-23 11:03:00,797 - supabase_utils - INFO - Zapisano og³oszenie: mieszkanie na sprzeda¿ 100m2 mieszkanie Warszawa, ¯oliborz, Stary ¯oliborz, Adama Mickiewicza
+2025-05-23 11:03:01,495 - httpx - INFO - HTTP Request: GET https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia?select=%2A&url=eq.https%3A%2F%2Fwww.domiporta.pl%2Fnieruchomosci%2Fsprzedam-mieszkanie-czteropokojowe-sobotka-81m2%2F155767076 "HTTP/2 200 OK"
+2025-05-23 11:03:01,586 - httpx - INFO - HTTP Request: POST https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia "HTTP/2 201 Created"
+2025-05-23 11:03:01,587 - supabase_utils - INFO - Zapisano og³oszenie: mieszkanie na sprzeda¿ 81m2 mieszkanie Sobótka
+2025-05-23 11:03:02,270 - httpx - INFO - HTTP Request: GET https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia?select=%2A&url=eq.https%3A%2F%2Fwww.domiporta.pl%2Fnieruchomosci%2Fsprzedam-mieszkanie-trzypokojowe-wroclaw-psie-pole-psie-pole-kielczowska-54m2%2F155669306 "HTTP/2 200 OK"
+2025-05-23 11:03:02,384 - httpx - INFO - HTTP Request: POST https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia "HTTP/2 201 Created"
+2025-05-23 11:03:02,385 - supabase_utils - INFO - Zapisano og³oszenie: mieszkanie na sprzeda¿ 54m2 mieszkanie Wroc³aw, Psie Pole, Psie Pole, Kie³czowska
+2025-05-23 11:03:03,102 - httpx - INFO - HTTP Request: GET https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia?select=%2A&url=eq.https%3A%2F%2Fwww.domiporta.pl%2Fnieruchomosci%2Fsprzedam-mieszkanie-dwupokojowe-warszawa-praga-polnoc-okrzei-51m2%2F155828591 "HTTP/2 200 OK"
+2025-05-23 11:03:03,190 - httpx - INFO - HTTP Request: POST https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia "HTTP/2 201 Created"
+2025-05-23 11:03:03,192 - supabase_utils - INFO - Zapisano og³oszenie: mieszkanie na sprzeda¿ 51m2 mieszkanie Warszawa, Praga-Pó³noc, Stara Praga, Okrzei
+2025-05-23 11:03:03,892 - httpx - INFO - HTTP Request: GET https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia?select=%2A&url=eq.https%3A%2F%2Fwww.domiporta.pl%2Fnieruchomosci%2Fsprzedam-mieszkanie-dwupokojowe-warszawa-ursus-apartamentowa-52m2%2F155798026 "HTTP/2 200 OK"
+2025-05-23 11:03:03,998 - httpx - INFO - HTTP Request: POST https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia "HTTP/2 201 Created"
+2025-05-23 11:03:03,998 - supabase_utils - INFO - Zapisano og³oszenie: mieszkanie na sprzeda¿ 52m2 mieszkanie Warszawa, Ursus, Ursus, Apartamentowa
+2025-05-23 11:03:04,673 - httpx - INFO - HTTP Request: GET https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia?select=%2A&url=eq.https%3A%2F%2Fwww.domiporta.pl%2Fnieruchomosci%2Fsprzedam-mieszkanie-dwupokojowe-warszawa-bemowo-lazurowa-37m2%2F155796619 "HTTP/2 200 OK"
+2025-05-23 11:03:04,763 - httpx - INFO - HTTP Request: POST https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia "HTTP/2 201 Created"
+2025-05-23 11:03:04,766 - supabase_utils - INFO - Zapisano og³oszenie: mieszkanie na sprzeda¿ 37m2 mieszkanie Warszawa, Bemowo, Bemowo, Lazurowa
+2025-05-23 11:03:05,444 - httpx - INFO - HTTP Request: GET https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia?select=%2A&url=eq.https%3A%2F%2Fwww.domiporta.pl%2Fnieruchomosci%2Fsprzedam-mieszkanie-dwupokojowe-warszawa-mokotow-bialej-koniczyny-44m2%2F155796618 "HTTP/2 200 OK"
+2025-05-23 11:03:05,520 - httpx - INFO - HTTP Request: POST https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia "HTTP/2 201 Created"
+2025-05-23 11:03:05,524 - supabase_utils - INFO - Zapisano og³oszenie: mieszkanie na sprzeda¿ 44m2 mieszkanie Warszawa, Mokotów, Stegny, Bia³ej Koniczyny
+2025-05-23 11:03:06,222 - httpx - INFO - HTTP Request: GET https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia?select=%2A&url=eq.https%3A%2F%2Fwww.domiporta.pl%2Fnieruchomosci%2Fsprzedam-mieszkanie-trzypokojowe-podkowa-lesna-podkowa-lesna-centralna-blonska-84m2%2F155791431 "HTTP/2 200 OK"
+2025-05-23 11:03:06,306 - httpx - INFO - HTTP Request: POST https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia "HTTP/2 201 Created"
+2025-05-23 11:03:06,309 - supabase_utils - INFO - Zapisano og³oszenie: mieszkanie na sprzeda¿ 84m2 mieszkanie Podkowa Leœna, Podkowa Leœna Centralna, B³oñska
+2025-05-23 11:03:07,005 - httpx - INFO - HTTP Request: GET https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia?select=%2A&url=eq.https%3A%2F%2Fwww.domiporta.pl%2Fnieruchomosci%2Fsprzedam-mieszkanie-trzypokojowe-warszawa-targowek-torunska-54m2%2F155780838 "HTTP/2 200 OK"
+2025-05-23 11:03:07,077 - httpx - INFO - HTTP Request: POST https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia "HTTP/2 201 Created"
+2025-05-23 11:03:07,079 - supabase_utils - INFO - Zapisano og³oszenie: mieszkanie na sprzeda¿ 54m2 mieszkanie Warszawa, Targówek, Bródno, Toruñska
+2025-05-23 11:03:07,783 - httpx - INFO - HTTP Request: GET https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia?select=%2A&url=eq.https%3A%2F%2Fwww.domiporta.pl%2Fnieruchomosci%2Fsprzedam-mieszkanie-dwupokojowe-grodzisk-mazowiecki-zacisze-52m2%2F155686576 "HTTP/2 200 OK"
+2025-05-23 11:03:07,890 - httpx - INFO - HTTP Request: POST https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia "HTTP/2 201 Created"
+2025-05-23 11:03:07,892 - supabase_utils - INFO - Zapisano og³oszenie: mieszkanie na sprzeda¿ 52m2 mieszkanie Grodzisk Mazowiecki, zacisze
+2025-05-23 11:03:08,573 - httpx - INFO - HTTP Request: GET https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia?select=%2A&url=eq.https%3A%2F%2Fwww.domiporta.pl%2Fnieruchomosci%2Fsprzedam-mieszkanie-dwupokojowe-choszczno-53m2%2F155017911 "HTTP/2 200 OK"
+2025-05-23 11:03:08,668 - httpx - INFO - HTTP Request: POST https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia "HTTP/2 201 Created"
+2025-05-23 11:03:08,669 - supabase_utils - INFO - Zapisano og³oszenie: mieszkanie na sprzeda¿ 53m2 mieszkanie Choszczno
+2025-05-23 11:03:09,344 - httpx - INFO - HTTP Request: GET https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia?select=%2A&url=eq.https%3A%2F%2Fwww.domiporta.pl%2Fnieruchomosci%2Fsprzedam-kawalerke-warszawa-srodmiescie-sw-franciszka-salezego-26m2%2F155768926 "HTTP/2 200 OK"
+2025-05-23 11:03:09,420 - httpx - INFO - HTTP Request: POST https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia "HTTP/2 201 Created"
+2025-05-23 11:03:09,423 - supabase_utils - INFO - Zapisano og³oszenie: mieszkanie na sprzeda¿ 26m2 mieszkanie Warszawa, Œródmieœcie, Powiœle, œw.Franciszka Salezego
+2025-05-23 11:03:10,128 - httpx - INFO - HTTP Request: GET https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia?select=%2A&url=eq.https%3A%2F%2Fgratka.pl%2Fnieruchomosci%2Fmieszkanie-tomaszowski-tomaszow-mazowiecki-barlickiego-6%2Fob%2F41839483 "HTTP/2 200 OK"
+2025-05-23 11:03:10,211 - httpx - INFO - HTTP Request: POST https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia "HTTP/2 201 Created"
+2025-05-23 11:03:10,213 - supabase_utils - INFO - Zapisano og³oszenie: 
+2025-05-23 11:03:10,917 - httpx - INFO - HTTP Request: GET https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia?select=%2A&url=eq.https%3A%2F%2Fgratka.pl%2Fnieruchomosci%2Fmieszkanie-wroclaw-stare-miasto-rynek%2Fob%2F40658009 "HTTP/2 200 OK"
+2025-05-23 11:03:11,001 - httpx - INFO - HTTP Request: POST https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia "HTTP/2 201 Created"
+2025-05-23 11:03:11,002 - supabase_utils - INFO - Zapisano og³oszenie: 
+2025-05-23 11:03:11,686 - httpx - INFO - HTTP Request: GET https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia?select=%2A&url=eq.https%3A%2F%2Fgratka.pl%2Fnieruchomosci%2Fmieszkanie-warszawa-targowek-pszczynska%2Fob%2F39455127 "HTTP/2 200 OK"
+2025-05-23 11:03:11,766 - httpx - INFO - HTTP Request: POST https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia "HTTP/2 201 Created"
+2025-05-23 11:03:11,767 - supabase_utils - INFO - Zapisano og³oszenie: 
+2025-05-23 11:03:12,464 - httpx - INFO - HTTP Request: GET https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia?select=%2A&url=eq.https%3A%2F%2Fgratka.pl%2Fnieruchomosci%2Fmieszkanie-warszawa-wilanow-sarmacka%2Foi%2F41776303 "HTTP/2 200 OK"
+2025-05-23 11:03:12,549 - httpx - INFO - HTTP Request: POST https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia "HTTP/2 201 Created"
+2025-05-23 11:03:12,550 - supabase_utils - INFO - Zapisano og³oszenie: 
+2025-05-23 11:03:13,235 - httpx - INFO - HTTP Request: GET https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia?select=%2A&url=eq.https%3A%2F%2Fgratka.pl%2Fnieruchomosci%2Fmieszkanie-gdansk-ujescisko-lostowice-krysztalowa%2Fob%2F33881581 "HTTP/2 200 OK"
+2025-05-23 11:03:13,320 - httpx - INFO - HTTP Request: POST https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia "HTTP/2 201 Created"
+2025-05-23 11:03:13,321 - supabase_utils - INFO - Zapisano og³oszenie: 
+2025-05-23 11:03:13,997 - httpx - INFO - HTTP Request: GET https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia?select=%2A&url=eq.https%3A%2F%2Fgratka.pl%2Fnieruchomosci%2Fmieszkanie-warszawa-wola-pradzynskiego-21%2Fob%2F39958955 "HTTP/2 200 OK"
+2025-05-23 11:03:14,077 - httpx - INFO - HTTP Request: POST https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia "HTTP/2 201 Created"
+2025-05-23 11:03:14,078 - supabase_utils - INFO - Zapisano og³oszenie: 
+2025-05-23 11:03:14,771 - httpx - INFO - HTTP Request: GET https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia?select=%2A&url=eq.https%3A%2F%2Fgratka.pl%2Fnieruchomosci%2Fmieszkanie-warszawa-targowek-oliwska-5c%2Fob%2F37707845 "HTTP/2 200 OK"
+2025-05-23 11:03:14,859 - httpx - INFO - HTTP Request: POST https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia "HTTP/2 201 Created"
+2025-05-23 11:03:14,860 - supabase_utils - INFO - Zapisano og³oszenie: 
+2025-05-23 11:03:15,527 - httpx - INFO - HTTP Request: GET https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia?select=%2A&url=eq.https%3A%2F%2Fgratka.pl%2Fnieruchomosci%2Fmieszkanie-warszawa-targowek-oliwska-5c%2Fob%2F37707847 "HTTP/2 200 OK"
+2025-05-23 11:03:15,603 - httpx - INFO - HTTP Request: POST https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia "HTTP/2 201 Created"
+2025-05-23 11:03:15,605 - supabase_utils - INFO - Zapisano og³oszenie: 
+2025-05-23 11:03:16,271 - httpx - INFO - HTTP Request: GET https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia?select=%2A&url=eq.https%3A%2F%2Fgratka.pl%2Fnieruchomosci%2Fmieszkanie-warszawa-bemowo-szligowska-57%2Fob%2F37706323 "HTTP/2 200 OK"
+2025-05-23 11:03:16,344 - httpx - INFO - HTTP Request: POST https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia "HTTP/2 201 Created"
+2025-05-23 11:03:16,344 - supabase_utils - INFO - Zapisano og³oszenie: 
+2025-05-23 11:03:17,017 - httpx - INFO - HTTP Request: GET https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia?select=%2A&url=eq.https%3A%2F%2Fgratka.pl%2Fnieruchomosci%2Fmieszkanie-warszawa-targowek-oliwska-5c%2Fob%2F37707957 "HTTP/2 200 OK"
+2025-05-23 11:03:17,104 - httpx - INFO - HTTP Request: POST https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia "HTTP/2 201 Created"
+2025-05-23 11:03:17,105 - supabase_utils - INFO - Zapisano og³oszenie: 
+2025-05-23 11:03:17,879 - httpx - INFO - HTTP Request: GET https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia?select=%2A&url=eq.https%3A%2F%2Fgratka.pl%2Fnieruchomosci%2Fmieszkanie-warszawa-bielany-rokokowa-132%2Fob%2F36881647 "HTTP/2 200 OK"
+2025-05-23 11:03:17,958 - httpx - INFO - HTTP Request: POST https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia "HTTP/2 201 Created"
+2025-05-23 11:03:17,959 - supabase_utils - INFO - Zapisano og³oszenie: 
+2025-05-23 11:03:18,805 - httpx - INFO - HTTP Request: GET https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia?select=%2A&url=eq.https%3A%2F%2Fgratka.pl%2Fnieruchomosci%2Fmieszkanie-lodz-polesie-konstantynowska%2Foi%2F37136903 "HTTP/2 200 OK"
+2025-05-23 11:03:18,903 - httpx - INFO - HTTP Request: POST https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia "HTTP/2 201 Created"
+2025-05-23 11:03:18,904 - supabase_utils - INFO - Zapisano og³oszenie: 
+2025-05-23 11:03:19,618 - httpx - INFO - HTTP Request: GET https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia?select=%2A&url=eq.https%3A%2F%2Fgratka.pl%2Fnieruchomosci%2Fmieszkanie-gdansk-ul-grunwaldzka%2Fob%2F40703801 "HTTP/2 200 OK"
+2025-05-23 11:03:19,704 - httpx - INFO - HTTP Request: POST https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia "HTTP/2 201 Created"
+2025-05-23 11:03:19,706 - supabase_utils - INFO - Zapisano og³oszenie: 
+2025-05-23 11:03:20,381 - httpx - INFO - HTTP Request: GET https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia?select=%2A&url=eq.https%3A%2F%2Fgratka.pl%2Fnieruchomosci%2Fmieszkanie-gdansk-ul-grunwaldzka%2Fob%2F40703747 "HTTP/2 200 OK"
+2025-05-23 11:03:20,456 - httpx - INFO - HTTP Request: POST https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia "HTTP/2 201 Created"
+2025-05-23 11:03:20,461 - supabase_utils - INFO - Zapisano og³oszenie: 
+2025-05-23 11:03:21,303 - httpx - INFO - HTTP Request: GET https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia?select=%2A&url=eq.https%3A%2F%2Fgratka.pl%2Fnieruchomosci%2Fmieszkanie-warszawa-mokotow-huculska%2Fob%2F41673781 "HTTP/2 200 OK"
+2025-05-23 11:03:21,391 - httpx - INFO - HTTP Request: POST https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia "HTTP/2 201 Created"
+2025-05-23 11:03:21,392 - supabase_utils - INFO - Zapisano og³oszenie: 
+2025-05-23 11:03:22,107 - httpx - INFO - HTTP Request: GET https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia?select=%2A&url=eq.https%3A%2F%2Fgratka.pl%2Fnieruchomosci%2Fmieszkanie-wroclaw-fabryczna-strachowicka-15%2Fob%2F41377475 "HTTP/2 200 OK"
+2025-05-23 11:03:22,191 - httpx - INFO - HTTP Request: POST https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia "HTTP/2 201 Created"
+2025-05-23 11:03:22,195 - supabase_utils - INFO - Zapisano og³oszenie: 
+2025-05-23 11:03:22,891 - httpx - INFO - HTTP Request: GET https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia?select=%2A&url=eq.https%3A%2F%2Fgratka.pl%2Fnieruchomosci%2Fmieszkanie-wroclaw-fabryczna-strachowicka-15%2Fob%2F41377471 "HTTP/2 200 OK"
+2025-05-23 11:03:22,964 - httpx - INFO - HTTP Request: POST https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia "HTTP/2 201 Created"
+2025-05-23 11:03:22,969 - supabase_utils - INFO - Zapisano og³oszenie: 
+2025-05-23 11:03:23,669 - httpx - INFO - HTTP Request: GET https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia?select=%2A&url=eq.https%3A%2F%2Fgratka.pl%2Fnieruchomosci%2Fmieszkanie-warszawa-wola-zelazna-54%2Fob%2F37994895 "HTTP/2 200 OK"
+2025-05-23 11:03:23,753 - httpx - INFO - HTTP Request: POST https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia "HTTP/2 201 Created"
+2025-05-23 11:03:23,754 - supabase_utils - INFO - Zapisano og³oszenie: 
+2025-05-23 11:03:24,490 - httpx - INFO - HTTP Request: GET https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia?select=%2A&url=eq.https%3A%2F%2Fgratka.pl%2Fnieruchomosci%2Fmieszkanie-szczecin-ks-bpa-wladyslawa-bandurskiego%2Fob%2F41647153 "HTTP/2 200 OK"
+2025-05-23 11:03:24,586 - httpx - INFO - HTTP Request: POST https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia "HTTP/2 201 Created"
+2025-05-23 11:03:24,587 - supabase_utils - INFO - Zapisano og³oszenie: 
+2025-05-23 11:03:25,311 - httpx - INFO - HTTP Request: GET https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia?select=%2A&url=eq.https%3A%2F%2Fgratka.pl%2Fnieruchomosci%2Fmieszkanie-warszawa-bielany-wolczynska-121%2Fob%2F40896575 "HTTP/2 200 OK"
+2025-05-23 11:03:25,395 - httpx - INFO - HTTP Request: POST https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia "HTTP/2 201 Created"
+2025-05-23 11:03:25,398 - supabase_utils - INFO - Zapisano og³oszenie: 
+2025-05-23 11:03:26,094 - httpx - INFO - HTTP Request: GET https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia?select=%2A&url=eq.https%3A%2F%2Fgratka.pl%2Fnieruchomosci%2Fmieszkanie-gdansk-wrzeszcz-jesionowa-6b%2Fob%2F38201859 "HTTP/2 200 OK"
+2025-05-23 11:03:26,179 - httpx - INFO - HTTP Request: POST https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia "HTTP/2 201 Created"
+2025-05-23 11:03:26,182 - supabase_utils - INFO - Zapisano og³oszenie: 
+2025-05-23 11:03:26,893 - httpx - INFO - HTTP Request: GET https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia?select=%2A&url=eq.https%3A%2F%2Fgratka.pl%2Fnieruchomosci%2Fmieszkanie-warszawa-bemowo-lazurowa%2Fob%2F41453287 "HTTP/2 200 OK"
+2025-05-23 11:03:26,975 - httpx - INFO - HTTP Request: POST https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia "HTTP/2 201 Created"
+2025-05-23 11:03:26,976 - supabase_utils - INFO - Zapisano og³oszenie: 
+2025-05-23 11:03:27,664 - httpx - INFO - HTTP Request: GET https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia?select=%2A&url=eq.https%3A%2F%2Fgratka.pl%2Fnieruchomosci%2Fmieszkanie-gdansk-wrzeszcz-jesionowa-6b%2Fob%2F38201847 "HTTP/2 200 OK"
+2025-05-23 11:03:27,772 - httpx - INFO - HTTP Request: POST https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia "HTTP/2 201 Created"
+2025-05-23 11:03:27,776 - supabase_utils - INFO - Zapisano og³oszenie: 
+2025-05-23 11:03:28,498 - httpx - INFO - HTTP Request: GET https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia?select=%2A&url=eq.https%3A%2F%2Fgratka.pl%2Fnieruchomosci%2Fmieszkanie-katowice-srodmiescie-marcina-szeligiewicza%2Foi%2F35203873 "HTTP/2 200 OK"
+2025-05-23 11:03:28,597 - httpx - INFO - HTTP Request: POST https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia "HTTP/2 201 Created"
+2025-05-23 11:03:28,597 - supabase_utils - INFO - Zapisano og³oszenie: 
+2025-05-23 11:03:29,299 - httpx - INFO - HTTP Request: GET https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia?select=%2A&url=eq.https%3A%2F%2Fgratka.pl%2Fnieruchomosci%2Fmieszkanie-wroclaw-stare-miasto-odrzanska%2Fob%2F41795053 "HTTP/2 200 OK"
+2025-05-23 11:03:29,396 - httpx - INFO - HTTP Request: POST https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia "HTTP/2 201 Created"
+2025-05-23 11:03:29,399 - supabase_utils - INFO - Zapisano og³oszenie: 
+2025-05-23 11:03:30,077 - httpx - INFO - HTTP Request: GET https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia?select=%2A&url=eq.https%3A%2F%2Fgratka.pl%2Fnieruchomosci%2Fmieszkanie-wroclaw-psie-pole-odrodzenia-polski%2Fob%2F41810587 "HTTP/2 200 OK"
+2025-05-23 11:03:30,164 - httpx - INFO - HTTP Request: POST https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia "HTTP/2 201 Created"
+2025-05-23 11:03:30,168 - supabase_utils - INFO - Zapisano og³oszenie: 
+2025-05-23 11:03:30,882 - httpx - INFO - HTTP Request: GET https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia?select=%2A&url=eq.https%3A%2F%2Fgratka.pl%2Fnieruchomosci%2Fmieszkanie-wroclaw-srodmiescie-niemcewicza-juliana-ursyna%2Fob%2F40780791 "HTTP/2 200 OK"
+2025-05-23 11:03:30,967 - httpx - INFO - HTTP Request: POST https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia "HTTP/2 201 Created"
+2025-05-23 11:03:30,969 - supabase_utils - INFO - Zapisano og³oszenie: 
+2025-05-23 11:03:31,679 - httpx - INFO - HTTP Request: GET https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia?select=%2A&url=eq.https%3A%2F%2Fgratka.pl%2Fnieruchomosci%2Fmieszkanie-warszawa-praga-poludnie-wspolna-droga%2Fob%2F41135947 "HTTP/2 200 OK"
+2025-05-23 11:03:31,769 - httpx - INFO - HTTP Request: POST https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia "HTTP/2 201 Created"
+2025-05-23 11:03:31,773 - supabase_utils - INFO - Zapisano og³oszenie: 
+2025-05-23 11:03:32,480 - httpx - INFO - HTTP Request: GET https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia?select=%2A&url=eq.https%3A%2F%2Fgratka.pl%2Fnieruchomosci%2Fmieszkanie-warszawa-wlochy-naukowa%2Fob%2F40706841 "HTTP/2 200 OK"
+2025-05-23 11:03:32,555 - httpx - INFO - HTTP Request: POST https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia "HTTP/2 201 Created"
+2025-05-23 11:03:32,557 - supabase_utils - INFO - Zapisano og³oszenie: 
+2025-05-23 11:03:33,219 - httpx - INFO - HTTP Request: GET https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia?select=%2A&url=eq.https%3A%2F%2Fgratka.pl%2Fnieruchomosci%2Fmieszkanie-warszawa-ursus-apartamentowa%2Fob%2F38611601 "HTTP/2 200 OK"
+2025-05-23 11:03:33,295 - httpx - INFO - HTTP Request: POST https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia "HTTP/2 201 Created"
+2025-05-23 11:03:33,297 - supabase_utils - INFO - Zapisano og³oszenie: 
+2025-05-23 11:03:34,186 - httpx - INFO - HTTP Request: GET https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia?select=%2A&url=eq.https%3A%2F%2Fgratka.pl%2Fnieruchomosci%2Fmieszkanie-chorzow-centrum%2Fob%2F41795203 "HTTP/2 200 OK"
+2025-05-23 11:03:34,322 - httpx - INFO - HTTP Request: POST https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia "HTTP/2 201 Created"
+2025-05-23 11:03:34,323 - supabase_utils - INFO - Zapisano og³oszenie: 
+2025-05-23 11:03:34,987 - httpx - INFO - HTTP Request: GET https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia?select=%2A&url=eq.https%3A%2F%2Fgratka.pl%2Fnieruchomosci%2Fmieszkanie-warszawa-wola-kajetana-garbinskiego%2Fob%2F41652563 "HTTP/2 200 OK"
+2025-05-23 11:03:35,069 - httpx - INFO - HTTP Request: POST https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia "HTTP/2 201 Created"
+2025-05-23 11:03:35,071 - supabase_utils - INFO - Zapisano og³oszenie: 
+2025-05-23 11:03:35,771 - httpx - INFO - HTTP Request: GET https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia?select=%2A&url=eq.https%3A%2F%2Fgratka.pl%2Fnieruchomosci%2Fmieszkanie-lodz-nowe-sady-85%2Fob%2F34239627 "HTTP/2 200 OK"
+2025-05-23 11:03:35,845 - httpx - INFO - HTTP Request: POST https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia "HTTP/2 201 Created"
+2025-05-23 11:03:35,846 - supabase_utils - INFO - Zapisano og³oszenie: 
+2025-05-23 11:03:36,632 - httpx - INFO - HTTP Request: GET https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia?select=%2A&url=eq.https%3A%2F%2Fgratka.pl%2Fnieruchomosci%2Fmieszkanie-warszawa-ochota-rakowska%2Fob%2F41181683 "HTTP/2 200 OK"
+2025-05-23 11:03:36,724 - httpx - INFO - HTTP Request: POST https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia "HTTP/2 201 Created"
+2025-05-23 11:03:36,728 - supabase_utils - INFO - Zapisano og³oszenie: 
+2025-05-23 11:03:37,406 - httpx - INFO - HTTP Request: GET https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia?select=%2A&url=eq.https%3A%2F%2Fgratka.pl%2Fnieruchomosci%2Fmieszkanie-warszawa-ochota-grojecka%2Fob%2F40977033 "HTTP/2 200 OK"
+2025-05-23 11:03:37,488 - httpx - INFO - HTTP Request: POST https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia "HTTP/2 201 Created"
+2025-05-23 11:03:37,489 - supabase_utils - INFO - Zapisano og³oszenie: 
+2025-05-23 11:03:38,184 - httpx - INFO - HTTP Request: GET https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia?select=%2A&url=eq.https%3A%2F%2Fgratka.pl%2Fnieruchomosci%2Fmieszkanie-warszawa-praga-polnoc-okrzei%2Fob%2F41794859 "HTTP/2 200 OK"
+2025-05-23 11:03:38,274 - httpx - INFO - HTTP Request: POST https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia "HTTP/2 201 Created"
+2025-05-23 11:03:38,276 - supabase_utils - INFO - Zapisano og³oszenie: 
+2025-05-23 11:03:38,988 - httpx - INFO - HTTP Request: GET https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia?select=%2A&url=eq.https%3A%2F%2Fgratka.pl%2Fnieruchomosci%2Fmieszkanie-warszawa-ochota-drawska%2Fob%2F41324607 "HTTP/2 200 OK"
+2025-05-23 11:03:39,071 - httpx - INFO - HTTP Request: POST https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia "HTTP/2 201 Created"
+2025-05-23 11:03:39,075 - supabase_utils - INFO - Zapisano og³oszenie: 
+2025-05-23 11:03:39,789 - httpx - INFO - HTTP Request: GET https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia?select=%2A&url=eq.https%3A%2F%2Fgratka.pl%2Fnieruchomosci%2Fmieszkanie-gdansk-stogi-zakole7%2Fob%2F38069969 "HTTP/2 200 OK"
+2025-05-23 11:03:39,883 - httpx - INFO - HTTP Request: POST https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia "HTTP/2 201 Created"
+2025-05-23 11:03:39,887 - supabase_utils - INFO - Zapisano og³oszenie: 
+2025-05-23 11:03:40,627 - httpx - INFO - HTTP Request: GET https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia?select=%2A&url=eq.https%3A%2F%2Fgratka.pl%2Fnieruchomosci%2Fmieszkanie-wejherowski-wejherowo-fenikowskiego%2Fob%2F41841525 "HTTP/2 200 OK"
+2025-05-23 11:03:40,716 - httpx - INFO - HTTP Request: POST https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia "HTTP/2 201 Created"
+2025-05-23 11:03:40,717 - supabase_utils - INFO - Zapisano og³oszenie: 
+2025-05-23 11:03:41,397 - httpx - INFO - HTTP Request: GET https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia?select=%2A&url=eq.https%3A%2F%2Fgratka.pl%2Fnieruchomosci%2Fmieszkanie-warszawa-targowek-torunska%2Fob%2F41246757 "HTTP/2 200 OK"
+2025-05-23 11:03:41,473 - httpx - INFO - HTTP Request: POST https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia "HTTP/2 201 Created"
+2025-05-23 11:03:41,474 - supabase_utils - INFO - Zapisano og³oszenie: 
+2025-05-23 11:03:42,198 - httpx - INFO - HTTP Request: GET https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia?select=%2A&url=eq.https%3A%2F%2Fgratka.pl%2Fnieruchomosci%2Fmieszkanie-radom-gen-leopolda-okulickiego%2Foi%2F34142537 "HTTP/2 200 OK"
+2025-05-23 11:03:42,291 - httpx - INFO - HTTP Request: POST https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia "HTTP/2 201 Created"
+2025-05-23 11:03:42,294 - supabase_utils - INFO - Zapisano og³oszenie: 
+2025-05-23 11:03:42,991 - httpx - INFO - HTTP Request: GET https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia?select=%2A&url=eq.https%3A%2F%2Fgratka.pl%2Fnieruchomosci%2Fmieszkanie-krakow-stare-miasto-aleja-zygmunta-krasinskiego%2Foi%2F41544121 "HTTP/2 200 OK"
+2025-05-23 11:03:43,073 - httpx - INFO - HTTP Request: POST https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia "HTTP/2 201 Created"
+2025-05-23 11:03:43,076 - supabase_utils - INFO - Zapisano og³oszenie: 
+2025-05-23 11:03:43,810 - httpx - INFO - HTTP Request: GET https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia?select=%2A&url=eq.https%3A%2F%2Fgratka.pl%2Fnieruchomosci%2Fmieszkanie-warszawa-bemowo-lazurowa%2Fob%2F41516843 "HTTP/2 200 OK"
+2025-05-23 11:03:43,901 - httpx - INFO - HTTP Request: POST https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia "HTTP/2 201 Created"
+2025-05-23 11:03:43,902 - supabase_utils - INFO - Zapisano og³oszenie: 
+2025-05-23 11:03:44,572 - httpx - INFO - HTTP Request: GET https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia?select=%2A&url=eq.https%3A%2F%2Fgratka.pl%2Fnieruchomosci%2Fmieszkanie-poznan-lazarz-jana-matejki%2Foi%2F41471367 "HTTP/2 200 OK"
+2025-05-23 11:03:44,662 - httpx - INFO - HTTP Request: POST https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia "HTTP/2 201 Created"
+2025-05-23 11:03:44,665 - supabase_utils - INFO - Zapisano og³oszenie: 
+2025-05-23 11:03:45,366 - httpx - INFO - HTTP Request: GET https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia?select=%2A&url=eq.https%3A%2F%2Fgratka.pl%2Fnieruchomosci%2Fmieszkanie-wroclawski-dlugoleka-poludniowa%2Foi%2F40814613 "HTTP/2 200 OK"
+2025-05-23 11:03:45,455 - httpx - INFO - HTTP Request: POST https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia "HTTP/2 201 Created"
+2025-05-23 11:03:45,458 - supabase_utils - INFO - Zapisano og³oszenie: 
+2025-05-23 11:03:46,174 - httpx - INFO - HTTP Request: GET https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia?select=%2A&url=eq.https%3A%2F%2Fgratka.pl%2Fnieruchomosci%2Fmieszkanie-wroclaw-fabryczna-stanislawa-kunickiego%2Foi%2F40814551 "HTTP/2 200 OK"
+2025-05-23 11:03:46,262 - httpx - INFO - HTTP Request: POST https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia "HTTP/2 201 Created"
+2025-05-23 11:03:46,264 - supabase_utils - INFO - Zapisano og³oszenie: 
+2025-05-23 11:03:46,971 - httpx - INFO - HTTP Request: GET https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia?select=%2A&url=eq.https%3A%2F%2Fgratka.pl%2Fnieruchomosci%2Fmieszkanie-warszawa-praga-poludnie-prochowa%2Foi%2F40643991 "HTTP/2 200 OK"
+2025-05-23 11:03:47,058 - httpx - INFO - HTTP Request: POST https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia "HTTP/2 201 Created"
+2025-05-23 11:03:47,061 - supabase_utils - INFO - Zapisano og³oszenie: 
+2025-05-23 11:03:47,752 - httpx - INFO - HTTP Request: GET https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia?select=%2A&url=eq.https%3A%2F%2Fgratka.pl%2Fnieruchomosci%2Fmieszkanie-szczecin-srodmiescie-pocztowa%2Foi%2F40641485 "HTTP/2 200 OK"
+2025-05-23 11:03:47,831 - httpx - INFO - HTTP Request: POST https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia "HTTP/2 201 Created"
+2025-05-23 11:03:47,832 - supabase_utils - INFO - Zapisano og³oszenie: 
+2025-05-23 11:03:48,659 - httpx - INFO - HTTP Request: GET https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia?select=%2A&url=eq.https%3A%2F%2Fgratka.pl%2Fnieruchomosci%2Fmieszkanie-ruda-slaska-wolnosci%2Foi%2F40571401 "HTTP/2 200 OK"
+2025-05-23 11:03:48,751 - httpx - INFO - HTTP Request: POST https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia "HTTP/2 201 Created"
+2025-05-23 11:03:48,754 - supabase_utils - INFO - Zapisano og³oszenie: 
+2025-05-23 11:03:49,469 - httpx - INFO - HTTP Request: GET https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia?select=%2A&url=eq.https%3A%2F%2Fgratka.pl%2Fnieruchomosci%2Fmieszkanie-lodz-gorna-emilii-sczanieckiej%2Fob%2F40641067 "HTTP/2 200 OK"
+2025-05-23 11:03:49,547 - httpx - INFO - HTTP Request: POST https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia "HTTP/2 201 Created"
+2025-05-23 11:03:49,548 - supabase_utils - INFO - Zapisano og³oszenie: 
+2025-05-23 11:03:50,262 - httpx - INFO - HTTP Request: GET https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia?select=%2A&url=eq.https%3A%2F%2Fgratka.pl%2Fnieruchomosci%2Fmieszkanie-warszawa-aleja-wilanowska%2Foi%2F40629653 "HTTP/2 200 OK"
+2025-05-23 11:03:50,341 - httpx - INFO - HTTP Request: POST https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia "HTTP/2 201 Created"
+2025-05-23 11:03:50,342 - supabase_utils - INFO - Zapisano og³oszenie: 
+2025-05-23 11:03:51,092 - httpx - INFO - HTTP Request: GET https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia?select=%2A&url=eq.https%3A%2F%2Fgratka.pl%2Fnieruchomosci%2Fmieszkanie-legionowski-legionowo-zygmunta-krasinskiego%2Foi%2F40629211 "HTTP/2 200 OK"
+2025-05-23 11:03:51,180 - httpx - INFO - HTTP Request: POST https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia "HTTP/2 201 Created"
+2025-05-23 11:03:51,181 - supabase_utils - INFO - Zapisano og³oszenie: 
+2025-05-23 11:03:51,868 - httpx - INFO - HTTP Request: GET https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia?select=%2A&url=eq.https%3A%2F%2Fgratka.pl%2Fnieruchomosci%2Fmieszkanie-minski-sulejowek-czynu-spolecznego%2Fob%2F39952637 "HTTP/2 200 OK"
+2025-05-23 11:03:51,965 - httpx - INFO - HTTP Request: POST https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia "HTTP/2 201 Created"
+2025-05-23 11:03:51,966 - supabase_utils - INFO - Zapisano og³oszenie: 
+2025-05-23 11:03:52,656 - httpx - INFO - HTTP Request: GET https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia?select=%2A&url=eq.https%3A%2F%2Fgratka.pl%2Fnieruchomosci%2Fmieszkanie-warszawa-wawer-celulozy%2Foi%2F39366075 "HTTP/2 200 OK"
+2025-05-23 11:03:52,727 - httpx - INFO - HTTP Request: POST https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia "HTTP/2 201 Created"
+2025-05-23 11:03:52,728 - supabase_utils - INFO - Zapisano og³oszenie: 
+2025-05-23 11:03:53,450 - httpx - INFO - HTTP Request: GET https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia?select=%2A&url=eq.https%3A%2F%2Fgratka.pl%2Fnieruchomosci%2Fmieszkanie-piaseczynski-konstancin-jeziorna-mala%2Fob%2F39304439 "HTTP/2 200 OK"
+2025-05-23 11:03:53,522 - httpx - INFO - HTTP Request: POST https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia "HTTP/2 201 Created"
+2025-05-23 11:03:53,524 - supabase_utils - INFO - Zapisano og³oszenie: 
+2025-05-23 11:03:54,214 - httpx - INFO - HTTP Request: GET https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia?select=%2A&url=eq.https%3A%2F%2Fgratka.pl%2Fnieruchomosci%2Fmieszkanie-krakow-mistrzejowice-osiedle-bohaterow-wrzesnia%2Foi%2F38914413 "HTTP/2 200 OK"
+2025-05-23 11:03:54,310 - httpx - INFO - HTTP Request: POST https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia "HTTP/2 201 Created"
+2025-05-23 11:03:54,310 - supabase_utils - INFO - Zapisano og³oszenie: 
+2025-05-23 11:03:55,001 - httpx - INFO - HTTP Request: GET https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia?select=%2A&url=eq.https%3A%2F%2Fgratka.pl%2Fnieruchomosci%2Fmieszkanie-warszawa-bialoleka-skarbka-z-gor%2Foi%2F37972799 "HTTP/2 200 OK"
+2025-05-23 11:03:55,083 - httpx - INFO - HTTP Request: POST https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia "HTTP/2 201 Created"
+2025-05-23 11:03:55,086 - supabase_utils - INFO - Zapisano og³oszenie: 
+2025-05-23 11:03:55,782 - httpx - INFO - HTTP Request: GET https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia?select=%2A&url=eq.https%3A%2F%2Fgratka.pl%2Fnieruchomosci%2Fmieszkanie-krakow-krowodrza-rusznikarska%2Fob%2F34920299 "HTTP/2 200 OK"
+2025-05-23 11:03:55,874 - httpx - INFO - HTTP Request: POST https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia "HTTP/2 201 Created"
+2025-05-23 11:03:55,875 - supabase_utils - INFO - Zapisano og³oszenie: 
+2025-05-23 11:03:56,566 - httpx - INFO - HTTP Request: GET https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia?select=%2A&url=eq.https%3A%2F%2Fgratka.pl%2Fnieruchomosci%2Fmieszkanie-warszawa-wlochy-aleje-jerozolimskie%2Fob%2F41626937 "HTTP/2 200 OK"
+2025-05-23 11:03:56,644 - httpx - INFO - HTTP Request: POST https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia "HTTP/2 201 Created"
+2025-05-23 11:03:56,646 - supabase_utils - INFO - Zapisano og³oszenie: 
+2025-05-23 11:03:57,320 - httpx - INFO - HTTP Request: GET https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia?select=%2A&url=eq.https%3A%2F%2Fgratka.pl%2Fnieruchomosci%2Fmieszkanie-warszawa-bialoleka-szafrancow-5%2Fob%2F39913997 "HTTP/2 200 OK"
+2025-05-23 11:03:57,397 - httpx - INFO - HTTP Request: POST https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia "HTTP/2 201 Created"
+2025-05-23 11:03:57,400 - supabase_utils - INFO - Zapisano og³oszenie: 
+2025-05-23 11:03:58,128 - httpx - INFO - HTTP Request: GET https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia?select=%2A&url=eq.https%3A%2F%2Fgratka.pl%2Fnieruchomosci%2Fmieszkanie-warszawa-wola-zelazna-54%2Fob%2F37994899 "HTTP/2 200 OK"
+2025-05-23 11:03:58,221 - httpx - INFO - HTTP Request: POST https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia "HTTP/2 201 Created"
+2025-05-23 11:03:58,223 - supabase_utils - INFO - Zapisano og³oszenie: 
+2025-05-23 11:03:58,939 - httpx - INFO - HTTP Request: GET https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia?select=%2A&url=eq.https%3A%2F%2Fgratka.pl%2Fnieruchomosci%2Fmieszkanie-warszawa-bialoleka-ksiazkowa%2Fob%2F36945589 "HTTP/2 200 OK"
+2025-05-23 11:03:59,023 - httpx - INFO - HTTP Request: POST https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia "HTTP/2 201 Created"
+2025-05-23 11:03:59,024 - supabase_utils - INFO - Zapisano og³oszenie: 
+2025-05-23 11:03:59,701 - httpx - INFO - HTTP Request: GET https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia?select=%2A&url=eq.https%3A%2F%2Fgratka.pl%2Fnieruchomosci%2Fmieszkanie-warszawa-wola-plocka%2Fob%2F39982177 "HTTP/2 200 OK"
+2025-05-23 11:03:59,777 - httpx - INFO - HTTP Request: POST https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia "HTTP/2 201 Created"
+2025-05-23 11:03:59,779 - supabase_utils - INFO - Zapisano og³oszenie: 
+2025-05-23 11:04:00,479 - httpx - INFO - HTTP Request: GET https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia?select=%2A&url=eq.https%3A%2F%2Fgratka.pl%2Fnieruchomosci%2Fmieszkanie-warszawa-wlochy-rakowska%2Fob%2F41181687 "HTTP/2 200 OK"
+2025-05-23 11:04:00,568 - httpx - INFO - HTTP Request: POST https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia "HTTP/2 201 Created"
+2025-05-23 11:04:00,570 - supabase_utils - INFO - Zapisano og³oszenie: 
+2025-05-23 11:04:01,261 - httpx - INFO - HTTP Request: GET https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia?select=%2A&url=eq.https%3A%2F%2Fgratka.pl%2Fnieruchomosci%2Fmieszkanie-braniewski-frombork-osiedle-sloneczne%2Fob%2F40782285 "HTTP/2 200 OK"
+2025-05-23 11:04:01,340 - httpx - INFO - HTTP Request: POST https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia "HTTP/2 201 Created"
+2025-05-23 11:04:01,342 - supabase_utils - INFO - Zapisano og³oszenie: 
+2025-05-23 11:04:02,059 - httpx - INFO - HTTP Request: GET https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia?select=%2A&url=eq.https%3A%2F%2Fgratka.pl%2Fnieruchomosci%2Fmieszkanie-lodz-nowe-sady-85%2Fob%2F34239619 "HTTP/2 200 OK"
+2025-05-23 11:04:02,134 - httpx - INFO - HTTP Request: POST https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia "HTTP/2 201 Created"
+2025-05-23 11:04:02,135 - supabase_utils - INFO - Zapisano og³oszenie: 
+2025-05-23 11:04:02,817 - httpx - INFO - HTTP Request: GET https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia?select=%2A&url=eq.https%3A%2F%2Fgratka.pl%2Fnieruchomosci%2Fmieszkanie-warszawa-bielany-fontany-antoniego%2Fob%2F41100951 "HTTP/2 200 OK"
+2025-05-23 11:04:02,900 - httpx - INFO - HTTP Request: POST https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia "HTTP/2 201 Created"
+2025-05-23 11:04:02,904 - supabase_utils - INFO - Zapisano og³oszenie: 
+2025-05-23 11:04:03,593 - httpx - INFO - HTTP Request: GET https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia?select=%2A&url=eq.https%3A%2F%2Fgratka.pl%2Fnieruchomosci%2Fmieszkanie-warszawa-bielany-romaszewskiego%2Fob%2F40455185 "HTTP/2 200 OK"
+2025-05-23 11:04:03,690 - httpx - INFO - HTTP Request: POST https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia "HTTP/2 201 Created"
+2025-05-23 11:04:03,691 - supabase_utils - INFO - Zapisano og³oszenie: 
+2025-05-23 11:04:04,393 - httpx - INFO - HTTP Request: GET https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia?select=%2A&url=eq.https%3A%2F%2Fgratka.pl%2Fnieruchomosci%2Fmieszkanie-warszawa-mokotow-aleja-niepodleglosci%2Fob%2F40377979 "HTTP/2 200 OK"
+2025-05-23 11:04:04,472 - httpx - INFO - HTTP Request: POST https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia "HTTP/2 201 Created"
+2025-05-23 11:04:04,472 - supabase_utils - INFO - Zapisano og³oszenie: 
+2025-05-23 11:04:05,153 - httpx - INFO - HTTP Request: GET https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia?select=%2A&url=eq.https%3A%2F%2Fgratka.pl%2Fnieruchomosci%2Fmieszkanie-warszawa-bialoleka-odkryta%2Fob%2F38278435 "HTTP/2 200 OK"
+2025-05-23 11:04:05,233 - httpx - INFO - HTTP Request: POST https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia "HTTP/2 201 Created"
+2025-05-23 11:04:05,234 - supabase_utils - INFO - Zapisano og³oszenie: 
+2025-05-23 11:04:05,933 - httpx - INFO - HTTP Request: GET https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia?select=%2A&url=eq.https%3A%2F%2Fgratka.pl%2Fnieruchomosci%2Fmieszkanie-krakow-strzelcow%2Foi%2F39564093 "HTTP/2 200 OK"
+2025-05-23 11:04:06,021 - httpx - INFO - HTTP Request: POST https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia "HTTP/2 201 Created"
+2025-05-23 11:04:06,022 - supabase_utils - INFO - Zapisano og³oszenie: 
+2025-05-23 11:04:06,675 - httpx - INFO - HTTP Request: GET https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia?select=%2A&url=eq.https%3A%2F%2Fgratka.pl%2Fnieruchomosci%2Fmieszkanie-warszawa-bialoleka-szafrancow-5%2Fob%2F37076487 "HTTP/2 200 OK"
+2025-05-23 11:04:06,766 - httpx - INFO - HTTP Request: POST https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia "HTTP/2 201 Created"
+2025-05-23 11:04:06,767 - supabase_utils - INFO - Zapisano og³oszenie: 
+2025-05-23 11:04:07,477 - httpx - INFO - HTTP Request: GET https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia?select=%2A&url=eq.https%3A%2F%2Fgratka.pl%2Fnieruchomosci%2Fmieszkanie-poznan-jezyce-dojazd-golecin%2Fob%2F41791317 "HTTP/2 200 OK"
+2025-05-23 11:04:07,564 - httpx - INFO - HTTP Request: POST https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia "HTTP/2 201 Created"
+2025-05-23 11:04:07,565 - supabase_utils - INFO - Zapisano og³oszenie: 
+2025-05-23 11:04:08,254 - httpx - INFO - HTTP Request: GET https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia?select=%2A&url=eq.https%3A%2F%2Fgratka.pl%2Fnieruchomosci%2Fmieszkanie-poznan-stare-miasto-podgorna%2Fob%2F34817523 "HTTP/2 200 OK"
+2025-05-23 11:04:08,329 - httpx - INFO - HTTP Request: POST https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia "HTTP/2 201 Created"
+2025-05-23 11:04:08,331 - supabase_utils - INFO - Zapisano og³oszenie: 
+2025-05-23 11:04:09,009 - httpx - INFO - HTTP Request: GET https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia?select=%2A&url=eq.https%3A%2F%2Fmetrohouse.pljavascript%3A+void%280%29 "HTTP/2 200 OK"
+2025-05-23 11:04:09,101 - httpx - INFO - HTTP Request: POST https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia "HTTP/2 201 Created"
+2025-05-23 11:04:09,102 - supabase_utils - INFO - Zapisano og³oszenie: 
+2025-05-23 11:04:09,784 - httpx - INFO - HTTP Request: GET https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia?select=%2A&url=eq.https%3A%2F%2Fmetrohouse.pl%23 "HTTP/2 200 OK"
+2025-05-23 11:04:09,856 - httpx - INFO - HTTP Request: POST https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia "HTTP/2 201 Created"
+2025-05-23 11:04:09,857 - supabase_utils - INFO - Zapisano og³oszenie: 
+2025-05-23 11:04:10,558 - httpx - INFO - HTTP Request: GET https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia?select=%2A&url=eq.https%3A%2F%2Fmetrohouse.pl%2Fnieruchomosc%2FSMFONE959%2Fnieruchomosc-na-sprzedaz-mieszkanie-zabrze-krakowska%2F%21%2Fcaller%2FL25hLXNwcnplZGF6L21pZXN6a2FuaWUvLS9yeW5lay13dG9ybnkv___ref___SMFONE959 "HTTP/2 200 OK"
+2025-05-23 11:04:10,649 - httpx - INFO - HTTP Request: POST https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia "HTTP/2 201 Created"
+2025-05-23 11:04:10,649 - supabase_utils - INFO - Zapisano og³oszenie: Mieszkanie na sprzeda¿, Zabrze, Krakowska
+2025-05-23 11:04:11,321 - httpx - INFO - HTTP Request: GET https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia?select=%2A&url=eq.https%3A%2F%2Fmetrohouse.pl%2Fnieruchomosc%2FSMTUVE924%2Fnieruchomosc-na-sprzedaz-mieszkanie-ilawa-centrum-westerplatte%2F%21%2Fcaller%2FL25hLXNwcnplZGF6L21pZXN6a2FuaWUvLS9yeW5lay13dG9ybnkv___ref___SMTUVE924 "HTTP/2 200 OK"
+2025-05-23 11:04:11,410 - httpx - INFO - HTTP Request: POST https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia "HTTP/2 201 Created"
+2025-05-23 11:04:11,413 - supabase_utils - INFO - Zapisano og³oszenie: Mieszkanie na sprzeda¿, I³awa, Centrum, Westerplatte
+2025-05-23 11:04:12,084 - httpx - INFO - HTTP Request: GET https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia?select=%2A&url=eq.https%3A%2F%2Fmetrohouse.pl%2Fnieruchomosc%2FSMZEBE296%2Fnieruchomosc-na-sprzedaz-mieszkanie-olecki--olecko-goldapska%2F%21%2Fcaller%2FL25hLXNwcnplZGF6L21pZXN6a2FuaWUvLS9yeW5lay13dG9ybnkv___ref___SMZEBE296 "HTTP/2 200 OK"
+2025-05-23 11:04:12,161 - httpx - INFO - HTTP Request: POST https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia "HTTP/2 201 Created"
+2025-05-23 11:04:12,162 - supabase_utils - INFO - Zapisano og³oszenie: Mieszkanie na sprzeda¿, Olecki, Olecko, Go³dapska
+2025-05-23 11:04:12,892 - httpx - INFO - HTTP Request: GET https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia?select=%2A&url=eq.https%3A%2F%2Fcredipass.pl%2Fklient-indywidualny%2Fkredyt-hipoteczny%2F "HTTP/2 200 OK"
+2025-05-23 11:04:12,988 - httpx - INFO - HTTP Request: POST https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia "HTTP/2 201 Created"
+2025-05-23 11:04:12,989 - supabase_utils - INFO - Zapisano og³oszenie: 
+2025-05-23 11:04:13,685 - httpx - INFO - HTTP Request: GET https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia?select=%2A&url=eq.https%3A%2F%2Fmetrohouse.pl%2Fnieruchomosc%2FSMTOMA411%2Fnieruchomosc-na-sprzedaz-mieszkanie-warszawa-bielany-%2F%21%2Fcaller%2FL25hLXNwcnplZGF6L21pZXN6a2FuaWUvLS9yeW5lay13dG9ybnkv___ref___SMTOMA411 "HTTP/2 200 OK"
+2025-05-23 11:04:13,758 - httpx - INFO - HTTP Request: POST https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia "HTTP/2 201 Created"
+2025-05-23 11:04:13,759 - supabase_utils - INFO - Zapisano og³oszenie: Mieszkanie na sprzeda¿, Warszawa, Bielany
+2025-05-23 11:04:14,454 - httpx - INFO - HTTP Request: GET https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia?select=%2A&url=eq.https%3A%2F%2Fmetrohouse.pl%2Fnieruchomosc%2FSMNADY433%2Fnieruchomosc-na-sprzedaz-mieszkanie-sosnowiec-zegadlowicza%2F%21%2Fcaller%2FL25hLXNwcnplZGF6L21pZXN6a2FuaWUvLS9yeW5lay13dG9ybnkv___ref___SMNADY433 "HTTP/2 200 OK"
+2025-05-23 11:04:14,538 - httpx - INFO - HTTP Request: POST https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia "HTTP/2 201 Created"
+2025-05-23 11:04:14,540 - supabase_utils - INFO - Zapisano og³oszenie: Mieszkanie na sprzeda¿, Sosnowiec, Zegad³owicza
+2025-05-23 11:04:15,207 - httpx - INFO - HTTP Request: GET https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia?select=%2A&url=eq.https%3A%2F%2Fmetrohouse.pl%2Fnieruchomosc%2FSMKOFE678%2Fnieruchomosc-na-sprzedaz-mieszkanie-lublin-bronowice-startowa%2F%21%2Fcaller%2FL25hLXNwcnplZGF6L21pZXN6a2FuaWUvLS9yeW5lay13dG9ybnkv___ref___SMKOFE678 "HTTP/2 200 OK"
+2025-05-23 11:04:15,278 - httpx - INFO - HTTP Request: POST https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia "HTTP/2 201 Created"
+2025-05-23 11:04:15,280 - supabase_utils - INFO - Zapisano og³oszenie: Mieszkanie na sprzeda¿, Lublin, Bronowice, Startowa
+2025-05-23 11:04:15,971 - httpx - INFO - HTTP Request: GET https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia?select=%2A&url=eq.https%3A%2F%2Fmetrohouse.pl%2Fnieruchomosc%2FSMVEFU753%2Fnieruchomosc-na-sprzedaz-mieszkanie-lodz-srodmiescie-narutowicza%2F%21%2Fcaller%2FL25hLXNwcnplZGF6L21pZXN6a2FuaWUvLS9yeW5lay13dG9ybnkv___ref___SMVEFU753 "HTTP/2 200 OK"
+2025-05-23 11:04:16,042 - httpx - INFO - HTTP Request: POST https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia "HTTP/2 201 Created"
+2025-05-23 11:04:16,043 - supabase_utils - INFO - Zapisano og³oszenie: Mieszkanie na sprzeda¿, £ódŸ, Œródmieœcie, Narutowicza
+2025-05-23 11:04:16,713 - httpx - INFO - HTTP Request: GET https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia?select=%2A&url=eq.https%3A%2F%2Fmetrohouse.pl%2Fnieruchomosc%2FSMFOSY603%2Fnieruchomosc-na-sprzedaz-mieszkanie-dzialdowski--dzialdowo-nidzicka%2F%21%2Fcaller%2FL25hLXNwcnplZGF6L21pZXN6a2FuaWUvLS9yeW5lay13dG9ybnkv___ref___SMFOSY603 "HTTP/2 200 OK"
+2025-05-23 11:04:16,791 - httpx - INFO - HTTP Request: POST https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia "HTTP/2 201 Created"
+2025-05-23 11:04:16,793 - supabase_utils - INFO - Zapisano og³oszenie: Mieszkanie na sprzeda¿, Dzia³dowski, Dzia³dowo, Nidzicka
+2025-05-23 11:04:17,458 - httpx - INFO - HTTP Request: GET https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia?select=%2A&url=eq.https%3A%2F%2Fmetrohouse.pl%2Fnieruchomosc%2FSMVAJU363%2Fnieruchomosc-na-sprzedaz-mieszkanie-rybnicki--czerwionka-leszczyny-slowackiego%2F%21%2Fcaller%2FL25hLXNwcnplZGF6L21pZXN6a2FuaWUvLS9yeW5lay13dG9ybnkv___ref___SMVAJU363 "HTTP/2 200 OK"
+2025-05-23 11:04:17,538 - httpx - INFO - HTTP Request: POST https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia "HTTP/2 201 Created"
+2025-05-23 11:04:17,539 - supabase_utils - INFO - Zapisano og³oszenie: Mieszkanie na sprzeda¿, Rybnicki, Czerwionka-Leszczyny, S³owackiego
+2025-05-23 11:04:18,251 - httpx - INFO - HTTP Request: GET https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia?select=%2A&url=eq.https%3A%2F%2Fmetrohouse.pl%2Fnieruchomosc%2FSMFESU252%2Fnieruchomosc-na-sprzedaz-mieszkanie-torun--lotnikow%2F%21%2Fcaller%2FL25hLXNwcnplZGF6L21pZXN6a2FuaWUvLS9yeW5lay13dG9ybnkv___ref___SMFESU252 "HTTP/2 200 OK"
+2025-05-23 11:04:18,339 - httpx - INFO - HTTP Request: POST https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia "HTTP/2 201 Created"
+2025-05-23 11:04:18,340 - supabase_utils - INFO - Zapisano og³oszenie: Mieszkanie na sprzeda¿, Toruñ, Lotników
+2025-05-23 11:04:19,410 - httpx - INFO - HTTP Request: GET https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia?select=%2A&url=eq.https%3A%2F%2Fmetrohouse.pl%2Fnieruchomosc%2FSMJUPY782%2Fnieruchomosc-na-sprzedaz-mieszkanie-warszawa-bemowo-gorczewska%2F%21%2Fcaller%2FL25hLXNwcnplZGF6L21pZXN6a2FuaWUvLS9yeW5lay13dG9ybnkv___ref___SMJUPY782 "HTTP/2 200 OK"
+2025-05-23 11:04:19,505 - httpx - INFO - HTTP Request: POST https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia "HTTP/2 201 Created"
+2025-05-23 11:04:19,507 - supabase_utils - INFO - Zapisano og³oszenie: Mieszkanie na sprzeda¿, Warszawa, Bemowo, Górczewska
+2025-05-23 11:04:20,232 - httpx - INFO - HTTP Request: GET https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia?select=%2A&url=eq.https%3A%2F%2Fmetrohouse.pl%2Fnieruchomosc%2FSMMEGO920%2Fnieruchomosc-na-sprzedaz-mieszkanie-stalowowolski--stalowa-wola-staszica%2F%21%2Fcaller%2FL25hLXNwcnplZGF6L21pZXN6a2FuaWUvLS9yeW5lay13dG9ybnkv___ref___SMMEGO920 "HTTP/2 200 OK"
+2025-05-23 11:04:20,311 - httpx - INFO - HTTP Request: POST https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia "HTTP/2 201 Created"
+2025-05-23 11:04:20,313 - supabase_utils - INFO - Zapisano og³oszenie: Mieszkanie na sprzeda¿, Stalowowolski, Stalowa Wola, Staszica
+2025-05-23 11:04:21,043 - httpx - INFO - HTTP Request: GET https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia?select=%2A&url=eq.https%3A%2F%2Fmetrohouse.pl%2Fnieruchomosc%2FSMHOSU138%2Fnieruchomosc-na-sprzedaz-mieszkanie-lodz-baluty-%2F%21%2Fcaller%2FL25hLXNwcnplZGF6L21pZXN6a2FuaWUvLS9yeW5lay13dG9ybnkv___ref___SMHOSU138 "HTTP/2 200 OK"
+2025-05-23 11:04:21,121 - httpx - INFO - HTTP Request: POST https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia "HTTP/2 201 Created"
+2025-05-23 11:04:21,124 - supabase_utils - INFO - Zapisano og³oszenie: Mieszkanie na sprzeda¿, £ódŸ, Ba³uty
+2025-05-23 11:04:21,800 - httpx - INFO - HTTP Request: GET https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia?select=%2A&url=eq.https%3A%2F%2Fmetrohouse.pl%2Fnieruchomosc%2FSMKEKU371%2Fnieruchomosc-na-sprzedaz-mieszkanie-krakow-azory-%2F%21%2Fcaller%2FL25hLXNwcnplZGF6L21pZXN6a2FuaWUvLS9yeW5lay13dG9ybnkv___ref___SMKEKU371 "HTTP/2 200 OK"
+2025-05-23 11:04:21,888 - httpx - INFO - HTTP Request: POST https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia "HTTP/2 201 Created"
+2025-05-23 11:04:21,889 - supabase_utils - INFO - Zapisano og³oszenie: Mieszkanie na sprzeda¿, Kraków, Azory
+2025-05-23 11:04:22,575 - httpx - INFO - HTTP Request: GET https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia?select=%2A&url=eq.https%3A%2F%2Fmetrohouse.pl%2Fnieruchomosc%2FSMPURE840%2Fnieruchomosc-na-sprzedaz-mieszkanie-kolobrzeg-podczele-%2F%21%2Fcaller%2FL25hLXNwcnplZGF6L21pZXN6a2FuaWUvLS9yeW5lay13dG9ybnkv___ref___SMPURE840 "HTTP/2 200 OK"
+2025-05-23 11:04:22,661 - httpx - INFO - HTTP Request: POST https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia "HTTP/2 201 Created"
+2025-05-23 11:04:22,663 - supabase_utils - INFO - Zapisano og³oszenie: Mieszkanie na sprzeda¿, Ko³obrzeg, Podczele
+2025-05-23 11:04:23,353 - httpx - INFO - HTTP Request: GET https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia?select=%2A&url=eq.https%3A%2F%2Fmetrohouse.pl%2Fnieruchomosc%2FSMBAVE508%2Fnieruchomosc-na-sprzedaz-mieszkanie-lodz-widzew-skalna%2F%21%2Fcaller%2FL25hLXNwcnplZGF6L21pZXN6a2FuaWUvLS9yeW5lay13dG9ybnkv___ref___SMBAVE508 "HTTP/2 200 OK"
+2025-05-23 11:04:23,430 - httpx - INFO - HTTP Request: POST https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia "HTTP/2 201 Created"
+2025-05-23 11:04:23,433 - supabase_utils - INFO - Zapisano og³oszenie: Mieszkanie na sprzeda¿, £ódŸ, Widzew, Skalna
+2025-05-23 11:04:24,131 - httpx - INFO - HTTP Request: GET https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia?select=%2A&url=eq.https%3A%2F%2Fmetrohouse.pl%2Fnieruchomosc%2FSMVIZA907%2Fnieruchomosc-na-sprzedaz-mieszkanie-jeleniogorski--piechowice-%2F%21%2Fcaller%2FL25hLXNwcnplZGF6L21pZXN6a2FuaWUvLS9yeW5lay13dG9ybnkv___ref___SMVIZA907 "HTTP/2 200 OK"
+2025-05-23 11:04:24,210 - httpx - INFO - HTTP Request: POST https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia "HTTP/2 201 Created"
+2025-05-23 11:04:24,214 - supabase_utils - INFO - Zapisano og³oszenie: Mieszkanie na sprzeda¿, Jeleniogórski, Piechowice
+2025-05-23 11:04:24,876 - httpx - INFO - HTTP Request: GET https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia?select=%2A&url=eq.https%3A%2F%2Fmetrohouse.pl%2Fnieruchomosc%2FSMJUFO362%2Fnieruchomosc-na-sprzedaz-mieszkanie-katowice-srodmiescie-baildona%2F%21%2Fcaller%2FL25hLXNwcnplZGF6L21pZXN6a2FuaWUvLS9yeW5lay13dG9ybnkv___ref___SMJUFO362 "HTTP/2 200 OK"
+2025-05-23 11:04:24,963 - httpx - INFO - HTTP Request: POST https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia "HTTP/2 201 Created"
+2025-05-23 11:04:24,965 - supabase_utils - INFO - Zapisano og³oszenie: Mieszkanie na sprzeda¿, Katowice, Œródmieœcie, Baildona
+2025-05-23 11:04:25,662 - httpx - INFO - HTTP Request: GET https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia?select=%2A&url=eq.https%3A%2F%2Fmetrohouse.pl%2Fnieruchomosc%2FSMKIME938%2Fnieruchomosc-na-sprzedaz-mieszkanie-grodziski--grodzisk-mazowiecki-%2F%21%2Fcaller%2FL25hLXNwcnplZGF6L21pZXN6a2FuaWUvLS9yeW5lay13dG9ybnkv___ref___SMKIME938 "HTTP/2 200 OK"
+2025-05-23 11:04:25,748 - httpx - INFO - HTTP Request: POST https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia "HTTP/2 201 Created"
+2025-05-23 11:04:25,749 - supabase_utils - INFO - Zapisano og³oszenie: Mieszkanie na sprzeda¿, Grodziski, Grodzisk Mazowiecki
+2025-05-23 11:04:26,449 - httpx - INFO - HTTP Request: GET https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia?select=%2A&url=eq.https%3A%2F%2Fmetrohouse.pl%2Fnieruchomosc%2FSMNORE606%2Fnieruchomosc-na-sprzedaz-mieszkanie-warszawa-ursus-ryzowa%2F%21%2Fcaller%2FL25hLXNwcnplZGF6L21pZXN6a2FuaWUvLS9yeW5lay13dG9ybnkv___ref___SMNORE606 "HTTP/2 200 OK"
+2025-05-23 11:04:26,525 - httpx - INFO - HTTP Request: POST https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia "HTTP/2 201 Created"
+2025-05-23 11:04:26,527 - supabase_utils - INFO - Zapisano og³oszenie: Mieszkanie na sprzeda¿, Warszawa, Ursus, Ry¿owa
+2025-05-23 11:04:27,213 - httpx - INFO - HTTP Request: GET https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia?select=%2A&url=eq.https%3A%2F%2Fmetrohouse.pl%2Fnieruchomosc%2FSMZAGU195%2Fnieruchomosc-na-sprzedaz-mieszkanie-pruszkowski--parzniew-dzialkowa%2F%21%2Fcaller%2FL25hLXNwcnplZGF6L21pZXN6a2FuaWUvLS9yeW5lay13dG9ybnkv___ref___SMZAGU195 "HTTP/2 200 OK"
+2025-05-23 11:04:27,293 - httpx - INFO - HTTP Request: POST https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia "HTTP/2 201 Created"
+2025-05-23 11:04:27,295 - supabase_utils - INFO - Zapisano og³oszenie: Mieszkanie na sprzeda¿, Pruszkowski, Parzniew, Dzia³kowa
+2025-05-23 11:04:27,993 - httpx - INFO - HTTP Request: GET https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia?select=%2A&url=eq.https%3A%2F%2Fmetrohouse.pl%2Fnieruchomosc%2FSMROZE375%2Fnieruchomosc-na-sprzedaz-mieszkanie-piekary-slaskie-%2F%21%2Fcaller%2FL25hLXNwcnplZGF6L21pZXN6a2FuaWUvLS9yeW5lay13dG9ybnkv___ref___SMROZE375 "HTTP/2 200 OK"
+2025-05-23 11:04:28,072 - httpx - INFO - HTTP Request: POST https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia "HTTP/2 201 Created"
+2025-05-23 11:04:28,073 - supabase_utils - INFO - Zapisano og³oszenie: Mieszkanie na sprzeda¿, Piekary Œl¹skie
+2025-05-23 11:04:28,769 - httpx - INFO - HTTP Request: GET https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia?select=%2A&url=eq.https%3A%2F%2Fmetrohouse.pl%2Fnieruchomosc%2FSMFOSY696%2Fnieruchomosc-na-sprzedaz-mieszkanie-ruda-slaska-grodzka%2F%21%2Fcaller%2FL25hLXNwcnplZGF6L21pZXN6a2FuaWUvLS9yeW5lay13dG9ybnkv___ref___SMFOSY696 "HTTP/2 200 OK"
+2025-05-23 11:04:28,857 - httpx - INFO - HTTP Request: POST https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia "HTTP/2 201 Created"
+2025-05-23 11:04:28,858 - supabase_utils - INFO - Zapisano og³oszenie: Mieszkanie na sprzeda¿, Ruda Œl¹ska, Grodzka
+2025-05-23 11:04:29,581 - httpx - INFO - HTTP Request: GET https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia?select=%2A&url=eq.https%3A%2F%2Fmetrohouse.pl%2Fnieruchomosc%2FSMGAKU836%2Fnieruchomosc-na-sprzedaz-mieszkanie-rybnik--borki%2F%21%2Fcaller%2FL25hLXNwcnplZGF6L21pZXN6a2FuaWUvLS9yeW5lay13dG9ybnkv___ref___SMGAKU836 "HTTP/2 200 OK"
+2025-05-23 11:04:29,673 - httpx - INFO - HTTP Request: POST https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia "HTTP/2 201 Created"
+2025-05-23 11:04:29,675 - supabase_utils - INFO - Zapisano og³oszenie: Mieszkanie na sprzeda¿, Rybnik, Borki
+2025-05-23 11:04:30,350 - httpx - INFO - HTTP Request: GET https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia?select=%2A&url=eq.https%3A%2F%2Fmetrohouse.pl%2Fnieruchomosc%2FSMCUMA662%2Fnieruchomosc-na-sprzedaz-mieszkanie-pucki--karwienskie-bloto-pierwsze-pomorska%2F%21%2Fcaller%2FL25hLXNwcnplZGF6L21pZXN6a2FuaWUvLS9yeW5lay13dG9ybnkv___ref___SMCUMA662 "HTTP/2 200 OK"
+2025-05-23 11:04:30,423 - httpx - INFO - HTTP Request: POST https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia "HTTP/2 201 Created"
+2025-05-23 11:04:30,424 - supabase_utils - INFO - Zapisano og³oszenie: Mieszkanie na sprzeda¿, Pucki, Karwieñskie B³oto Pierwsze, Pomorska
+2025-05-23 11:04:31,081 - httpx - INFO - HTTP Request: GET https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia?select=%2A&url=eq.https%3A%2F%2Fmetrohouse.pljavascript%3A+void%280%29 "HTTP/2 200 OK"
+2025-05-23 11:04:31,084 - supabase_utils - INFO - Og³oszenie ju¿ istnieje: https://metrohouse.pljavascript: void(0)
+2025-05-23 11:04:31,777 - httpx - INFO - HTTP Request: GET https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia?select=%2A&url=eq.https%3A%2F%2Fmetrohouse.pl%23 "HTTP/2 200 OK"
+2025-05-23 11:04:31,781 - supabase_utils - INFO - Og³oszenie ju¿ istnieje: https://metrohouse.pl#
+2025-05-23 11:04:32,463 - httpx - INFO - HTTP Request: GET https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia?select=%2A&url=eq.https%3A%2F%2Fcredipass.pl%2Fklient-indywidualny%2Fkredyt-hipoteczny%2F "HTTP/2 200 OK"
+2025-05-23 11:04:32,464 - supabase_utils - INFO - Og³oszenie ju¿ istnieje: https://credipass.pl/klient-indywidualny/kredyt-hipoteczny/

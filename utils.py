@@ -4,6 +4,8 @@ import time
 import random
 import logging
 from fake_useragent import UserAgent
+import re
+from typing import List, Dict, Tuple, Optional
 
 try:
     from config import DEFAULT_DELAY, MAX_RETRIES, TIMEOUT, SELENIUM_HEADLESS, SELENIUM_TIMEOUT, SELENIUM_WAIT_TIME
@@ -123,8 +125,6 @@ def extract_price(price_text: str) -> dict:
     Returns:
         dict: {"price": float, "currency": str, "original": str}
     """
-    import re
-    
     if not price_text:
         return {"price": None, "currency": None, "original": ""}
     
@@ -149,4 +149,340 @@ def extract_price(price_text: str) -> dict:
         "price": price_value,
         "currency": currency,
         "original": price_clean
-    } 
+    }
+
+# =================================================================
+# FUNKCJE WYKRYWANIA DUPLIKATÓW OGŁOSZEŃ
+# =================================================================
+
+def normalize_text(text: str) -> str:
+    """
+    Normalizuje tekst do porównywania duplikatów
+    
+    Args:
+        text: Tekst do normalizacji
+    
+    Returns:
+        str: Znormalizowany tekst
+    """
+    if not text:
+        return ""
+    
+    # Konwertuj na małe litery
+    text = text.lower()
+    
+    # Usuń interpunkcję i nadmiarowe spacje
+    text = re.sub(r'[^\w\s]', ' ', text)
+    text = re.sub(r'\s+', ' ', text)
+    
+    # Usuń typowe słowa nieistotne
+    stop_words = [
+        'mieszkanie', 'pokojowe', 'pokój', 'pokoje', 'm2', 'sprzedam', 
+        'na', 'sprzedaż', 'do', 'w', 'z', 'i', 'a', 'o', 'u', 'po'
+    ]
+    
+    words = text.split()
+    words = [word for word in words if word not in stop_words and len(word) > 2]
+    
+    return ' '.join(words).strip()
+
+def extract_area_number(area_text: str) -> Optional[float]:
+    """
+    Ekstraktuje liczbę metrów kwadratowych z tekstu
+    
+    Args:
+        area_text: Tekst z powierzchnią
+    
+    Returns:
+        float: Powierzchnia w m2 lub None
+    """
+    if not area_text:
+        return None
+    
+    # Szukaj wzorców typu "65 m2", "65m²", "65.5 m2"
+    pattern = r'(\d+(?:[.,]\d+)?)\s*m[2²]?'
+    match = re.search(pattern, area_text.lower())
+    
+    if match:
+        try:
+            return float(match.group(1).replace(',', '.'))
+        except ValueError:
+            pass
+    
+    return None
+
+def extract_rooms_number(rooms_text: str) -> Optional[int]:
+    """
+    Ekstraktuje liczbę pokoi z tekstu
+    
+    Args:
+        rooms_text: Tekst z liczbą pokoi
+    
+    Returns:
+        int: Liczba pokoi lub None
+    """
+    if not rooms_text:
+        return None
+    
+    # Szukaj wzorców typu "3 pokoje", "3-pokojowe", "3pok"
+    pattern = r'(\d+)[\s\-]?pok'
+    match = re.search(pattern, rooms_text.lower())
+    
+    if match:
+        try:
+            return int(match.group(1))
+        except ValueError:
+            pass
+    
+    # Może być sama liczba
+    if rooms_text.strip().isdigit():
+        return int(rooms_text.strip())
+    
+    return None
+
+def calculate_listings_similarity(listing1: Dict, listing2: Dict) -> float:
+    """
+    Oblicza podobieństwo między dwoma ogłoszeniami
+    
+    Args:
+        listing1: Pierwsze ogłoszenie
+        listing2: Drugie ogłoszenie
+    
+    Returns:
+        float: Współczynnik podobieństwa (0-100)
+    """
+    try:
+        from fuzzywuzzy import fuzz
+    except ImportError:
+        logger.warning("fuzzywuzzy nie jest zainstalowane, używam prostego porównania")
+        return simple_similarity(listing1, listing2)
+    
+    total_score = 0
+    weight_sum = 0
+    
+    # 1. Podobieństwo tytułów (waga: 40%)
+    title1 = normalize_text(listing1.get('title', ''))
+    title2 = normalize_text(listing2.get('title', ''))
+    if title1 and title2:
+        title_similarity = fuzz.token_sort_ratio(title1, title2)
+        total_score += title_similarity * 0.4
+        weight_sum += 0.4
+    
+    # 2. Dokładność ceny (waga: 25%)
+    price1 = listing1.get('price')
+    price2 = listing2.get('price')
+    if price1 and price2:
+        price_diff = abs(price1 - price2) / max(price1, price2)
+        price_similarity = max(0, 100 - (price_diff * 100))
+        total_score += price_similarity * 0.25
+        weight_sum += 0.25
+    
+    # 3. Powierzchnia (waga: 15%)
+    area1 = extract_area_number(listing1.get('area', ''))
+    area2 = extract_area_number(listing2.get('area', ''))
+    if area1 and area2:
+        area_diff = abs(area1 - area2) / max(area1, area2)
+        area_similarity = max(0, 100 - (area_diff * 50))  # Większa tolerancja
+        total_score += area_similarity * 0.15
+        weight_sum += 0.15
+    
+    # 4. Liczba pokoi (waga: 10%)
+    rooms1 = extract_rooms_number(listing1.get('rooms', ''))
+    rooms2 = extract_rooms_number(listing2.get('rooms', ''))
+    if rooms1 and rooms2:
+        if rooms1 == rooms2:
+            total_score += 100 * 0.1
+        weight_sum += 0.1
+    
+    # 5. Lokalizacja (waga: 10%)
+    location1 = normalize_text(listing1.get('location', ''))
+    location2 = normalize_text(listing2.get('location', ''))
+    if location1 and location2:
+        location_similarity = fuzz.partial_ratio(location1, location2)
+        total_score += location_similarity * 0.1
+        weight_sum += 0.1
+    
+    # Oblicz końcowy wynik
+    if weight_sum > 0:
+        return total_score / weight_sum
+    else:
+        return 0
+
+def simple_similarity(listing1: Dict, listing2: Dict) -> float:
+    """
+    Prosta kalkulacja podobieństwa bez fuzzywuzzy
+    """
+    score = 0
+    factors = 0
+    
+    # Porównaj ceny
+    price1 = listing1.get('price')
+    price2 = listing2.get('price')
+    if price1 and price2:
+        price_diff = abs(price1 - price2) / max(price1, price2)
+        if price_diff < 0.05:  # 5% różnicy
+            score += 80
+        elif price_diff < 0.1:  # 10% różnicy
+            score += 60
+        factors += 1
+    
+    # Porównaj powierzchnie
+    area1 = extract_area_number(listing1.get('area', ''))
+    area2 = extract_area_number(listing2.get('area', ''))
+    if area1 and area2:
+        area_diff = abs(area1 - area2) / max(area1, area2)
+        if area_diff < 0.1:  # 10% różnicy
+            score += 70
+        factors += 1
+    
+    # Porównaj pokoje
+    rooms1 = extract_rooms_number(listing1.get('rooms', ''))
+    rooms2 = extract_rooms_number(listing2.get('rooms', ''))
+    if rooms1 and rooms2 and rooms1 == rooms2:
+        score += 60
+        factors += 1
+    
+    return score / factors if factors > 0 else 0
+
+def find_duplicates(listings: List[Dict], similarity_threshold: float = 75.0) -> Tuple[List[Dict], List[Dict]]:
+    """
+    Znajduje duplikaty w liście ogłoszeń
+    
+    Args:
+        listings: Lista ogłoszeń do sprawdzenia
+        similarity_threshold: Próg podobieństwa (0-100)
+    
+    Returns:
+        Tuple[List[Dict], List[Dict]]: (unikalne_ogłoszenia, duplikaty)
+    """
+    unique_listings = []
+    duplicates = []
+    
+    logger.info(f"🔍 Sprawdzam {len(listings)} ogłoszeń pod kątem duplikatów (próg: {similarity_threshold}%)")
+    
+    for i, listing in enumerate(listings):
+        is_duplicate = False
+        
+        # Porównaj z już zaakceptowanymi unikalnymi ogłoszeniami
+        for unique_listing in unique_listings:
+            similarity = calculate_listings_similarity(listing, unique_listing)
+            
+            if similarity >= similarity_threshold:
+                logger.debug(f"Znaleziono duplikat: {similarity:.1f}% podobieństwa")
+                logger.debug(f"  Original: {unique_listing.get('title', '')[:50]}... ({unique_listing.get('source')})")
+                logger.debug(f"  Duplikat: {listing.get('title', '')[:50]}... ({listing.get('source')})")
+                
+                # Dodaj informację o duplikacie
+                duplicate_info = listing.copy()
+                duplicate_info['duplicate_of'] = unique_listing.get('url', '')
+                duplicate_info['similarity_score'] = similarity
+                duplicates.append(duplicate_info)
+                
+                is_duplicate = True
+                break
+        
+        if not is_duplicate:
+            unique_listings.append(listing)
+    
+    logger.info(f"✅ Wyniki deduplikacji:")
+    logger.info(f"   📋 Unikalne ogłoszenia: {len(unique_listings)}")
+    logger.info(f"   🔄 Duplikaty: {len(duplicates)}")
+    
+    return unique_listings, duplicates
+
+def deduplicate_listings(listings: List[Dict], similarity_threshold: float = 75.0, 
+                        keep_best_source: bool = True) -> List[Dict]:
+    """
+    Usuwa duplikaty z listy ogłoszeń
+    
+    Args:
+        listings: Lista ogłoszeń
+        similarity_threshold: Próg podobieństwa (0-100)
+        keep_best_source: Czy zachować najlepsze źródło przy duplikatach
+    
+    Returns:
+        List[Dict]: Lista bez duplikatów
+    """
+    if not listings:
+        return []
+    
+    # Ranking portali (najlepsze źródła mają priorytet)
+    source_priority = {
+        'otodom.pl': 1,
+        'olx.pl': 2,
+        'domiporta.pl': 3,
+        'gratka.pl': 4,
+        'metrohouse.pl': 5,
+        'freedom.pl': 6
+    }
+    
+    # Sortuj według priorytetu źródła jeśli włączone
+    if keep_best_source:
+        listings_sorted = sorted(listings, 
+                               key=lambda x: source_priority.get(x.get('source', ''), 999))
+    else:
+        listings_sorted = listings.copy()
+    
+    unique_listings, duplicates = find_duplicates(listings_sorted, similarity_threshold)
+    
+    # Wyświetl statystyki duplikatów per portal
+    if duplicates:
+        duplicate_stats = {}
+        for dup in duplicates:
+            source = dup.get('source', 'nieznany')
+            duplicate_stats[source] = duplicate_stats.get(source, 0) + 1
+        
+        logger.info("📊 Duplikaty per portal:")
+        for source, count in sorted(duplicate_stats.items()):
+            logger.info(f"   • {source}: {count} duplikatów")
+    
+    return unique_listings
+
+def generate_duplicate_report(duplicates: List[Dict]) -> str:
+    """
+    Generuje raport o duplikatach
+    
+    Args:
+        duplicates: Lista duplikatów
+    
+    Returns:
+        str: Raport tekstowy
+    """
+    if not duplicates:
+        return "🎉 Nie znaleziono duplikatów!"
+    
+    report = [
+        "🔄 RAPORT DUPLIKATÓW OGŁOSZEŃ",
+        "="*50,
+        f"Łączna liczba duplikatów: {len(duplicates)}",
+        ""
+    ]
+    
+    # Grupuj według podobieństwa
+    high_similarity = [d for d in duplicates if d.get('similarity_score', 0) >= 90]
+    medium_similarity = [d for d in duplicates if 75 <= d.get('similarity_score', 0) < 90]
+    
+    if high_similarity:
+        report.extend([
+            f"🔴 Bardzo podobne (90%+): {len(high_similarity)}",
+            ""
+        ])
+        for dup in high_similarity[:5]:  # Pokaż tylko pierwsze 5
+            title = dup.get('title', 'Brak tytułu')[:60]
+            source = dup.get('source', 'nieznany')
+            similarity = dup.get('similarity_score', 0)
+            report.append(f"  • {title}... ({source}) - {similarity:.1f}%")
+    
+    if medium_similarity:
+        report.extend([
+            "",
+            f"🟡 Średnio podobne (75-89%): {len(medium_similarity)}",
+            ""
+        ])
+        for dup in medium_similarity[:3]:  # Pokaż tylko pierwsze 3
+            title = dup.get('title', 'Brak tytułu')[:60]
+            source = dup.get('source', 'nieznany')
+            similarity = dup.get('similarity_score', 0)
+            report.append(f"  • {title}... ({source}) - {similarity:.1f}%")
+    
+    return "\n".join(report) 
