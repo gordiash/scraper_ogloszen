@@ -1,0 +1,488 @@
+2025-05-23 10:09:01,544 - __main__ - INFO - Rozpoczynam scraping portali nieruchomoœci
+2025-05-23 10:09:01,545 - __main__ - INFO - Rozpoczynam scraping: freedom
+2025-05-23 10:09:01,545 - scrapers.freedom - INFO - Scrapujê Freedom.pl - strona 1
+2025-05-23 10:09:02,822 - scrapers.freedom - WARNING - Nie znaleziono og³oszeñ na stronie 1
+2025-05-23 10:09:02,822 - scrapers.freedom - INFO - Pobrano 0 og³oszeñ z Freedom.pl
+2025-05-23 10:09:02,822 - __main__ - INFO - Zakoñczono scraping freedom: 0 og³oszeñ
+2025-05-23 10:09:02,823 - __main__ - INFO - Rozpoczynam scraping: otodom
+2025-05-23 10:09:02,823 - scrapers.otodom - INFO - Scrapujê Otodom.pl - strona 1
+2025-05-23 10:09:02,823 - utils - WARNING - Selenium nie jest zainstalowany, u¿ywam requests
+2025-05-23 10:09:04,811 - scrapers.otodom - INFO - Scrapujê Otodom.pl - strona 2
+2025-05-23 10:09:04,813 - utils - WARNING - Selenium nie jest zainstalowany, u¿ywam requests
+2025-05-23 10:09:08,608 - scrapers.otodom - INFO - Pobrano 78 og³oszeñ z Otodom.pl
+2025-05-23 10:09:08,609 - __main__ - INFO - Zakoñczono scraping otodom: 78 og³oszeñ
+2025-05-23 10:09:08,610 - __main__ - INFO - Rozpoczynam scraping: metrohouse
+2025-05-23 10:09:08,612 - scrapers.metrohouse - INFO - Scrapujê Metrohouse.pl - strona 1
+2025-05-23 10:09:09,403 - scrapers.metrohouse - WARNING - Nie znaleziono og³oszeñ na stronie 1
+2025-05-23 10:09:09,403 - scrapers.metrohouse - INFO - Pobrano 0 og³oszeñ z Metrohouse.pl
+2025-05-23 10:09:09,403 - __main__ - INFO - Zakoñczono scraping metrohouse: 0 og³oszeñ
+2025-05-23 10:09:09,403 - __main__ - INFO - Rozpoczynam scraping: domiporta
+2025-05-23 10:09:09,404 - scrapers.domiporta - INFO - Scrapujê Domiporta.pl - strona 1
+2025-05-23 10:09:10,359 - scrapers.domiporta - WARNING - Nie znaleziono og³oszeñ na stronie 1
+2025-05-23 10:09:10,360 - scrapers.domiporta - INFO - Pobrano 0 og³oszeñ z Domiporta.pl
+2025-05-23 10:09:10,360 - __main__ - INFO - Zakoñczono scraping domiporta: 0 og³oszeñ
+2025-05-23 10:09:10,360 - __main__ - INFO - Rozpoczynam scraping: gratka
+2025-05-23 10:09:10,361 - scrapers.gratka - INFO - Scrapujê Gratka.pl - strona 1
+2025-05-23 10:09:10,711 - scrapers.gratka - WARNING - Nie znaleziono og³oszeñ na stronie 1
+2025-05-23 10:09:10,711 - scrapers.gratka - INFO - Pobrano 0 og³oszeñ z Gratka.pl
+2025-05-23 10:09:10,712 - __main__ - INFO - Zakoñczono scraping gratka: 0 og³oszeñ
+2025-05-23 10:09:10,712 - __main__ - INFO - Rozpoczynam scraping: olx
+2025-05-23 10:09:10,712 - scrapers.olx - INFO - Scrapujê OLX.pl - strona 1
+2025-05-23 10:09:14,717 - scrapers.olx - INFO - Scrapujê OLX.pl - strona 2
+2025-05-23 10:09:18,088 - scrapers.olx - INFO - Pobrano 0 og³oszeñ z OLX.pl
+2025-05-23 10:09:18,089 - __main__ - INFO - Zakoñczono scraping olx: 0 og³oszeñ
+2025-05-23 10:09:18,089 - __main__ - INFO - Ca³kowita liczba pobranych og³oszeñ: 78
+2025-05-23 10:09:18,984 - httpx - INFO - HTTP Request: GET https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia?select=%2A&url=eq.https%3A%2F%2Fwww.otodom.pl%2Fpl%2Foferta%2F4-pok-mieszkanie-81m-ogrodek-gotowe-do-odbioru-ID4undS "HTTP/2 200 OK"
+2025-05-23 10:09:19,175 - httpx - INFO - HTTP Request: POST https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia "HTTP/2 400 Bad Request"
+2025-05-23 10:09:19,177 - supabase_utils - ERROR - B³¹d zapisu do Supabase: {'message': "Could not find the 'scraped_at' column of 'ogloszenia' in the schema cache", 'code': 'PGRST204', 'hint': None, 'details': None}
+2025-05-23 10:09:19,725 - httpx - INFO - HTTP Request: GET https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia?select=%2A&url=eq.https%3A%2F%2Fwww.otodom.pl%2Fpl%2Foferta%2Fidealne-na-flipa-ID4t54P "HTTP/2 200 OK"
+2025-05-23 10:09:19,842 - httpx - INFO - HTTP Request: POST https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia "HTTP/2 400 Bad Request"
+2025-05-23 10:09:19,845 - supabase_utils - ERROR - B³¹d zapisu do Supabase: {'message': "Could not find the 'scraped_at' column of 'ogloszenia' in the schema cache", 'code': 'PGRST204', 'hint': None, 'details': None}
+2025-05-23 10:09:20,373 - httpx - INFO - HTTP Request: GET https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia?select=%2A&url=eq.https%3A%2F%2Fwww.otodom.pl%2Fpl%2Foferta%2F3-pokojowe-mieszkanie-44m2-balkon-bezposrednio-ID4t4xL "HTTP/2 200 OK"
+2025-05-23 10:09:20,450 - httpx - INFO - HTTP Request: POST https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia "HTTP/2 400 Bad Request"
+2025-05-23 10:09:20,453 - supabase_utils - ERROR - B³¹d zapisu do Supabase: {'message': "Could not find the 'scraped_at' column of 'ogloszenia' in the schema cache", 'code': 'PGRST204', 'hint': None, 'details': None}
+2025-05-23 10:09:21,003 - httpx - INFO - HTTP Request: GET https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia?select=%2A&url=eq.https%3A%2F%2Fwww.otodom.pl%2Fpl%2Foferta%2Fostatnie-pietro-widokowy-taras-28-m2-ID4vwVV "HTTP/2 200 OK"
+2025-05-23 10:09:21,141 - httpx - INFO - HTTP Request: POST https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia "HTTP/2 400 Bad Request"
+2025-05-23 10:09:21,142 - supabase_utils - ERROR - B³¹d zapisu do Supabase: {'message': "Could not find the 'scraped_at' column of 'ogloszenia' in the schema cache", 'code': 'PGRST204', 'hint': None, 'details': None}
+2025-05-23 10:09:21,669 - httpx - INFO - HTTP Request: GET https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia?select=%2A&url=eq.https%3A%2F%2Fwww.otodom.pl%2Fpl%2Foferta%2Ftarnowo-podg-nowe-3-pok-stan-developerski-ID4vra8 "HTTP/2 200 OK"
+2025-05-23 10:09:21,819 - httpx - INFO - HTTP Request: POST https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia "HTTP/2 400 Bad Request"
+2025-05-23 10:09:21,822 - supabase_utils - ERROR - B³¹d zapisu do Supabase: {'message': "Could not find the 'scraped_at' column of 'ogloszenia' in the schema cache", 'code': 'PGRST204', 'hint': None, 'details': None}
+2025-05-23 10:09:22,277 - httpx - INFO - HTTP Request: GET https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia?select=%2A&url=eq.https%3A%2F%2Fwww.otodom.pl%2Fpl%2Foferta%2F3-pokojowe-mieszkanie-53m2-balkon-ID4wZDN "HTTP/2 200 OK"
+2025-05-23 10:09:22,347 - httpx - INFO - HTTP Request: POST https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia "HTTP/2 400 Bad Request"
+2025-05-23 10:09:22,349 - supabase_utils - ERROR - B³¹d zapisu do Supabase: {'message': "Could not find the 'scraped_at' column of 'ogloszenia' in the schema cache", 'code': 'PGRST204', 'hint': None, 'details': None}
+2025-05-23 10:09:22,909 - httpx - INFO - HTTP Request: GET https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia?select=%2A&url=eq.https%3A%2F%2Fwww.otodom.pl%2Fpl%2Foferta%2Fapartament-iii-pokojowy-laskowicka-ID4wTrX "HTTP/2 200 OK"
+2025-05-23 10:09:23,056 - httpx - INFO - HTTP Request: POST https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia "HTTP/2 400 Bad Request"
+2025-05-23 10:09:23,059 - supabase_utils - ERROR - B³¹d zapisu do Supabase: {'message': "Could not find the 'scraped_at' column of 'ogloszenia' in the schema cache", 'code': 'PGRST204', 'hint': None, 'details': None}
+2025-05-23 10:09:23,545 - httpx - INFO - HTTP Request: GET https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia?select=%2A&url=eq.https%3A%2F%2Fwww.otodom.pl%2Fpl%2Foferta%2F3-pokojowe-mieszkanie-68m2-balkon-bez-prowizji-ID4ulCg "HTTP/2 200 OK"
+2025-05-23 10:09:23,639 - httpx - INFO - HTTP Request: POST https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia "HTTP/2 400 Bad Request"
+2025-05-23 10:09:23,641 - supabase_utils - ERROR - B³¹d zapisu do Supabase: {'message': "Could not find the 'scraped_at' column of 'ogloszenia' in the schema cache", 'code': 'PGRST204', 'hint': None, 'details': None}
+2025-05-23 10:09:24,100 - httpx - INFO - HTTP Request: GET https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia?select=%2A&url=eq.https%3A%2F%2Fwww.otodom.pl%2Fpl%2Foferta%2Fdworcowa-28-mieszkanie-1-pok-b-18-ID4wvv4 "HTTP/2 200 OK"
+2025-05-23 10:09:24,176 - httpx - INFO - HTTP Request: POST https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia "HTTP/2 400 Bad Request"
+2025-05-23 10:09:24,177 - supabase_utils - ERROR - B³¹d zapisu do Supabase: {'message': "Could not find the 'scraped_at' column of 'ogloszenia' in the schema cache", 'code': 'PGRST204', 'hint': None, 'details': None}
+2025-05-23 10:09:24,639 - httpx - INFO - HTTP Request: GET https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia?select=%2A&url=eq.https%3A%2F%2Fwww.otodom.pl%2Fpl%2Foferta%2Fbiskupin-88-5m-do-wprowadzenia-4pokoje-26m2-ID4tosN "HTTP/2 200 OK"
+2025-05-23 10:09:24,726 - httpx - INFO - HTTP Request: POST https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia "HTTP/2 400 Bad Request"
+2025-05-23 10:09:24,729 - supabase_utils - ERROR - B³¹d zapisu do Supabase: {'message': "Could not find the 'scraped_at' column of 'ogloszenia' in the schema cache", 'code': 'PGRST204', 'hint': None, 'details': None}
+2025-05-23 10:09:25,213 - httpx - INFO - HTTP Request: GET https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia?select=%2A&url=eq.https%3A%2F%2Fwww.otodom.pl%2Fpl%2Foferta%2Fmieszkanie-na-sprzedaz-retkinia-ID4wLTP "HTTP/2 200 OK"
+2025-05-23 10:09:25,288 - httpx - INFO - HTTP Request: POST https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia "HTTP/2 400 Bad Request"
+2025-05-23 10:09:25,289 - supabase_utils - ERROR - B³¹d zapisu do Supabase: {'message': "Could not find the 'scraped_at' column of 'ogloszenia' in the schema cache", 'code': 'PGRST204', 'hint': None, 'details': None}
+2025-05-23 10:09:25,742 - httpx - INFO - HTTP Request: GET https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia?select=%2A&url=eq.https%3A%2F%2Fwww.otodom.pl%2Fpl%2Foferta%2F3-pokoje-metro-ursynow-2-min-pieszo-do-wprowadzenia-ID4vbZ0 "HTTP/2 200 OK"
+2025-05-23 10:09:25,813 - httpx - INFO - HTTP Request: POST https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia "HTTP/2 400 Bad Request"
+2025-05-23 10:09:25,815 - supabase_utils - ERROR - B³¹d zapisu do Supabase: {'message': "Could not find the 'scraped_at' column of 'ogloszenia' in the schema cache", 'code': 'PGRST204', 'hint': None, 'details': None}
+2025-05-23 10:09:26,301 - httpx - INFO - HTTP Request: GET https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia?select=%2A&url=eq.https%3A%2F%2Fwww.otodom.pl%2Fpl%2Foferta%2Fnowe-mieszkania-na-sprzedaz-nova-kviatova-winda-ID4nPwI "HTTP/2 200 OK"
+2025-05-23 10:09:26,372 - httpx - INFO - HTTP Request: POST https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia "HTTP/2 400 Bad Request"
+2025-05-23 10:09:26,375 - supabase_utils - ERROR - B³¹d zapisu do Supabase: {'message': "Could not find the 'scraped_at' column of 'ogloszenia' in the schema cache", 'code': 'PGRST204', 'hint': None, 'details': None}
+2025-05-23 10:09:26,915 - httpx - INFO - HTTP Request: GET https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia?select=%2A&url=eq.https%3A%2F%2Fwww.otodom.pl%2Fpl%2Foferta%2Fmieszkanie-62-5m-3pokoje-os-poludnie-przy-parku-ID4u2VZ "HTTP/2 200 OK"
+2025-05-23 10:09:27,039 - httpx - INFO - HTTP Request: POST https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia "HTTP/2 400 Bad Request"
+2025-05-23 10:09:27,042 - supabase_utils - ERROR - B³¹d zapisu do Supabase: {'message': "Could not find the 'scraped_at' column of 'ogloszenia' in the schema cache", 'code': 'PGRST204', 'hint': None, 'details': None}
+2025-05-23 10:09:27,502 - httpx - INFO - HTTP Request: GET https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia?select=%2A&url=eq.https%3A%2F%2Fwww.otodom.pl%2Fpl%2Foferta%2Frabat-na-dni-otwarte-24-05-zaraz-odbierz-parking-ID4vwVY "HTTP/2 200 OK"
+2025-05-23 10:09:27,580 - httpx - INFO - HTTP Request: POST https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia "HTTP/2 400 Bad Request"
+2025-05-23 10:09:27,582 - supabase_utils - ERROR - B³¹d zapisu do Supabase: {'message': "Could not find the 'scraped_at' column of 'ogloszenia' in the schema cache", 'code': 'PGRST204', 'hint': None, 'details': None}
+2025-05-23 10:09:28,125 - httpx - INFO - HTTP Request: GET https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia?select=%2A&url=eq.https%3A%2F%2Fwww.otodom.pl%2Fpl%2Foferta%2Fostatnie-pietro-widokowy-taras-28-m2-ID4mmW5 "HTTP/2 200 OK"
+2025-05-23 10:09:28,272 - httpx - INFO - HTTP Request: POST https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia "HTTP/2 400 Bad Request"
+2025-05-23 10:09:28,275 - supabase_utils - ERROR - B³¹d zapisu do Supabase: {'message': "Could not find the 'scraped_at' column of 'ogloszenia' in the schema cache", 'code': 'PGRST204', 'hint': None, 'details': None}
+2025-05-23 10:09:28,756 - httpx - INFO - HTTP Request: GET https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia?select=%2A&url=eq.https%3A%2F%2Fwww.otodom.pl%2Fpl%2Foferta%2Fsloneczne-3-pokoje-blisko-morza-hala-gar-ID4vw1Z "HTTP/2 200 OK"
+2025-05-23 10:09:28,842 - httpx - INFO - HTTP Request: POST https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia "HTTP/2 400 Bad Request"
+2025-05-23 10:09:28,845 - supabase_utils - ERROR - B³¹d zapisu do Supabase: {'message': "Could not find the 'scraped_at' column of 'ogloszenia' in the schema cache", 'code': 'PGRST204', 'hint': None, 'details': None}
+2025-05-23 10:09:29,365 - httpx - INFO - HTTP Request: GET https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia?select=%2A&url=eq.https%3A%2F%2Fwww.otodom.pl%2Fpl%2Foferta%2Fmieszkanie-dwupokojowe-w-kamienicy-ul-kordeckiego-ID4vfv4 "HTTP/2 200 OK"
+2025-05-23 10:09:29,439 - httpx - INFO - HTTP Request: POST https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia "HTTP/2 400 Bad Request"
+2025-05-23 10:09:29,442 - supabase_utils - ERROR - B³¹d zapisu do Supabase: {'message': "Could not find the 'scraped_at' column of 'ogloszenia' in the schema cache", 'code': 'PGRST204', 'hint': None, 'details': None}
+2025-05-23 10:09:29,976 - httpx - INFO - HTTP Request: GET https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia?select=%2A&url=eq.https%3A%2F%2Fwww.otodom.pl%2Fpl%2Foferta%2Fprado-katowice-mieszkanie-4-pok-a2-1-01-ID4qfYu "HTTP/2 200 OK"
+2025-05-23 10:09:30,117 - httpx - INFO - HTTP Request: POST https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia "HTTP/2 400 Bad Request"
+2025-05-23 10:09:30,120 - supabase_utils - ERROR - B³¹d zapisu do Supabase: {'message': "Could not find the 'scraped_at' column of 'ogloszenia' in the schema cache", 'code': 'PGRST204', 'hint': None, 'details': None}
+2025-05-23 10:09:30,640 - httpx - INFO - HTTP Request: GET https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia?select=%2A&url=eq.https%3A%2F%2Fwww.otodom.pl%2Fpl%2Foferta%2Fos-lesne-71m2-piekne-3-pokoje-w-nowym-bloku-ID4wr10 "HTTP/2 200 OK"
+2025-05-23 10:09:30,714 - httpx - INFO - HTTP Request: POST https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia "HTTP/2 400 Bad Request"
+2025-05-23 10:09:30,717 - supabase_utils - ERROR - B³¹d zapisu do Supabase: {'message': "Could not find the 'scraped_at' column of 'ogloszenia' in the schema cache", 'code': 'PGRST204', 'hint': None, 'details': None}
+2025-05-23 10:09:31,182 - httpx - INFO - HTTP Request: GET https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia?select=%2A&url=eq.https%3A%2F%2Fwww.otodom.pl%2Fpl%2Foferta%2Fidealna-alternatywa-dla-domu-jednorodzinnego-ID4wIwa "HTTP/2 200 OK"
+2025-05-23 10:09:31,261 - httpx - INFO - HTTP Request: POST https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia "HTTP/2 400 Bad Request"
+2025-05-23 10:09:31,264 - supabase_utils - ERROR - B³¹d zapisu do Supabase: {'message': "Could not find the 'scraped_at' column of 'ogloszenia' in the schema cache", 'code': 'PGRST204', 'hint': None, 'details': None}
+2025-05-23 10:09:31,728 - httpx - INFO - HTTP Request: GET https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia?select=%2A&url=eq.https%3A%2F%2Fwww.otodom.pl%2Fpl%2Foferta%2Fpiekne-mieszkanie-33-m-z-wyjatkowym-widokiem-ID4uMWJ "HTTP/2 200 OK"
+2025-05-23 10:09:31,800 - httpx - INFO - HTTP Request: POST https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia "HTTP/2 400 Bad Request"
+2025-05-23 10:09:31,802 - supabase_utils - ERROR - B³¹d zapisu do Supabase: {'message': "Could not find the 'scraped_at' column of 'ogloszenia' in the schema cache", 'code': 'PGRST204', 'hint': None, 'details': None}
+2025-05-23 10:09:32,266 - httpx - INFO - HTTP Request: GET https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia?select=%2A&url=eq.https%3A%2F%2Fwww.otodom.pl%2Fpl%2Foferta%2F2-pokoje-37-24m2-loggia-winda-dakar-karolina-ID4vwVT "HTTP/2 200 OK"
+2025-05-23 10:09:32,339 - httpx - INFO - HTTP Request: POST https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia "HTTP/2 400 Bad Request"
+2025-05-23 10:09:32,341 - supabase_utils - ERROR - B³¹d zapisu do Supabase: {'message': "Could not find the 'scraped_at' column of 'ogloszenia' in the schema cache", 'code': 'PGRST204', 'hint': None, 'details': None}
+2025-05-23 10:09:32,813 - httpx - INFO - HTTP Request: GET https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia?select=%2A&url=eq.https%3A%2F%2Fwww.otodom.pl%2Fpl%2Foferta%2Fwinogrady-to-zawsze-dobra-lokalizacja-do-zycia-ID4wM4h "HTTP/2 200 OK"
+2025-05-23 10:09:32,893 - httpx - INFO - HTTP Request: POST https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia "HTTP/2 400 Bad Request"
+2025-05-23 10:09:32,895 - supabase_utils - ERROR - B³¹d zapisu do Supabase: {'message': "Could not find the 'scraped_at' column of 'ogloszenia' in the schema cache", 'code': 'PGRST204', 'hint': None, 'details': None}
+2025-05-23 10:09:33,421 - httpx - INFO - HTTP Request: GET https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia?select=%2A&url=eq.https%3A%2F%2Fwww.otodom.pl%2Fpl%2Foferta%2Fokazja-rabat-miasteczko-siewierz-jeziorna-4-pokoje-ID4vh2T "HTTP/2 200 OK"
+2025-05-23 10:09:33,561 - httpx - INFO - HTTP Request: POST https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia "HTTP/2 400 Bad Request"
+2025-05-23 10:09:33,564 - supabase_utils - ERROR - B³¹d zapisu do Supabase: {'message': "Could not find the 'scraped_at' column of 'ogloszenia' in the schema cache", 'code': 'PGRST204', 'hint': None, 'details': None}
+2025-05-23 10:09:34,035 - httpx - INFO - HTTP Request: GET https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia?select=%2A&url=eq.https%3A%2F%2Fwww.otodom.pl%2Fpl%2Foferta%2Fprzytulne-po-remoncie-widok-na-zatoke-ID4sSHo "HTTP/2 200 OK"
+2025-05-23 10:09:34,102 - httpx - INFO - HTTP Request: POST https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia "HTTP/2 400 Bad Request"
+2025-05-23 10:09:34,104 - supabase_utils - ERROR - B³¹d zapisu do Supabase: {'message': "Could not find the 'scraped_at' column of 'ogloszenia' in the schema cache", 'code': 'PGRST204', 'hint': None, 'details': None}
+2025-05-23 10:09:34,606 - httpx - INFO - HTTP Request: GET https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia?select=%2A&url=eq.https%3A%2F%2Fwww.otodom.pl%2Fpl%2Foferta%2Fekskluzywny-apartament-w-miasteczku-wilanow-ID4v9Gs "HTTP/2 200 OK"
+2025-05-23 10:09:34,880 - httpx - INFO - HTTP Request: POST https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia "HTTP/2 400 Bad Request"
+2025-05-23 10:09:34,883 - supabase_utils - ERROR - B³¹d zapisu do Supabase: {'message': "Could not find the 'scraped_at' column of 'ogloszenia' in the schema cache", 'code': 'PGRST204', 'hint': None, 'details': None}
+2025-05-23 10:09:35,328 - httpx - INFO - HTTP Request: GET https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia?select=%2A&url=eq.https%3A%2F%2Fwww.otodom.pl%2Fpl%2Foferta%2Fbunscha-park-4-0-ostatni-etap-inwestycji-b-m7-2-pok-43-74m2-ID4rsHU "HTTP/2 200 OK"
+2025-05-23 10:09:35,402 - httpx - INFO - HTTP Request: POST https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia "HTTP/2 400 Bad Request"
+2025-05-23 10:09:35,405 - supabase_utils - ERROR - B³¹d zapisu do Supabase: {'message': "Could not find the 'scraped_at' column of 'ogloszenia' in the schema cache", 'code': 'PGRST204', 'hint': None, 'details': None}
+2025-05-23 10:09:35,857 - httpx - INFO - HTTP Request: GET https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia?select=%2A&url=eq.https%3A%2F%2Fwww.otodom.pl%2Fpl%2Foferta%2Fpkp-5-min-od-zaraz-do-remontu-53-6-m2-4-pokoje-ID4vwVQ "HTTP/2 200 OK"
+2025-05-23 10:09:35,939 - httpx - INFO - HTTP Request: POST https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia "HTTP/2 400 Bad Request"
+2025-05-23 10:09:35,942 - supabase_utils - ERROR - B³¹d zapisu do Supabase: {'message': "Could not find the 'scraped_at' column of 'ogloszenia' in the schema cache", 'code': 'PGRST204', 'hint': None, 'details': None}
+2025-05-23 10:09:36,399 - httpx - INFO - HTTP Request: GET https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia?select=%2A&url=eq.https%3A%2F%2Fwww.otodom.pl%2Fpl%2Foferta%2Fmedykow-32-mieszkanie-3-pok-72-ID4nj2G "HTTP/2 200 OK"
+2025-05-23 10:09:36,474 - httpx - INFO - HTTP Request: POST https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia "HTTP/2 400 Bad Request"
+2025-05-23 10:09:36,477 - supabase_utils - ERROR - B³¹d zapisu do Supabase: {'message': "Could not find the 'scraped_at' column of 'ogloszenia' in the schema cache", 'code': 'PGRST204', 'hint': None, 'details': None}
+2025-05-23 10:09:36,945 - httpx - INFO - HTTP Request: GET https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia?select=%2A&url=eq.https%3A%2F%2Fwww.otodom.pl%2Fpl%2Foferta%2Fmilejow-4-pojokowe-mieszkanie-z-balkonem-ID4wZmp "HTTP/2 200 OK"
+2025-05-23 10:09:37,018 - httpx - INFO - HTTP Request: POST https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia "HTTP/2 400 Bad Request"
+2025-05-23 10:09:37,021 - supabase_utils - ERROR - B³¹d zapisu do Supabase: {'message': "Could not find the 'scraped_at' column of 'ogloszenia' in the schema cache", 'code': 'PGRST204', 'hint': None, 'details': None}
+2025-05-23 10:09:37,479 - httpx - INFO - HTTP Request: GET https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia?select=%2A&url=eq.https%3A%2F%2Fwww.otodom.pl%2Fpl%2Foferta%2Fcentrum-starego-miasta-balkon-od-zaraz-ID4vwVN "HTTP/2 200 OK"
+2025-05-23 10:09:37,561 - httpx - INFO - HTTP Request: POST https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia "HTTP/2 400 Bad Request"
+2025-05-23 10:09:37,563 - supabase_utils - ERROR - B³¹d zapisu do Supabase: {'message': "Could not find the 'scraped_at' column of 'ogloszenia' in the schema cache", 'code': 'PGRST204', 'hint': None, 'details': None}
+2025-05-23 10:09:38,018 - httpx - INFO - HTTP Request: GET https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia?select=%2A&url=eq.https%3A%2F%2Fwww.otodom.pl%2Fpl%2Foferta%2F3-pok-63m2-spokojna-okolica-panorama-ID4vwVM "HTTP/2 200 OK"
+2025-05-23 10:09:38,090 - httpx - INFO - HTTP Request: POST https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia "HTTP/2 400 Bad Request"
+2025-05-23 10:09:38,092 - supabase_utils - ERROR - B³¹d zapisu do Supabase: {'message': "Could not find the 'scraped_at' column of 'ogloszenia' in the schema cache", 'code': 'PGRST204', 'hint': None, 'details': None}
+2025-05-23 10:09:38,545 - httpx - INFO - HTTP Request: GET https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia?select=%2A&url=eq.https%3A%2F%2Fwww.otodom.pl%2Fpl%2Foferta%2F4-pokoje-komorka-lokatorska-w-cenie-mieszkania-ID4nYGV "HTTP/2 200 OK"
+2025-05-23 10:09:38,624 - httpx - INFO - HTTP Request: POST https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia "HTTP/2 400 Bad Request"
+2025-05-23 10:09:38,627 - supabase_utils - ERROR - B³¹d zapisu do Supabase: {'message': "Could not find the 'scraped_at' column of 'ogloszenia' in the schema cache", 'code': 'PGRST204', 'hint': None, 'details': None}
+2025-05-23 10:09:39,102 - httpx - INFO - HTTP Request: GET https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia?select=%2A&url=eq.https%3A%2F%2Fwww.otodom.pl%2Fpl%2Foferta%2Fnowogard-4-pokojowe-86m2-2008r-2-mieszkania-ID4wJrb "HTTP/2 200 OK"
+2025-05-23 10:09:39,182 - httpx - INFO - HTTP Request: POST https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia "HTTP/2 400 Bad Request"
+2025-05-23 10:09:39,183 - supabase_utils - ERROR - B³¹d zapisu do Supabase: {'message': "Could not find the 'scraped_at' column of 'ogloszenia' in the schema cache", 'code': 'PGRST204', 'hint': None, 'details': None}
+2025-05-23 10:09:39,661 - httpx - INFO - HTTP Request: GET https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia?select=%2A&url=eq.https%3A%2F%2Fwww.otodom.pl%2Fpl%2Foferta%2Fmieszkanie-na-sprzedaz-2-pokoje-38-6-m2-krakow-wykonczone-wyposazone-ID4voBu "HTTP/2 200 OK"
+2025-05-23 10:09:39,907 - httpx - INFO - HTTP Request: POST https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia "HTTP/2 400 Bad Request"
+2025-05-23 10:09:39,910 - supabase_utils - ERROR - B³¹d zapisu do Supabase: {'message': "Could not find the 'scraped_at' column of 'ogloszenia' in the schema cache", 'code': 'PGRST204', 'hint': None, 'details': None}
+2025-05-23 10:09:40,376 - httpx - INFO - HTTP Request: GET https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia?select=%2A&url=eq.https%3A%2F%2Fwww.otodom.pl%2Fpl%2Foferta%2F2-pokoje-1pietro-balkon-2018r-potulicka-5-ID4uqQz "HTTP/2 200 OK"
+2025-05-23 10:09:40,462 - httpx - INFO - HTTP Request: POST https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia "HTTP/2 400 Bad Request"
+2025-05-23 10:09:40,464 - supabase_utils - ERROR - B³¹d zapisu do Supabase: {'message': "Could not find the 'scraped_at' column of 'ogloszenia' in the schema cache", 'code': 'PGRST204', 'hint': None, 'details': None}
+2025-05-23 10:09:40,921 - httpx - INFO - HTTP Request: GET https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia?select=%2A&url=eq.https%3A%2F%2Fwww.otodom.pl%2Fhpr%2Fpl%2Foferta%2Fostatnie-pietro-widokowy-taras-28-m2-ID4vwVV "HTTP/2 200 OK"
+2025-05-23 10:09:40,992 - httpx - INFO - HTTP Request: POST https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia "HTTP/2 400 Bad Request"
+2025-05-23 10:09:40,993 - supabase_utils - ERROR - B³¹d zapisu do Supabase: {'message': "Could not find the 'scraped_at' column of 'ogloszenia' in the schema cache", 'code': 'PGRST204', 'hint': None, 'details': None}
+2025-05-23 10:09:41,442 - httpx - INFO - HTTP Request: GET https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia?select=%2A&url=eq.https%3A%2F%2Fwww.otodom.pl%2Fpl%2Foferta%2F2-pokojowe-mieszkanie-41m2-balkon-bezposrednio-ID4um6V "HTTP/2 200 OK"
+2025-05-23 10:09:41,512 - httpx - INFO - HTTP Request: POST https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia "HTTP/2 400 Bad Request"
+2025-05-23 10:09:41,514 - supabase_utils - ERROR - B³¹d zapisu do Supabase: {'message': "Could not find the 'scraped_at' column of 'ogloszenia' in the schema cache", 'code': 'PGRST204', 'hint': None, 'details': None}
+2025-05-23 10:09:41,963 - httpx - INFO - HTTP Request: GET https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia?select=%2A&url=eq.https%3A%2F%2Fwww.otodom.pl%2Fpl%2Foferta%2F5-pokojowe-mieszkanie-118m2-taras-bez-prowizji-ID4ui63 "HTTP/2 200 OK"
+2025-05-23 10:09:42,046 - httpx - INFO - HTTP Request: POST https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia "HTTP/2 400 Bad Request"
+2025-05-23 10:09:42,047 - supabase_utils - ERROR - B³¹d zapisu do Supabase: {'message': "Could not find the 'scraped_at' column of 'ogloszenia' in the schema cache", 'code': 'PGRST204', 'hint': None, 'details': None}
+2025-05-23 10:09:42,491 - httpx - INFO - HTTP Request: GET https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia?select=%2A&url=eq.https%3A%2F%2Fwww.otodom.pl%2Fpl%2Foferta%2Fapartament-scisle-centrum-z-tarasem-120mkw-ID4wIyd "HTTP/2 200 OK"
+2025-05-23 10:09:42,568 - httpx - INFO - HTTP Request: POST https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia "HTTP/2 400 Bad Request"
+2025-05-23 10:09:42,571 - supabase_utils - ERROR - B³¹d zapisu do Supabase: {'message': "Could not find the 'scraped_at' column of 'ogloszenia' in the schema cache", 'code': 'PGRST204', 'hint': None, 'details': None}
+2025-05-23 10:09:43,053 - httpx - INFO - HTTP Request: GET https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia?select=%2A&url=eq.https%3A%2F%2Fwww.otodom.pl%2Fpl%2Foferta%2F75-2-mkw-apartament-w-rezydencji-ID4vmTe "HTTP/2 200 OK"
+2025-05-23 10:09:43,200 - httpx - INFO - HTTP Request: POST https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia "HTTP/2 400 Bad Request"
+2025-05-23 10:09:43,203 - supabase_utils - ERROR - B³¹d zapisu do Supabase: {'message': "Could not find the 'scraped_at' column of 'ogloszenia' in the schema cache", 'code': 'PGRST204', 'hint': None, 'details': None}
+2025-05-23 10:09:43,672 - httpx - INFO - HTTP Request: GET https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia?select=%2A&url=eq.https%3A%2F%2Fwww.otodom.pl%2Fpl%2Foferta%2Fwidok-na-gory-pod-adresem-karpacka-60-ID4vwVH "HTTP/2 200 OK"
+2025-05-23 10:09:43,749 - httpx - INFO - HTTP Request: POST https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia "HTTP/2 400 Bad Request"
+2025-05-23 10:09:43,751 - supabase_utils - ERROR - B³¹d zapisu do Supabase: {'message': "Could not find the 'scraped_at' column of 'ogloszenia' in the schema cache", 'code': 'PGRST204', 'hint': None, 'details': None}
+2025-05-23 10:09:44,206 - httpx - INFO - HTTP Request: GET https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia?select=%2A&url=eq.https%3A%2F%2Fwww.otodom.pl%2Fpl%2Foferta%2Fszczecin-przestronne-mieszkanie-w-kamienicy-ID4qqCE "HTTP/2 200 OK"
+2025-05-23 10:09:44,272 - httpx - INFO - HTTP Request: POST https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia "HTTP/2 400 Bad Request"
+2025-05-23 10:09:44,275 - supabase_utils - ERROR - B³¹d zapisu do Supabase: {'message': "Could not find the 'scraped_at' column of 'ogloszenia' in the schema cache", 'code': 'PGRST204', 'hint': None, 'details': None}
+2025-05-23 10:09:44,766 - httpx - INFO - HTTP Request: GET https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia?select=%2A&url=eq.https%3A%2F%2Fwww.otodom.pl%2Fpl%2Foferta%2Fswinoujscie-apartament-nad-morzem-z-garazem-ID4tzbR "HTTP/2 200 OK"
+2025-05-23 10:09:44,864 - httpx - INFO - HTTP Request: POST https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia "HTTP/2 400 Bad Request"
+2025-05-23 10:09:44,867 - supabase_utils - ERROR - B³¹d zapisu do Supabase: {'message': "Could not find the 'scraped_at' column of 'ogloszenia' in the schema cache", 'code': 'PGRST204', 'hint': None, 'details': None}
+2025-05-23 10:09:45,330 - httpx - INFO - HTTP Request: GET https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia?select=%2A&url=eq.https%3A%2F%2Fwww.otodom.pl%2Fpl%2Foferta%2Fmiedzylesie-apartament-z-dwoma-ogrodkami-ID4v3xF "HTTP/2 200 OK"
+2025-05-23 10:09:45,401 - httpx - INFO - HTTP Request: POST https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia "HTTP/2 400 Bad Request"
+2025-05-23 10:09:45,404 - supabase_utils - ERROR - B³¹d zapisu do Supabase: {'message': "Could not find the 'scraped_at' column of 'ogloszenia' in the schema cache", 'code': 'PGRST204', 'hint': None, 'details': None}
+2025-05-23 10:09:45,851 - httpx - INFO - HTTP Request: GET https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia?select=%2A&url=eq.https%3A%2F%2Fwww.otodom.pl%2Fpl%2Foferta%2Fswinoujscie-mieszkanie-inwestycyjne-przy-parku-ID4rgjK "HTTP/2 200 OK"
+2025-05-23 10:09:45,922 - httpx - INFO - HTTP Request: POST https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia "HTTP/2 400 Bad Request"
+2025-05-23 10:09:45,925 - supabase_utils - ERROR - B³¹d zapisu do Supabase: {'message': "Could not find the 'scraped_at' column of 'ogloszenia' in the schema cache", 'code': 'PGRST204', 'hint': None, 'details': None}
+2025-05-23 10:09:46,391 - httpx - INFO - HTTP Request: GET https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia?select=%2A&url=eq.https%3A%2F%2Fwww.otodom.pl%2Fpl%2Foferta%2Fmieszkanie-na-nowym-osiedlu-bez-prowizji-ID4lzMx "HTTP/2 200 OK"
+2025-05-23 10:09:46,462 - httpx - INFO - HTTP Request: POST https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia "HTTP/2 400 Bad Request"
+2025-05-23 10:09:46,465 - supabase_utils - ERROR - B³¹d zapisu do Supabase: {'message': "Could not find the 'scraped_at' column of 'ogloszenia' in the schema cache", 'code': 'PGRST204', 'hint': None, 'details': None}
+2025-05-23 10:09:46,956 - httpx - INFO - HTTP Request: GET https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia?select=%2A&url=eq.https%3A%2F%2Fwww.otodom.pl%2Fpl%2Foferta%2F3-pokoje-71-91-m2-balkon-ID4vwVG "HTTP/2 200 OK"
+2025-05-23 10:09:47,037 - httpx - INFO - HTTP Request: POST https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia "HTTP/2 400 Bad Request"
+2025-05-23 10:09:47,040 - supabase_utils - ERROR - B³¹d zapisu do Supabase: {'message': "Could not find the 'scraped_at' column of 'ogloszenia' in the schema cache", 'code': 'PGRST204', 'hint': None, 'details': None}
+2025-05-23 10:09:47,504 - httpx - INFO - HTTP Request: GET https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia?select=%2A&url=eq.https%3A%2F%2Fwww.otodom.pl%2Fpl%2Foferta%2F100m2-ogrod-komorka-garaz-12min-od-centrum-ID4vwVB "HTTP/2 200 OK"
+2025-05-23 10:09:47,575 - httpx - INFO - HTTP Request: POST https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia "HTTP/2 400 Bad Request"
+2025-05-23 10:09:47,577 - supabase_utils - ERROR - B³¹d zapisu do Supabase: {'message': "Could not find the 'scraped_at' column of 'ogloszenia' in the schema cache", 'code': 'PGRST204', 'hint': None, 'details': None}
+2025-05-23 10:09:48,049 - httpx - INFO - HTTP Request: GET https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia?select=%2A&url=eq.https%3A%2F%2Fwww.otodom.pl%2Fpl%2Foferta%2Fmieszkanie-poznan-grunwald-2-pokoje-balkon-ID4vwVF "HTTP/2 200 OK"
+2025-05-23 10:09:48,133 - httpx - INFO - HTTP Request: POST https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia "HTTP/2 400 Bad Request"
+2025-05-23 10:09:48,135 - supabase_utils - ERROR - B³¹d zapisu do Supabase: {'message': "Could not find the 'scraped_at' column of 'ogloszenia' in the schema cache", 'code': 'PGRST204', 'hint': None, 'details': None}
+2025-05-23 10:09:48,597 - httpx - INFO - HTTP Request: GET https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia?select=%2A&url=eq.https%3A%2F%2Fwww.otodom.pl%2Fpl%2Foferta%2Fmokotow-4pok-metro-park-galeria-ID4vwVC "HTTP/2 200 OK"
+2025-05-23 10:09:48,674 - httpx - INFO - HTTP Request: POST https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia "HTTP/2 400 Bad Request"
+2025-05-23 10:09:48,676 - supabase_utils - ERROR - B³¹d zapisu do Supabase: {'message': "Could not find the 'scraped_at' column of 'ogloszenia' in the schema cache", 'code': 'PGRST204', 'hint': None, 'details': None}
+2025-05-23 10:09:49,138 - httpx - INFO - HTTP Request: GET https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia?select=%2A&url=eq.https%3A%2F%2Fwww.otodom.pl%2Fpl%2Foferta%2Fszczecin-dwupokojowe-mieszkanie-na-starym-miescie-ID4qRIB "HTTP/2 200 OK"
+2025-05-23 10:09:49,224 - httpx - INFO - HTTP Request: POST https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia "HTTP/2 400 Bad Request"
+2025-05-23 10:09:49,226 - supabase_utils - ERROR - B³¹d zapisu do Supabase: {'message': "Could not find the 'scraped_at' column of 'ogloszenia' in the schema cache", 'code': 'PGRST204', 'hint': None, 'details': None}
+2025-05-23 10:09:49,682 - httpx - INFO - HTTP Request: GET https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia?select=%2A&url=eq.https%3A%2F%2Fwww.otodom.pl%2Fpl%2Foferta%2Fswinoujscie-apartament-300-metrow-od-promenady-ID4wQBh "HTTP/2 200 OK"
+2025-05-23 10:09:49,776 - httpx - INFO - HTTP Request: POST https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia "HTTP/2 400 Bad Request"
+2025-05-23 10:09:49,778 - supabase_utils - ERROR - B³¹d zapisu do Supabase: {'message': "Could not find the 'scraped_at' column of 'ogloszenia' in the schema cache", 'code': 'PGRST204', 'hint': None, 'details': None}
+2025-05-23 10:09:50,322 - httpx - INFO - HTTP Request: GET https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia?select=%2A&url=eq.https%3A%2F%2Fwww.otodom.pl%2Fpl%2Foferta%2Fszczecin-dwa-pokoje-ul-heleny-45-22m2-ID4wQty "HTTP/2 200 OK"
+2025-05-23 10:09:50,426 - httpx - INFO - HTTP Request: POST https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia "HTTP/2 400 Bad Request"
+2025-05-23 10:09:50,427 - supabase_utils - ERROR - B³¹d zapisu do Supabase: {'message': "Could not find the 'scraped_at' column of 'ogloszenia' in the schema cache", 'code': 'PGRST204', 'hint': None, 'details': None}
+2025-05-23 10:09:50,872 - httpx - INFO - HTTP Request: GET https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia?select=%2A&url=eq.https%3A%2F%2Fwww.otodom.pl%2Fpl%2Foferta%2Fapartamenty-parkowe-mieszkanie-3-pok-446-ID4twal "HTTP/2 200 OK"
+2025-05-23 10:09:50,952 - httpx - INFO - HTTP Request: POST https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia "HTTP/2 400 Bad Request"
+2025-05-23 10:09:50,955 - supabase_utils - ERROR - B³¹d zapisu do Supabase: {'message': "Could not find the 'scraped_at' column of 'ogloszenia' in the schema cache", 'code': 'PGRST204', 'hint': None, 'details': None}
+2025-05-23 10:09:51,414 - httpx - INFO - HTTP Request: GET https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia?select=%2A&url=eq.https%3A%2F%2Fwww.otodom.pl%2Fpl%2Foferta%2F3-pokoje-w-centrum-idealna-inwestycja-ID4vatY "HTTP/2 200 OK"
+2025-05-23 10:09:51,496 - httpx - INFO - HTTP Request: POST https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia "HTTP/2 400 Bad Request"
+2025-05-23 10:09:51,497 - supabase_utils - ERROR - B³¹d zapisu do Supabase: {'message': "Could not find the 'scraped_at' column of 'ogloszenia' in the schema cache", 'code': 'PGRST204', 'hint': None, 'details': None}
+2025-05-23 10:09:51,954 - httpx - INFO - HTTP Request: GET https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia?select=%2A&url=eq.https%3A%2F%2Fwww.otodom.pl%2Fpl%2Foferta%2Fszczecin-duze-2-poziomowe-mieszkanie-na-sprzedaz-ID4osQd "HTTP/2 200 OK"
+2025-05-23 10:09:52,032 - httpx - INFO - HTTP Request: POST https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia "HTTP/2 400 Bad Request"
+2025-05-23 10:09:52,034 - supabase_utils - ERROR - B³¹d zapisu do Supabase: {'message': "Could not find the 'scraped_at' column of 'ogloszenia' in the schema cache", 'code': 'PGRST204', 'hint': None, 'details': None}
+2025-05-23 10:09:52,490 - httpx - INFO - HTTP Request: GET https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia?select=%2A&url=eq.https%3A%2F%2Fwww.otodom.pl%2Fpl%2Foferta%2F2-pokojowe-mieszkanie-z-widokiem-na-panorame-nysy-ID4tIlf "HTTP/2 200 OK"
+2025-05-23 10:09:52,558 - httpx - INFO - HTTP Request: POST https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia "HTTP/2 400 Bad Request"
+2025-05-23 10:09:52,559 - supabase_utils - ERROR - B³¹d zapisu do Supabase: {'message': "Could not find the 'scraped_at' column of 'ogloszenia' in the schema cache", 'code': 'PGRST204', 'hint': None, 'details': None}
+2025-05-23 10:09:53,037 - httpx - INFO - HTTP Request: GET https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia?select=%2A&url=eq.https%3A%2F%2Fwww.otodom.pl%2Fpl%2Foferta%2Fna-sprzedaz-mieszkanie-66-74-m-z-widokiem-na-gory-ID4tbdJ "HTTP/2 200 OK"
+2025-05-23 10:09:53,127 - httpx - INFO - HTTP Request: POST https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia "HTTP/2 400 Bad Request"
+2025-05-23 10:09:53,128 - supabase_utils - ERROR - B³¹d zapisu do Supabase: {'message': "Could not find the 'scraped_at' column of 'ogloszenia' in the schema cache", 'code': 'PGRST204', 'hint': None, 'details': None}
+2025-05-23 10:09:53,575 - httpx - INFO - HTTP Request: GET https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia?select=%2A&url=eq.https%3A%2F%2Fwww.otodom.pl%2Fpl%2Foferta%2Fnowoczesne-3-pokojowe-mieszkanie-na-sprzedaz-ID4wn3y "HTTP/2 200 OK"
+2025-05-23 10:09:53,643 - httpx - INFO - HTTP Request: POST https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia "HTTP/2 400 Bad Request"
+2025-05-23 10:09:53,645 - supabase_utils - ERROR - B³¹d zapisu do Supabase: {'message': "Could not find the 'scraped_at' column of 'ogloszenia' in the schema cache", 'code': 'PGRST204', 'hint': None, 'details': None}
+2025-05-23 10:09:54,108 - httpx - INFO - HTTP Request: GET https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia?select=%2A&url=eq.https%3A%2F%2Fwww.otodom.pl%2Fpl%2Foferta%2Fmiejsce-gdzie-codziennosc-spotyka-spokoj-w-sercu-zieleni-elblaga-ID4vlxK "HTTP/2 200 OK"
+2025-05-23 10:09:54,181 - httpx - INFO - HTTP Request: POST https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia "HTTP/2 400 Bad Request"
+2025-05-23 10:09:54,183 - supabase_utils - ERROR - B³¹d zapisu do Supabase: {'message': "Could not find the 'scraped_at' column of 'ogloszenia' in the schema cache", 'code': 'PGRST204', 'hint': None, 'details': None}
+2025-05-23 10:09:54,634 - httpx - INFO - HTTP Request: GET https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia?select=%2A&url=eq.https%3A%2F%2Fwww.otodom.pl%2Fpl%2Foferta%2Fdo-sprzedania-apartament-w-centrum-zakopanego-ID4titl "HTTP/2 200 OK"
+2025-05-23 10:09:54,708 - httpx - INFO - HTTP Request: POST https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia "HTTP/2 400 Bad Request"
+2025-05-23 10:09:54,710 - supabase_utils - ERROR - B³¹d zapisu do Supabase: {'message': "Could not find the 'scraped_at' column of 'ogloszenia' in the schema cache", 'code': 'PGRST204', 'hint': None, 'details': None}
+2025-05-23 10:09:55,161 - httpx - INFO - HTTP Request: GET https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia?select=%2A&url=eq.https%3A%2F%2Fwww.otodom.pl%2Fpl%2Foferta%2Fmieszkanie-29-90-m-zakopane-ID4vfb3 "HTTP/2 200 OK"
+2025-05-23 10:09:55,244 - httpx - INFO - HTTP Request: POST https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia "HTTP/2 400 Bad Request"
+2025-05-23 10:09:55,246 - supabase_utils - ERROR - B³¹d zapisu do Supabase: {'message': "Could not find the 'scraped_at' column of 'ogloszenia' in the schema cache", 'code': 'PGRST204', 'hint': None, 'details': None}
+2025-05-23 10:09:55,711 - httpx - INFO - HTTP Request: GET https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia?select=%2A&url=eq.https%3A%2F%2Fwww.otodom.pl%2Fpl%2Foferta%2Fwyjatkowe-2-pok-ataner-naramowicka-serbska-ID4vuMK "HTTP/2 200 OK"
+2025-05-23 10:09:55,787 - httpx - INFO - HTTP Request: POST https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia "HTTP/2 400 Bad Request"
+2025-05-23 10:09:55,790 - supabase_utils - ERROR - B³¹d zapisu do Supabase: {'message': "Could not find the 'scraped_at' column of 'ogloszenia' in the schema cache", 'code': 'PGRST204', 'hint': None, 'details': None}
+2025-05-23 10:09:56,256 - httpx - INFO - HTTP Request: GET https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia?select=%2A&url=eq.https%3A%2F%2Fwww.otodom.pl%2Fpl%2Foferta%2Fapartament-eurosty-spektrum-park-reagana-plaza-ID4wVgB "HTTP/2 200 OK"
+2025-05-23 10:09:56,339 - httpx - INFO - HTTP Request: POST https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia "HTTP/2 400 Bad Request"
+2025-05-23 10:09:56,342 - supabase_utils - ERROR - B³¹d zapisu do Supabase: {'message': "Could not find the 'scraped_at' column of 'ogloszenia' in the schema cache", 'code': 'PGRST204', 'hint': None, 'details': None}
+2025-05-23 10:09:56,817 - httpx - INFO - HTTP Request: GET https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia?select=%2A&url=eq.https%3A%2F%2Fwww.otodom.pl%2Fpl%2Foferta%2Fmieszkanie-pod-klucz-ID4udee "HTTP/2 200 OK"
+2025-05-23 10:09:56,912 - httpx - INFO - HTTP Request: POST https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia "HTTP/2 400 Bad Request"
+2025-05-23 10:09:56,915 - supabase_utils - ERROR - B³¹d zapisu do Supabase: {'message': "Could not find the 'scraped_at' column of 'ogloszenia' in the schema cache", 'code': 'PGRST204', 'hint': None, 'details': None}
+2025-05-23 10:09:57,399 - httpx - INFO - HTTP Request: GET https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia?select=%2A&url=eq.https%3A%2F%2Fwww.otodom.pl%2Fpl%2Foferta%2Fgoclaw-bezposrednio-3-pokoje-80m2-parking-nowaka-jezioranskiego-9-ID4vwVa "HTTP/2 200 OK"
+2025-05-23 10:09:57,470 - httpx - INFO - HTTP Request: POST https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia "HTTP/2 400 Bad Request"
+2025-05-23 10:09:57,471 - supabase_utils - ERROR - B³¹d zapisu do Supabase: {'message': "Could not find the 'scraped_at' column of 'ogloszenia' in the schema cache", 'code': 'PGRST204', 'hint': None, 'details': None}
+2025-05-23 10:09:57,942 - httpx - INFO - HTTP Request: GET https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia?select=%2A&url=eq.https%3A%2F%2Fwww.otodom.pl%2Fpl%2Foferta%2Fnalkowskiej-12-mieszkanie-na-parterze-ID4vmb3 "HTTP/2 200 OK"
+2025-05-23 10:09:58,021 - httpx - INFO - HTTP Request: POST https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia "HTTP/2 400 Bad Request"
+2025-05-23 10:09:58,023 - supabase_utils - ERROR - B³¹d zapisu do Supabase: {'message': "Could not find the 'scraped_at' column of 'ogloszenia' in the schema cache", 'code': 'PGRST204', 'hint': None, 'details': None}
+2025-05-23 10:09:58,496 - httpx - INFO - HTTP Request: GET https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia?select=%2A&url=eq.https%3A%2F%2Fwww.otodom.pl%2Fpl%2Foferta%2Fprzestronna-kawalerka-na-dolach-ID4vq3B "HTTP/2 200 OK"
+2025-05-23 10:09:58,569 - httpx - INFO - HTTP Request: POST https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia "HTTP/2 400 Bad Request"
+2025-05-23 10:09:58,572 - supabase_utils - ERROR - B³¹d zapisu do Supabase: {'message': "Could not find the 'scraped_at' column of 'ogloszenia' in the schema cache", 'code': 'PGRST204', 'hint': None, 'details': None}
+2025-05-23 10:09:59,024 - httpx - INFO - HTTP Request: GET https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia?select=%2A&url=eq.https%3A%2F%2Fwww.otodom.pl%2Fpl%2Foferta%2Fm3-z-balkonem-na-osiedlu-marysin-doly-ID4sG2Z "HTTP/2 200 OK"
+2025-05-23 10:09:59,101 - httpx - INFO - HTTP Request: POST https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia "HTTP/2 400 Bad Request"
+2025-05-23 10:09:59,103 - supabase_utils - ERROR - B³¹d zapisu do Supabase: {'message': "Could not find the 'scraped_at' column of 'ogloszenia' in the schema cache", 'code': 'PGRST204', 'hint': None, 'details': None}
+2025-05-23 10:09:59,590 - httpx - INFO - HTTP Request: GET https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia?select=%2A&url=eq.https%3A%2F%2Fwww.otodom.pl%2Fpl%2Foferta%2Fwyremontowane-przestrzenne-m3-na-retkini-ID4uPYX "HTTP/2 200 OK"
+2025-05-23 10:09:59,673 - httpx - INFO - HTTP Request: POST https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia "HTTP/2 400 Bad Request"
+2025-05-23 10:09:59,675 - supabase_utils - ERROR - B³¹d zapisu do Supabase: {'message': "Could not find the 'scraped_at' column of 'ogloszenia' in the schema cache", 'code': 'PGRST204', 'hint': None, 'details': None}
+2025-05-23 10:10:00,139 - httpx - INFO - HTTP Request: GET https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia?select=%2A&url=eq.https%3A%2F%2Fwww.otodom.pl%2Fpl%2Foferta%2Fokazja-inwestycyjna-kleczkow-3-pok-ID4viWq "HTTP/2 200 OK"
+2025-05-23 10:10:00,228 - httpx - INFO - HTTP Request: POST https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia "HTTP/2 400 Bad Request"
+2025-05-23 10:10:00,230 - supabase_utils - ERROR - B³¹d zapisu do Supabase: {'message': "Could not find the 'scraped_at' column of 'ogloszenia' in the schema cache", 'code': 'PGRST204', 'hint': None, 'details': None}
+2025-05-23 10:10:00,694 - httpx - INFO - HTTP Request: GET https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia?select=%2A&url=eq.https%3A%2F%2Fwww.otodom.pl%2Fpl%2Foferta%2Fprzestronne-mieszkanie-w-inwestycji-krysztalowej-ID4vwVs "HTTP/2 200 OK"
+2025-05-23 10:10:00,762 - httpx - INFO - HTTP Request: POST https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia "HTTP/2 400 Bad Request"
+2025-05-23 10:10:00,764 - supabase_utils - ERROR - B³¹d zapisu do Supabase: {'message': "Could not find the 'scraped_at' column of 'ogloszenia' in the schema cache", 'code': 'PGRST204', 'hint': None, 'details': None}
+2025-05-23 10:10:01,222 - httpx - INFO - HTTP Request: GET https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia?select=%2A&url=eq.https%3A%2F%2Fwww.otodom.pl%2Fpl%2Foferta%2Fjasne-3-pokojowe-mieszkanie-66m2-gorka-narodowa-ID4vpYf "HTTP/2 200 OK"
+2025-05-23 10:10:01,292 - httpx - INFO - HTTP Request: POST https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia "HTTP/2 400 Bad Request"
+2025-05-23 10:10:01,293 - supabase_utils - ERROR - B³¹d zapisu do Supabase: {'message': "Could not find the 'scraped_at' column of 'ogloszenia' in the schema cache", 'code': 'PGRST204', 'hint': None, 'details': None}
+2025-05-23 10:10:01,813 - httpx - INFO - HTTP Request: GET https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia?select=%2A&url=eq.https%3A%2F%2Fwww.otodom.pl%2Fpl%2Foferta%2Fm3-w-kowalu-42-2-m2-do-remntu-2300zl-za-m2-ID4vwVo "HTTP/2 200 OK"
+2025-05-23 10:10:01,891 - httpx - INFO - HTTP Request: POST https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia "HTTP/2 400 Bad Request"
+2025-05-23 10:10:01,892 - supabase_utils - ERROR - B³¹d zapisu do Supabase: {'message': "Could not find the 'scraped_at' column of 'ogloszenia' in the schema cache", 'code': 'PGRST204', 'hint': None, 'details': None}
+2025-05-23 10:10:02,371 - httpx - INFO - HTTP Request: GET https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia?select=%2A&url=eq.https%3A%2F%2Fwww.otodom.pl%2Fpl%2Foferta%2Fprywatny-taras-prestizowa-kamienica-apartament-gotowy-do-obioru-ID4iCzQ "HTTP/2 200 OK"
+2025-05-23 10:10:02,448 - httpx - INFO - HTTP Request: POST https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia "HTTP/2 400 Bad Request"
+2025-05-23 10:10:02,450 - supabase_utils - ERROR - B³¹d zapisu do Supabase: {'message': "Could not find the 'scraped_at' column of 'ogloszenia' in the schema cache", 'code': 'PGRST204', 'hint': None, 'details': None}
+2025-05-23 10:10:02,918 - httpx - INFO - HTTP Request: GET https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia?select=%2A&url=eq.https%3A%2F%2Fwww.otodom.pl%2Fhpr%2Fpl%2Foferta%2F75-2-mkw-apartament-w-rezydencji-ID4vmTe "HTTP/2 200 OK"
+2025-05-23 10:10:02,996 - httpx - INFO - HTTP Request: POST https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia "HTTP/2 400 Bad Request"
+2025-05-23 10:10:02,997 - supabase_utils - ERROR - B³¹d zapisu do Supabase: {'message': "Could not find the 'scraped_at' column of 'ogloszenia' in the schema cache", 'code': 'PGRST204', 'hint': None, 'details': None}
+2025-05-23 10:10:02,998 - __main__ - INFO - Zapisano 0/78 og³oszeñ z otodom
+2025-05-23 10:10:02,998 - __main__ - INFO - Ca³kowita liczba zapisanych og³oszeñ: 0
+2025-05-23 10:10:02,998 - __main__ - INFO - Zakoñczono scraping
+2025-05-23 10:11:30,938 - __main__ - INFO - Rozpoczynam scraping portali nieruchomoœci
+2025-05-23 10:11:30,938 - __main__ - INFO - Rozpoczynam scraping: freedom
+2025-05-23 10:11:30,938 - scrapers.freedom - INFO - Scrapujê Freedom.pl - strona 1
+2025-05-23 10:11:32,196 - scrapers.freedom - WARNING - Nie znaleziono og³oszeñ na stronie 1
+2025-05-23 10:11:32,196 - scrapers.freedom - INFO - Pobrano 0 og³oszeñ z Freedom.pl
+2025-05-23 10:11:32,196 - __main__ - INFO - Zakoñczono scraping freedom: 0 og³oszeñ
+2025-05-23 10:11:32,196 - __main__ - INFO - Rozpoczynam scraping: otodom
+2025-05-23 10:11:32,196 - scrapers.otodom - INFO - Scrapujê Otodom.pl - strona 1
+2025-05-23 10:11:32,197 - utils - WARNING - Selenium nie jest zainstalowany, u¿ywam requests
+2025-05-23 10:11:33,955 - scrapers.otodom - INFO - Scrapujê Otodom.pl - strona 2
+2025-05-23 10:11:33,958 - utils - WARNING - Selenium nie jest zainstalowany, u¿ywam requests
+2025-05-23 10:11:36,562 - scrapers.otodom - INFO - Pobrano 60 og³oszeñ z Otodom.pl
+2025-05-23 10:11:36,563 - __main__ - INFO - Zakoñczono scraping otodom: 60 og³oszeñ
+2025-05-23 10:11:36,565 - __main__ - INFO - Rozpoczynam scraping: metrohouse
+2025-05-23 10:11:36,566 - scrapers.metrohouse - INFO - Scrapujê Metrohouse.pl - strona 1
+2025-05-23 10:11:37,252 - scrapers.metrohouse - WARNING - Nie znaleziono og³oszeñ na stronie 1
+2025-05-23 10:11:37,252 - scrapers.metrohouse - INFO - Pobrano 0 og³oszeñ z Metrohouse.pl
+2025-05-23 10:11:37,252 - __main__ - INFO - Zakoñczono scraping metrohouse: 0 og³oszeñ
+2025-05-23 10:11:37,253 - __main__ - INFO - Rozpoczynam scraping: domiporta
+2025-05-23 10:11:37,253 - scrapers.domiporta - INFO - Scrapujê Domiporta.pl - strona 1
+2025-05-23 10:11:37,932 - scrapers.domiporta - WARNING - Nie znaleziono og³oszeñ na stronie 1
+2025-05-23 10:11:37,933 - scrapers.domiporta - INFO - Pobrano 0 og³oszeñ z Domiporta.pl
+2025-05-23 10:11:37,933 - __main__ - INFO - Zakoñczono scraping domiporta: 0 og³oszeñ
+2025-05-23 10:11:37,933 - __main__ - INFO - Rozpoczynam scraping: gratka
+2025-05-23 10:11:37,934 - scrapers.gratka - INFO - Scrapujê Gratka.pl - strona 1
+2025-05-23 10:11:38,287 - scrapers.gratka - WARNING - Nie znaleziono og³oszeñ na stronie 1
+2025-05-23 10:11:38,287 - scrapers.gratka - INFO - Pobrano 0 og³oszeñ z Gratka.pl
+2025-05-23 10:11:38,288 - __main__ - INFO - Zakoñczono scraping gratka: 0 og³oszeñ
+2025-05-23 10:11:38,288 - __main__ - INFO - Rozpoczynam scraping: olx
+2025-05-23 10:11:38,288 - scrapers.olx - INFO - Scrapujê OLX.pl - strona 1
+2025-05-23 10:11:43,909 - scrapers.olx - INFO - Scrapujê OLX.pl - strona 2
+2025-05-23 10:11:46,192 - scrapers.olx - INFO - Pobrano 0 og³oszeñ z OLX.pl
+2025-05-23 10:11:46,194 - __main__ - INFO - Zakoñczono scraping olx: 0 og³oszeñ
+2025-05-23 10:11:46,196 - __main__ - INFO - Ca³kowita liczba pobranych og³oszeñ: 60
+2025-05-23 10:11:47,042 - httpx - INFO - HTTP Request: GET https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia?select=%2A&url=eq.https%3A%2F%2Fwww.otodom.pl%2Fpl%2Foferta%2Fpakiet-2-mieszkan-inwestycyjnych-stopa-8-tramwaje-uczelnie-pkp-glowna-ID4va9n "HTTP/2 200 OK"
+2025-05-23 10:11:47,112 - httpx - INFO - HTTP Request: POST https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia "HTTP/2 400 Bad Request"
+2025-05-23 10:11:47,115 - supabase_utils - ERROR - B³¹d zapisu do Supabase: {'message': "Could not find the 'scraper_version' column of 'ogloszenia' in the schema cache", 'code': 'PGRST204', 'hint': None, 'details': None}
+2025-05-23 10:11:47,605 - httpx - INFO - HTTP Request: GET https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia?select=%2A&url=eq.https%3A%2F%2Fwww.otodom.pl%2Fpl%2Foferta%2Fokazja-luksusowy-apartament-e5-w-budynku-z-basenem-ID4uMzF "HTTP/2 200 OK"
+2025-05-23 10:11:47,716 - httpx - INFO - HTTP Request: POST https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia "HTTP/2 400 Bad Request"
+2025-05-23 10:11:47,719 - supabase_utils - ERROR - B³¹d zapisu do Supabase: {'message': "Could not find the 'scraper_version' column of 'ogloszenia' in the schema cache", 'code': 'PGRST204', 'hint': None, 'details': None}
+2025-05-23 10:11:48,185 - httpx - INFO - HTTP Request: GET https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia?select=%2A&url=eq.https%3A%2F%2Fwww.otodom.pl%2Fpl%2Foferta%2Fna-start-idealne-pod-inwestycje-osobna-kuchnia-ID4vt9q "HTTP/2 200 OK"
+2025-05-23 10:11:48,260 - httpx - INFO - HTTP Request: POST https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia "HTTP/2 400 Bad Request"
+2025-05-23 10:11:48,261 - supabase_utils - ERROR - B³¹d zapisu do Supabase: {'message': "Could not find the 'scraper_version' column of 'ogloszenia' in the schema cache", 'code': 'PGRST204', 'hint': None, 'details': None}
+2025-05-23 10:11:48,729 - httpx - INFO - HTTP Request: GET https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia?select=%2A&url=eq.https%3A%2F%2Fwww.otodom.pl%2Fpl%2Foferta%2F2-pokoje-na-nowoczesnym-zielonym-osiedlu-ID4vwXm "HTTP/2 200 OK"
+2025-05-23 10:11:48,808 - httpx - INFO - HTTP Request: POST https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia "HTTP/2 400 Bad Request"
+2025-05-23 10:11:48,811 - supabase_utils - ERROR - B³¹d zapisu do Supabase: {'message': "Could not find the 'scraper_version' column of 'ogloszenia' in the schema cache", 'code': 'PGRST204', 'hint': None, 'details': None}
+2025-05-23 10:11:49,272 - httpx - INFO - HTTP Request: GET https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia?select=%2A&url=eq.https%3A%2F%2Fwww.otodom.pl%2Fpl%2Foferta%2Fwyjatkowe-3-pokoje-wysoki-standard-bemowo-ID4vwXn "HTTP/2 200 OK"
+2025-05-23 10:11:49,345 - httpx - INFO - HTTP Request: POST https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia "HTTP/2 400 Bad Request"
+2025-05-23 10:11:49,347 - supabase_utils - ERROR - B³¹d zapisu do Supabase: {'message': "Could not find the 'scraper_version' column of 'ogloszenia' in the schema cache", 'code': 'PGRST204', 'hint': None, 'details': None}
+2025-05-23 10:11:49,839 - httpx - INFO - HTTP Request: GET https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia?select=%2A&url=eq.https%3A%2F%2Fwww.otodom.pl%2Fpl%2Foferta%2Fprzy-zieleni-zaraz-odbierz-rabat-dni-otwarte-24-05-ID4vwXg "HTTP/2 200 OK"
+2025-05-23 10:11:49,919 - httpx - INFO - HTTP Request: POST https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia "HTTP/2 400 Bad Request"
+2025-05-23 10:11:49,922 - supabase_utils - ERROR - B³¹d zapisu do Supabase: {'message': "Could not find the 'scraper_version' column of 'ogloszenia' in the schema cache", 'code': 'PGRST204', 'hint': None, 'details': None}
+2025-05-23 10:11:50,393 - httpx - INFO - HTTP Request: GET https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia?select=%2A&url=eq.https%3A%2F%2Fwww.otodom.pl%2Fpl%2Foferta%2Fustawne-2-pokojewe-mieszkanie-garaz-ID4vwXi "HTTP/2 200 OK"
+2025-05-23 10:11:50,465 - httpx - INFO - HTTP Request: POST https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia "HTTP/2 400 Bad Request"
+2025-05-23 10:11:50,466 - supabase_utils - ERROR - B³¹d zapisu do Supabase: {'message': "Could not find the 'scraper_version' column of 'ogloszenia' in the schema cache", 'code': 'PGRST204', 'hint': None, 'details': None}
+2025-05-23 10:11:50,956 - httpx - INFO - HTTP Request: GET https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia?select=%2A&url=eq.https%3A%2F%2Fwww.otodom.pl%2Fpl%2Foferta%2F3-pokoje-wysoki-standard-0-pcc-0-prowizji-rabaty-ID4vwXj "HTTP/2 200 OK"
+2025-05-23 10:11:51,041 - httpx - INFO - HTTP Request: POST https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia "HTTP/2 400 Bad Request"
+2025-05-23 10:11:51,044 - supabase_utils - ERROR - B³¹d zapisu do Supabase: {'message': "Could not find the 'scraper_version' column of 'ogloszenia' in the schema cache", 'code': 'PGRST204', 'hint': None, 'details': None}
+2025-05-23 10:11:51,501 - httpx - INFO - HTTP Request: GET https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia?select=%2A&url=eq.https%3A%2F%2Fwww.otodom.pl%2Fpl%2Foferta%2F3-pokojowe-mieszkanie-balkon-osiedle-mlodych-ID4vwXk "HTTP/2 200 OK"
+2025-05-23 10:11:51,569 - httpx - INFO - HTTP Request: POST https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia "HTTP/2 400 Bad Request"
+2025-05-23 10:11:51,570 - supabase_utils - ERROR - B³¹d zapisu do Supabase: {'message': "Could not find the 'scraper_version' column of 'ogloszenia' in the schema cache", 'code': 'PGRST204', 'hint': None, 'details': None}
+2025-05-23 10:11:52,023 - httpx - INFO - HTTP Request: GET https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia?select=%2A&url=eq.https%3A%2F%2Fwww.otodom.pl%2Fpl%2Foferta%2Fbiokominek-i-ogrod-60-m2-3-pokoje-obok-centrum-ID4wqdW "HTTP/2 200 OK"
+2025-05-23 10:11:52,099 - httpx - INFO - HTTP Request: POST https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia "HTTP/2 400 Bad Request"
+2025-05-23 10:11:52,102 - supabase_utils - ERROR - B³¹d zapisu do Supabase: {'message': "Could not find the 'scraper_version' column of 'ogloszenia' in the schema cache", 'code': 'PGRST204', 'hint': None, 'details': None}
+2025-05-23 10:11:52,568 - httpx - INFO - HTTP Request: GET https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia?select=%2A&url=eq.https%3A%2F%2Fwww.otodom.pl%2Fpl%2Foferta%2Fsprzedam-mieszkanie-stablowice-43-5-m2-plus-piwnic-ID4s5ns "HTTP/2 200 OK"
+2025-05-23 10:11:52,637 - httpx - INFO - HTTP Request: POST https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia "HTTP/2 400 Bad Request"
+2025-05-23 10:11:52,637 - supabase_utils - ERROR - B³¹d zapisu do Supabase: {'message': "Could not find the 'scraper_version' column of 'ogloszenia' in the schema cache", 'code': 'PGRST204', 'hint': None, 'details': None}
+2025-05-23 10:11:53,097 - httpx - INFO - HTTP Request: GET https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia?select=%2A&url=eq.https%3A%2F%2Fwww.otodom.pl%2Fpl%2Foferta%2Fkawalerka-gotowa-do-wprowadzenia-sie-ID4wArs "HTTP/2 200 OK"
+2025-05-23 10:11:53,190 - httpx - INFO - HTTP Request: POST https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia "HTTP/2 400 Bad Request"
+2025-05-23 10:11:53,192 - supabase_utils - ERROR - B³¹d zapisu do Supabase: {'message': "Could not find the 'scraper_version' column of 'ogloszenia' in the schema cache", 'code': 'PGRST204', 'hint': None, 'details': None}
+2025-05-23 10:11:53,699 - httpx - INFO - HTTP Request: GET https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia?select=%2A&url=eq.https%3A%2F%2Fwww.otodom.pl%2Fpl%2Foferta%2Fwyjatkowy-apartament-w-sercu-stolicy-ID4uSzD "HTTP/2 200 OK"
+2025-05-23 10:11:53,775 - httpx - INFO - HTTP Request: POST https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia "HTTP/2 400 Bad Request"
+2025-05-23 10:11:53,777 - supabase_utils - ERROR - B³¹d zapisu do Supabase: {'message': "Could not find the 'scraper_version' column of 'ogloszenia' in the schema cache", 'code': 'PGRST204', 'hint': None, 'details': None}
+2025-05-23 10:11:54,279 - httpx - INFO - HTTP Request: GET https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia?select=%2A&url=eq.https%3A%2F%2Fwww.otodom.pl%2Fpl%2Foferta%2Fokazja-inwestycyjna-na-woli-ID4w6WQ "HTTP/2 200 OK"
+2025-05-23 10:11:54,356 - httpx - INFO - HTTP Request: POST https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia "HTTP/2 400 Bad Request"
+2025-05-23 10:11:54,358 - supabase_utils - ERROR - B³¹d zapisu do Supabase: {'message': "Could not find the 'scraper_version' column of 'ogloszenia' in the schema cache", 'code': 'PGRST204', 'hint': None, 'details': None}
+2025-05-23 10:11:54,812 - httpx - INFO - HTTP Request: GET https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia?select=%2A&url=eq.https%3A%2F%2Fwww.otodom.pl%2Fpl%2Foferta%2F4-pokojowy-apartament-88m2-balkon-bezposrednio-ID4ug6Z "HTTP/2 200 OK"
+2025-05-23 10:11:54,901 - httpx - INFO - HTTP Request: POST https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia "HTTP/2 400 Bad Request"
+2025-05-23 10:11:54,903 - supabase_utils - ERROR - B³¹d zapisu do Supabase: {'message': "Could not find the 'scraper_version' column of 'ogloszenia' in the schema cache", 'code': 'PGRST204', 'hint': None, 'details': None}
+2025-05-23 10:11:55,359 - httpx - INFO - HTTP Request: GET https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia?select=%2A&url=eq.https%3A%2F%2Fwww.otodom.pl%2Fpl%2Foferta%2F0-prow-3pokojowe-mieszkanie-w-sercu-jeleniej-gory-ID4wLLH "HTTP/2 200 OK"
+2025-05-23 10:11:55,436 - httpx - INFO - HTTP Request: POST https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia "HTTP/2 400 Bad Request"
+2025-05-23 10:11:55,438 - supabase_utils - ERROR - B³¹d zapisu do Supabase: {'message': "Could not find the 'scraper_version' column of 'ogloszenia' in the schema cache", 'code': 'PGRST204', 'hint': None, 'details': None}
+2025-05-23 10:11:55,917 - httpx - INFO - HTTP Request: GET https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia?select=%2A&url=eq.https%3A%2F%2Fwww.otodom.pl%2Fpl%2Foferta%2Fos-boleslawa-chrobrego-z-wyposazeniem-ID4vwX9 "HTTP/2 200 OK"
+2025-05-23 10:11:55,991 - httpx - INFO - HTTP Request: POST https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia "HTTP/2 400 Bad Request"
+2025-05-23 10:11:55,994 - supabase_utils - ERROR - B³¹d zapisu do Supabase: {'message': "Could not find the 'scraper_version' column of 'ogloszenia' in the schema cache", 'code': 'PGRST204', 'hint': None, 'details': None}
+2025-05-23 10:11:56,490 - httpx - INFO - HTTP Request: GET https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia?select=%2A&url=eq.https%3A%2F%2Fwww.otodom.pl%2Fpl%2Foferta%2Fmieszkanie-z-widokiem-w-eleganckiej-kamienicy-ID4vwXa "HTTP/2 200 OK"
+2025-05-23 10:11:56,565 - httpx - INFO - HTTP Request: POST https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia "HTTP/2 400 Bad Request"
+2025-05-23 10:11:56,567 - supabase_utils - ERROR - B³¹d zapisu do Supabase: {'message': "Could not find the 'scraper_version' column of 'ogloszenia' in the schema cache", 'code': 'PGRST204', 'hint': None, 'details': None}
+2025-05-23 10:11:57,037 - httpx - INFO - HTTP Request: GET https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia?select=%2A&url=eq.https%3A%2F%2Fwww.otodom.pl%2Fpl%2Foferta%2F2-pokoje-po-remoncie-spokojna-okolica-ID4v8az "HTTP/2 200 OK"
+2025-05-23 10:11:57,106 - httpx - INFO - HTTP Request: POST https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia "HTTP/2 400 Bad Request"
+2025-05-23 10:11:57,107 - supabase_utils - ERROR - B³¹d zapisu do Supabase: {'message': "Could not find the 'scraper_version' column of 'ogloszenia' in the schema cache", 'code': 'PGRST204', 'hint': None, 'details': None}
+2025-05-23 10:11:57,568 - httpx - INFO - HTTP Request: GET https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia?select=%2A&url=eq.https%3A%2F%2Fwww.otodom.pl%2Fpl%2Foferta%2F2-pokoje-cicha-okolica-i-swietna-lokalizacja-ID4vivC "HTTP/2 200 OK"
+2025-05-23 10:11:57,640 - httpx - INFO - HTTP Request: POST https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia "HTTP/2 400 Bad Request"
+2025-05-23 10:11:57,641 - supabase_utils - ERROR - B³¹d zapisu do Supabase: {'message': "Could not find the 'scraper_version' column of 'ogloszenia' in the schema cache", 'code': 'PGRST204', 'hint': None, 'details': None}
+2025-05-23 10:11:58,121 - httpx - INFO - HTTP Request: GET https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia?select=%2A&url=eq.https%3A%2F%2Fwww.otodom.pl%2Fpl%2Foferta%2F3-pok-metro-kondratowicza-100m-las-brodnowski-ID4viz4 "HTTP/2 200 OK"
+2025-05-23 10:11:58,203 - httpx - INFO - HTTP Request: POST https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia "HTTP/2 400 Bad Request"
+2025-05-23 10:11:58,206 - supabase_utils - ERROR - B³¹d zapisu do Supabase: {'message': "Could not find the 'scraper_version' column of 'ogloszenia' in the schema cache", 'code': 'PGRST204', 'hint': None, 'details': None}
+2025-05-23 10:11:58,678 - httpx - INFO - HTTP Request: GET https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia?select=%2A&url=eq.https%3A%2F%2Fwww.otodom.pl%2Fhpr%2Fpl%2Foferta%2F2-pokoje-na-nowoczesnym-zielonym-osiedlu-ID4vwXm "HTTP/2 200 OK"
+2025-05-23 10:11:58,748 - httpx - INFO - HTTP Request: POST https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia "HTTP/2 400 Bad Request"
+2025-05-23 10:11:58,749 - supabase_utils - ERROR - B³¹d zapisu do Supabase: {'message': "Could not find the 'scraper_version' column of 'ogloszenia' in the schema cache", 'code': 'PGRST204', 'hint': None, 'details': None}
+2025-05-23 10:11:59,229 - httpx - INFO - HTTP Request: GET https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia?select=%2A&url=eq.https%3A%2F%2Fwww.otodom.pl%2Fpl%2Foferta%2F2-pokojowe-mieszkanie-39m2-balkon-ID4ui49 "HTTP/2 200 OK"
+2025-05-23 10:11:59,336 - httpx - INFO - HTTP Request: POST https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia "HTTP/2 400 Bad Request"
+2025-05-23 10:11:59,336 - supabase_utils - ERROR - B³¹d zapisu do Supabase: {'message': "Could not find the 'scraper_version' column of 'ogloszenia' in the schema cache", 'code': 'PGRST204', 'hint': None, 'details': None}
+2025-05-23 10:11:59,839 - httpx - INFO - HTTP Request: GET https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia?select=%2A&url=eq.https%3A%2F%2Fwww.otodom.pl%2Fpl%2Foferta%2F3-pokojowe-mieszkanie-59m2-balkon-bez-prowizji-ID4ui4x "HTTP/2 200 OK"
+2025-05-23 10:11:59,912 - httpx - INFO - HTTP Request: POST https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia "HTTP/2 400 Bad Request"
+2025-05-23 10:11:59,913 - supabase_utils - ERROR - B³¹d zapisu do Supabase: {'message': "Could not find the 'scraper_version' column of 'ogloszenia' in the schema cache", 'code': 'PGRST204', 'hint': None, 'details': None}
+2025-05-23 10:12:00,379 - httpx - INFO - HTTP Request: GET https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia?select=%2A&url=eq.https%3A%2F%2Fwww.otodom.pl%2Fpl%2Foferta%2F3-pokojowe-mieszkanie-45m2-balkon-bez-prowizji-ID4u9QO "HTTP/2 200 OK"
+2025-05-23 10:12:00,449 - httpx - INFO - HTTP Request: POST https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia "HTTP/2 400 Bad Request"
+2025-05-23 10:12:00,451 - supabase_utils - ERROR - B³¹d zapisu do Supabase: {'message': "Could not find the 'scraper_version' column of 'ogloszenia' in the schema cache", 'code': 'PGRST204', 'hint': None, 'details': None}
+2025-05-23 10:12:00,937 - httpx - INFO - HTTP Request: GET https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia?select=%2A&url=eq.https%3A%2F%2Fwww.otodom.pl%2Fpl%2Foferta%2F3-pok-w-kamienicy-w-centrum-z-balkonem-ID4wI9c "HTTP/2 200 OK"
+2025-05-23 10:12:01,011 - httpx - INFO - HTTP Request: POST https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia "HTTP/2 400 Bad Request"
+2025-05-23 10:12:01,011 - supabase_utils - ERROR - B³¹d zapisu do Supabase: {'message': "Could not find the 'scraper_version' column of 'ogloszenia' in the schema cache", 'code': 'PGRST204', 'hint': None, 'details': None}
+2025-05-23 10:12:01,516 - httpx - INFO - HTTP Request: GET https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia?select=%2A&url=eq.https%3A%2F%2Fwww.otodom.pl%2Fpl%2Foferta%2F1-pokoj-xii-pietro-piekny-panoramiczny-widok-ID4vo5t "HTTP/2 200 OK"
+2025-05-23 10:12:01,601 - httpx - INFO - HTTP Request: POST https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia "HTTP/2 400 Bad Request"
+2025-05-23 10:12:01,603 - supabase_utils - ERROR - B³¹d zapisu do Supabase: {'message': "Could not find the 'scraper_version' column of 'ogloszenia' in the schema cache", 'code': 'PGRST204', 'hint': None, 'details': None}
+2025-05-23 10:12:02,074 - httpx - INFO - HTTP Request: GET https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia?select=%2A&url=eq.https%3A%2F%2Fwww.otodom.pl%2Fpl%2Foferta%2Fokazja-sloneczne-duzy-balkon-lokalizacja-ID4viQz "HTTP/2 200 OK"
+2025-05-23 10:12:02,147 - httpx - INFO - HTTP Request: POST https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia "HTTP/2 400 Bad Request"
+2025-05-23 10:12:02,148 - supabase_utils - ERROR - B³¹d zapisu do Supabase: {'message': "Could not find the 'scraper_version' column of 'ogloszenia' in the schema cache", 'code': 'PGRST204', 'hint': None, 'details': None}
+2025-05-23 10:12:02,620 - httpx - INFO - HTTP Request: GET https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia?select=%2A&url=eq.https%3A%2F%2Fwww.otodom.pl%2Fpl%2Foferta%2Fkawalerka-po-remoncie-swietna-lokalizacja-ID4vosN "HTTP/2 200 OK"
+2025-05-23 10:12:02,692 - httpx - INFO - HTTP Request: POST https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia "HTTP/2 400 Bad Request"
+2025-05-23 10:12:02,693 - supabase_utils - ERROR - B³¹d zapisu do Supabase: {'message': "Could not find the 'scraper_version' column of 'ogloszenia' in the schema cache", 'code': 'PGRST204', 'hint': None, 'details': None}
+2025-05-23 10:12:03,180 - httpx - INFO - HTTP Request: GET https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia?select=%2A&url=eq.https%3A%2F%2Fwww.otodom.pl%2Fpl%2Foferta%2Fnowe-widokowe-mieszkanie-z-balkonem-od-wschodu-ID4vwX4 "HTTP/2 200 OK"
+2025-05-23 10:12:03,265 - httpx - INFO - HTTP Request: POST https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia "HTTP/2 400 Bad Request"
+2025-05-23 10:12:03,266 - supabase_utils - ERROR - B³¹d zapisu do Supabase: {'message': "Could not find the 'scraper_version' column of 'ogloszenia' in the schema cache", 'code': 'PGRST204', 'hint': None, 'details': None}
+2025-05-23 10:12:03,761 - httpx - INFO - HTTP Request: GET https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia?select=%2A&url=eq.https%3A%2F%2Fwww.otodom.pl%2Fpl%2Foferta%2Frozkladowe-2-pokoje-na-parterze-w-centrum-ID4vuMP "HTTP/2 200 OK"
+2025-05-23 10:12:03,836 - httpx - INFO - HTTP Request: POST https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia "HTTP/2 400 Bad Request"
+2025-05-23 10:12:03,837 - supabase_utils - ERROR - B³¹d zapisu do Supabase: {'message': "Could not find the 'scraper_version' column of 'ogloszenia' in the schema cache", 'code': 'PGRST204', 'hint': None, 'details': None}
+2025-05-23 10:12:04,305 - httpx - INFO - HTTP Request: GET https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia?select=%2A&url=eq.https%3A%2F%2Fwww.otodom.pl%2Fpl%2Foferta%2Fprzestronne-2-pokoje-z-mozliwoscia-adaptacji-na-3-ID4wXAU "HTTP/2 200 OK"
+2025-05-23 10:12:04,374 - httpx - INFO - HTTP Request: POST https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia "HTTP/2 400 Bad Request"
+2025-05-23 10:12:04,375 - supabase_utils - ERROR - B³¹d zapisu do Supabase: {'message': "Could not find the 'scraper_version' column of 'ogloszenia' in the schema cache", 'code': 'PGRST204', 'hint': None, 'details': None}
+2025-05-23 10:12:04,840 - httpx - INFO - HTTP Request: GET https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia?select=%2A&url=eq.https%3A%2F%2Fwww.otodom.pl%2Fpl%2Foferta%2Fmieszkanie-z-ogrodkiem-lub-balkon-mosina-ID4v81O "HTTP/2 200 OK"
+2025-05-23 10:12:04,929 - httpx - INFO - HTTP Request: POST https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia "HTTP/2 400 Bad Request"
+2025-05-23 10:12:04,930 - supabase_utils - ERROR - B³¹d zapisu do Supabase: {'message': "Could not find the 'scraper_version' column of 'ogloszenia' in the schema cache", 'code': 'PGRST204', 'hint': None, 'details': None}
+2025-05-23 10:12:05,412 - httpx - INFO - HTTP Request: GET https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia?select=%2A&url=eq.https%3A%2F%2Fwww.otodom.pl%2Fpl%2Foferta%2Fostatnie-pietro-widokowy-taras-28-m2-ID4vwVV "HTTP/2 200 OK"
+2025-05-23 10:12:05,492 - httpx - INFO - HTTP Request: POST https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia "HTTP/2 400 Bad Request"
+2025-05-23 10:12:05,492 - supabase_utils - ERROR - B³¹d zapisu do Supabase: {'message': "Could not find the 'scraper_version' column of 'ogloszenia' in the schema cache", 'code': 'PGRST204', 'hint': None, 'details': None}
+2025-05-23 10:12:05,978 - httpx - INFO - HTTP Request: GET https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia?select=%2A&url=eq.https%3A%2F%2Fwww.otodom.pl%2Fpl%2Foferta%2Ftarnowo-podg-nowe-3-pok-stan-developerski-ID4vra8 "HTTP/2 200 OK"
+2025-05-23 10:12:06,076 - httpx - INFO - HTTP Request: POST https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia "HTTP/2 400 Bad Request"
+2025-05-23 10:12:06,077 - supabase_utils - ERROR - B³¹d zapisu do Supabase: {'message': "Could not find the 'scraper_version' column of 'ogloszenia' in the schema cache", 'code': 'PGRST204', 'hint': None, 'details': None}
+2025-05-23 10:12:06,567 - httpx - INFO - HTTP Request: GET https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia?select=%2A&url=eq.https%3A%2F%2Fwww.otodom.pl%2Fpl%2Foferta%2F3-pokojowe-mieszkanie-53m2-balkon-ID4wZDN "HTTP/2 200 OK"
+2025-05-23 10:12:06,643 - httpx - INFO - HTTP Request: POST https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia "HTTP/2 400 Bad Request"
+2025-05-23 10:12:06,643 - supabase_utils - ERROR - B³¹d zapisu do Supabase: {'message': "Could not find the 'scraper_version' column of 'ogloszenia' in the schema cache", 'code': 'PGRST204', 'hint': None, 'details': None}
+2025-05-23 10:12:07,145 - httpx - INFO - HTTP Request: GET https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia?select=%2A&url=eq.https%3A%2F%2Fwww.otodom.pl%2Fpl%2Foferta%2Fapartament-iii-pokojowy-laskowicka-ID4wTrX "HTTP/2 200 OK"
+2025-05-23 10:12:07,229 - httpx - INFO - HTTP Request: POST https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia "HTTP/2 400 Bad Request"
+2025-05-23 10:12:07,229 - supabase_utils - ERROR - B³¹d zapisu do Supabase: {'message': "Could not find the 'scraper_version' column of 'ogloszenia' in the schema cache", 'code': 'PGRST204', 'hint': None, 'details': None}
+2025-05-23 10:12:07,709 - httpx - INFO - HTTP Request: GET https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia?select=%2A&url=eq.https%3A%2F%2Fwww.otodom.pl%2Fpl%2Foferta%2F3-pokojowe-mieszkanie-68m2-balkon-bez-prowizji-ID4ulCg "HTTP/2 200 OK"
+2025-05-23 10:12:07,781 - httpx - INFO - HTTP Request: POST https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia "HTTP/2 400 Bad Request"
+2025-05-23 10:12:07,783 - supabase_utils - ERROR - B³¹d zapisu do Supabase: {'message': "Could not find the 'scraper_version' column of 'ogloszenia' in the schema cache", 'code': 'PGRST204', 'hint': None, 'details': None}
+2025-05-23 10:12:08,257 - httpx - INFO - HTTP Request: GET https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia?select=%2A&url=eq.https%3A%2F%2Fwww.otodom.pl%2Fpl%2Foferta%2Fdworcowa-28-mieszkanie-1-pok-b-18-ID4wvv4 "HTTP/2 200 OK"
+2025-05-23 10:12:08,335 - httpx - INFO - HTTP Request: POST https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia "HTTP/2 400 Bad Request"
+2025-05-23 10:12:08,336 - supabase_utils - ERROR - B³¹d zapisu do Supabase: {'message': "Could not find the 'scraper_version' column of 'ogloszenia' in the schema cache", 'code': 'PGRST204', 'hint': None, 'details': None}
+2025-05-23 10:12:08,796 - httpx - INFO - HTTP Request: GET https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia?select=%2A&url=eq.https%3A%2F%2Fwww.otodom.pl%2Fpl%2Foferta%2Fbiskupin-88-5m-do-wprowadzenia-4pokoje-26m2-ID4tosN "HTTP/2 200 OK"
+2025-05-23 10:12:08,863 - httpx - INFO - HTTP Request: POST https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia "HTTP/2 400 Bad Request"
+2025-05-23 10:12:08,864 - supabase_utils - ERROR - B³¹d zapisu do Supabase: {'message': "Could not find the 'scraper_version' column of 'ogloszenia' in the schema cache", 'code': 'PGRST204', 'hint': None, 'details': None}
+2025-05-23 10:12:09,310 - httpx - INFO - HTTP Request: GET https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia?select=%2A&url=eq.https%3A%2F%2Fwww.otodom.pl%2Fpl%2Foferta%2Fmieszkanie-na-sprzedaz-retkinia-ID4wLTP "HTTP/2 200 OK"
+2025-05-23 10:12:09,400 - httpx - INFO - HTTP Request: POST https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia "HTTP/2 400 Bad Request"
+2025-05-23 10:12:09,400 - supabase_utils - ERROR - B³¹d zapisu do Supabase: {'message': "Could not find the 'scraper_version' column of 'ogloszenia' in the schema cache", 'code': 'PGRST204', 'hint': None, 'details': None}
+2025-05-23 10:12:09,879 - httpx - INFO - HTTP Request: GET https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia?select=%2A&url=eq.https%3A%2F%2Fwww.otodom.pl%2Fpl%2Foferta%2F3-pokoje-metro-ursynow-2-min-pieszo-do-wprowadzenia-ID4vbZ0 "HTTP/2 200 OK"
+2025-05-23 10:12:09,965 - httpx - INFO - HTTP Request: POST https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia "HTTP/2 400 Bad Request"
+2025-05-23 10:12:09,966 - supabase_utils - ERROR - B³¹d zapisu do Supabase: {'message': "Could not find the 'scraper_version' column of 'ogloszenia' in the schema cache", 'code': 'PGRST204', 'hint': None, 'details': None}
+2025-05-23 10:12:10,430 - httpx - INFO - HTTP Request: GET https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia?select=%2A&url=eq.https%3A%2F%2Fwww.otodom.pl%2Fpl%2Foferta%2Fnowe-mieszkania-na-sprzedaz-nova-kviatova-winda-ID4nPwI "HTTP/2 200 OK"
+2025-05-23 10:12:10,501 - httpx - INFO - HTTP Request: POST https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia "HTTP/2 400 Bad Request"
+2025-05-23 10:12:10,501 - supabase_utils - ERROR - B³¹d zapisu do Supabase: {'message': "Could not find the 'scraper_version' column of 'ogloszenia' in the schema cache", 'code': 'PGRST204', 'hint': None, 'details': None}
+2025-05-23 10:12:10,976 - httpx - INFO - HTTP Request: GET https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia?select=%2A&url=eq.https%3A%2F%2Fwww.otodom.pl%2Fpl%2Foferta%2Fmieszkanie-62-5m-3pokoje-os-poludnie-przy-parku-ID4u2VZ "HTTP/2 200 OK"
+2025-05-23 10:12:11,056 - httpx - INFO - HTTP Request: POST https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia "HTTP/2 400 Bad Request"
+2025-05-23 10:12:11,057 - supabase_utils - ERROR - B³¹d zapisu do Supabase: {'message': "Could not find the 'scraper_version' column of 'ogloszenia' in the schema cache", 'code': 'PGRST204', 'hint': None, 'details': None}
+2025-05-23 10:12:11,544 - httpx - INFO - HTTP Request: GET https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia?select=%2A&url=eq.https%3A%2F%2Fwww.otodom.pl%2Fpl%2Foferta%2Frabat-na-dni-otwarte-24-05-zaraz-odbierz-parking-ID4vwVY "HTTP/2 200 OK"
+2025-05-23 10:12:11,627 - httpx - INFO - HTTP Request: POST https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia "HTTP/2 400 Bad Request"
+2025-05-23 10:12:11,628 - supabase_utils - ERROR - B³¹d zapisu do Supabase: {'message': "Could not find the 'scraper_version' column of 'ogloszenia' in the schema cache", 'code': 'PGRST204', 'hint': None, 'details': None}
+2025-05-23 10:12:12,087 - httpx - INFO - HTTP Request: GET https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia?select=%2A&url=eq.https%3A%2F%2Fwww.otodom.pl%2Fpl%2Foferta%2Fostatnie-pietro-widokowy-taras-28-m2-ID4mmW5 "HTTP/2 200 OK"
+2025-05-23 10:12:12,156 - httpx - INFO - HTTP Request: POST https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia "HTTP/2 400 Bad Request"
+2025-05-23 10:12:12,157 - supabase_utils - ERROR - B³¹d zapisu do Supabase: {'message': "Could not find the 'scraper_version' column of 'ogloszenia' in the schema cache", 'code': 'PGRST204', 'hint': None, 'details': None}
+2025-05-23 10:12:12,625 - httpx - INFO - HTTP Request: GET https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia?select=%2A&url=eq.https%3A%2F%2Fwww.otodom.pl%2Fpl%2Foferta%2Fsloneczne-3-pokoje-blisko-morza-hala-gar-ID4vw1Z "HTTP/2 200 OK"
+2025-05-23 10:12:12,698 - httpx - INFO - HTTP Request: POST https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia "HTTP/2 400 Bad Request"
+2025-05-23 10:12:12,698 - supabase_utils - ERROR - B³¹d zapisu do Supabase: {'message': "Could not find the 'scraper_version' column of 'ogloszenia' in the schema cache", 'code': 'PGRST204', 'hint': None, 'details': None}
+2025-05-23 10:12:13,219 - httpx - INFO - HTTP Request: GET https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia?select=%2A&url=eq.https%3A%2F%2Fwww.otodom.pl%2Fpl%2Foferta%2Fmieszkanie-dwupokojowe-w-kamienicy-ul-kordeckiego-ID4vfv4 "HTTP/2 200 OK"
+2025-05-23 10:12:13,313 - httpx - INFO - HTTP Request: POST https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia "HTTP/2 400 Bad Request"
+2025-05-23 10:12:13,315 - supabase_utils - ERROR - B³¹d zapisu do Supabase: {'message': "Could not find the 'scraper_version' column of 'ogloszenia' in the schema cache", 'code': 'PGRST204', 'hint': None, 'details': None}
+2025-05-23 10:12:13,850 - httpx - INFO - HTTP Request: GET https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia?select=%2A&url=eq.https%3A%2F%2Fwww.otodom.pl%2Fpl%2Foferta%2Fprado-katowice-mieszkanie-4-pok-a2-1-01-ID4qfYu "HTTP/2 200 OK"
+2025-05-23 10:12:13,949 - httpx - INFO - HTTP Request: POST https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia "HTTP/2 400 Bad Request"
+2025-05-23 10:12:13,951 - supabase_utils - ERROR - B³¹d zapisu do Supabase: {'message': "Could not find the 'scraper_version' column of 'ogloszenia' in the schema cache", 'code': 'PGRST204', 'hint': None, 'details': None}
+2025-05-23 10:12:14,417 - httpx - INFO - HTTP Request: GET https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia?select=%2A&url=eq.https%3A%2F%2Fwww.otodom.pl%2Fpl%2Foferta%2Fos-lesne-71m2-piekne-3-pokoje-w-nowym-bloku-ID4wr10 "HTTP/2 200 OK"
+2025-05-23 10:12:14,495 - httpx - INFO - HTTP Request: POST https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia "HTTP/2 400 Bad Request"
+2025-05-23 10:12:14,495 - supabase_utils - ERROR - B³¹d zapisu do Supabase: {'message': "Could not find the 'scraper_version' column of 'ogloszenia' in the schema cache", 'code': 'PGRST204', 'hint': None, 'details': None}
+2025-05-23 10:12:14,989 - httpx - INFO - HTTP Request: GET https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia?select=%2A&url=eq.https%3A%2F%2Fwww.otodom.pl%2Fpl%2Foferta%2Fidealna-alternatywa-dla-domu-jednorodzinnego-ID4wIwa "HTTP/2 200 OK"
+2025-05-23 10:12:15,082 - httpx - INFO - HTTP Request: POST https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia "HTTP/2 400 Bad Request"
+2025-05-23 10:12:15,083 - supabase_utils - ERROR - B³¹d zapisu do Supabase: {'message': "Could not find the 'scraper_version' column of 'ogloszenia' in the schema cache", 'code': 'PGRST204', 'hint': None, 'details': None}
+2025-05-23 10:12:15,537 - httpx - INFO - HTTP Request: GET https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia?select=%2A&url=eq.https%3A%2F%2Fwww.otodom.pl%2Fpl%2Foferta%2Fpiekne-mieszkanie-33-m-z-wyjatkowym-widokiem-ID4uMWJ "HTTP/2 200 OK"
+2025-05-23 10:12:15,617 - httpx - INFO - HTTP Request: POST https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia "HTTP/2 400 Bad Request"
+2025-05-23 10:12:15,617 - supabase_utils - ERROR - B³¹d zapisu do Supabase: {'message': "Could not find the 'scraper_version' column of 'ogloszenia' in the schema cache", 'code': 'PGRST204', 'hint': None, 'details': None}
+2025-05-23 10:12:16,094 - httpx - INFO - HTTP Request: GET https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia?select=%2A&url=eq.https%3A%2F%2Fwww.otodom.pl%2Fpl%2Foferta%2F2-pokoje-37-24m2-loggia-winda-dakar-karolina-ID4vwVT "HTTP/2 200 OK"
+2025-05-23 10:12:16,169 - httpx - INFO - HTTP Request: POST https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia "HTTP/2 400 Bad Request"
+2025-05-23 10:12:16,169 - supabase_utils - ERROR - B³¹d zapisu do Supabase: {'message': "Could not find the 'scraper_version' column of 'ogloszenia' in the schema cache", 'code': 'PGRST204', 'hint': None, 'details': None}
+2025-05-23 10:12:16,648 - httpx - INFO - HTTP Request: GET https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia?select=%2A&url=eq.https%3A%2F%2Fwww.otodom.pl%2Fpl%2Foferta%2Fwinogrady-to-zawsze-dobra-lokalizacja-do-zycia-ID4wM4h "HTTP/2 200 OK"
+2025-05-23 10:12:16,722 - httpx - INFO - HTTP Request: POST https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia "HTTP/2 400 Bad Request"
+2025-05-23 10:12:16,725 - supabase_utils - ERROR - B³¹d zapisu do Supabase: {'message': "Could not find the 'scraper_version' column of 'ogloszenia' in the schema cache", 'code': 'PGRST204', 'hint': None, 'details': None}
+2025-05-23 10:12:17,188 - httpx - INFO - HTTP Request: GET https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia?select=%2A&url=eq.https%3A%2F%2Fwww.otodom.pl%2Fpl%2Foferta%2Fokazja-rabat-miasteczko-siewierz-jeziorna-4-pokoje-ID4vh2T "HTTP/2 200 OK"
+2025-05-23 10:12:17,258 - httpx - INFO - HTTP Request: POST https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia "HTTP/2 400 Bad Request"
+2025-05-23 10:12:17,260 - supabase_utils - ERROR - B³¹d zapisu do Supabase: {'message': "Could not find the 'scraper_version' column of 'ogloszenia' in the schema cache", 'code': 'PGRST204', 'hint': None, 'details': None}
+2025-05-23 10:12:17,734 - httpx - INFO - HTTP Request: GET https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia?select=%2A&url=eq.https%3A%2F%2Fwww.otodom.pl%2Fpl%2Foferta%2Fprzytulne-po-remoncie-widok-na-zatoke-ID4sSHo "HTTP/2 200 OK"
+2025-05-23 10:12:17,808 - httpx - INFO - HTTP Request: POST https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia "HTTP/2 400 Bad Request"
+2025-05-23 10:12:17,808 - supabase_utils - ERROR - B³¹d zapisu do Supabase: {'message': "Could not find the 'scraper_version' column of 'ogloszenia' in the schema cache", 'code': 'PGRST204', 'hint': None, 'details': None}
+2025-05-23 10:12:18,306 - httpx - INFO - HTTP Request: GET https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia?select=%2A&url=eq.https%3A%2F%2Fwww.otodom.pl%2Fpl%2Foferta%2Fekskluzywny-apartament-w-miasteczku-wilanow-ID4v9Gs "HTTP/2 200 OK"
+2025-05-23 10:12:18,406 - httpx - INFO - HTTP Request: POST https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia "HTTP/2 400 Bad Request"
+2025-05-23 10:12:18,409 - supabase_utils - ERROR - B³¹d zapisu do Supabase: {'message': "Could not find the 'scraper_version' column of 'ogloszenia' in the schema cache", 'code': 'PGRST204', 'hint': None, 'details': None}
+2025-05-23 10:12:18,878 - httpx - INFO - HTTP Request: GET https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia?select=%2A&url=eq.https%3A%2F%2Fwww.otodom.pl%2Fpl%2Foferta%2Fbunscha-park-4-0-ostatni-etap-inwestycji-b-m7-2-pok-43-74m2-ID4rsHU "HTTP/2 200 OK"
+2025-05-23 10:12:18,947 - httpx - INFO - HTTP Request: POST https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia "HTTP/2 400 Bad Request"
+2025-05-23 10:12:18,948 - supabase_utils - ERROR - B³¹d zapisu do Supabase: {'message': "Could not find the 'scraper_version' column of 'ogloszenia' in the schema cache", 'code': 'PGRST204', 'hint': None, 'details': None}
+2025-05-23 10:12:19,436 - httpx - INFO - HTTP Request: GET https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia?select=%2A&url=eq.https%3A%2F%2Fwww.otodom.pl%2Fpl%2Foferta%2Fpkp-5-min-od-zaraz-do-remontu-53-6-m2-4-pokoje-ID4vwVQ "HTTP/2 200 OK"
+2025-05-23 10:12:19,523 - httpx - INFO - HTTP Request: POST https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia "HTTP/2 400 Bad Request"
+2025-05-23 10:12:19,525 - supabase_utils - ERROR - B³¹d zapisu do Supabase: {'message': "Could not find the 'scraper_version' column of 'ogloszenia' in the schema cache", 'code': 'PGRST204', 'hint': None, 'details': None}
+2025-05-23 10:12:19,989 - httpx - INFO - HTTP Request: GET https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia?select=%2A&url=eq.https%3A%2F%2Fwww.otodom.pl%2Fhpr%2Fpl%2Foferta%2F3-pok-w-kamienicy-w-centrum-z-balkonem-ID4wI9c "HTTP/2 200 OK"
+2025-05-23 10:12:20,067 - httpx - INFO - HTTP Request: POST https://bqmyolfhalpghwyacwmr.supabase.co/rest/v1/ogloszenia "HTTP/2 400 Bad Request"
+2025-05-23 10:12:20,068 - supabase_utils - ERROR - B³¹d zapisu do Supabase: {'message': "Could not find the 'scraper_version' column of 'ogloszenia' in the schema cache", 'code': 'PGRST204', 'hint': None, 'details': None}
+2025-05-23 10:12:20,068 - __main__ - INFO - Zapisano 0/60 og³oszeñ z otodom
+2025-05-23 10:12:20,068 - __main__ - INFO - Ca³kowita liczba zapisanych og³oszeñ: 0
+2025-05-23 10:12:20,068 - __main__ - INFO - Zakoñczono scraping
