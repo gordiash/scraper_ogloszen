@@ -1,16 +1,19 @@
+#!/usr/bin/env python3
 """
-Scraper dla Otodom.pl (ZAKTUALIZOWANY)
-Używa aktualnych selektorów CSS z grudnia 2024
+SCRAPER TYLKO DLA OTODOM.PL
+Uproszczona wersja scrapująca wyłącznie Otodom.pl
 """
 import logging
 from typing import List, Dict
 from utils import get_soup, random_delay, clean_text, extract_price
 
+# Konfiguracja logowania
+logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 logger = logging.getLogger(__name__)
 
-def get_otodom_listings(max_pages: int = 3) -> List[Dict]:
+def get_otodom_listings(max_pages: int = 5) -> List[Dict]:
     """
-    Pobiera ogłoszenia z Otodom.pl
+    Pobiera ogłoszenia TYLKO z Otodom.pl
     
     Args:
         max_pages: Maksymalna liczba stron do przeskanowania
@@ -19,20 +22,26 @@ def get_otodom_listings(max_pages: int = 3) -> List[Dict]:
         List[Dict]: Lista ogłoszeń
     """
     listings = []
+    # URL z parametrem viewType=listing zgodnie z życzeniem
     base_url = "https://www.otodom.pl/pl/wyniki/sprzedaz/mieszkanie/cala-polska"
     
     for page in range(1, max_pages + 1):
         try:
-            url = f"{base_url}?page={page}"
+            # Konstruuj URL z parametrami
+            if page == 1:
+                url = f"{base_url}?viewType=listing"
+            else:
+                url = f"{base_url}?viewType=listing&page={page}"
+                
             logger.info(f"🏠 Scrapuję Otodom.pl - strona {page}")
+            logger.info(f"🔗 URL: {url}")
             
-            # Otodom wymaga Selenium ze względu na nowoczesny JS
+            # Używamy Selenium dla Otodom
             soup = get_soup(url, use_selenium=True)
             
-            # Nowe selektory dla Otodom (aktualne na grudzień 2024)
+            # Selektory dla kontenerów ogłoszeń
             offers = (soup.select("[data-cy='listing-item']") or 
-                     soup.select(".es62z2j0") or 
-                     soup.select("[data-testid='listing-item']") or
+                     soup.select("article.css-136g1q2") or 
                      soup.select("article") or
                      soup.select(".listing-item"))
             
@@ -55,20 +64,20 @@ def get_otodom_listings(max_pages: int = 3) -> List[Dict]:
                         listings.append(listing)
                         logger.debug(f"✅ Parsowano ogłoszenie {i+1}: {listing.get('title', '')[:30]}...")
                 except Exception as e:
-                    logger.error(f"❌ Błąd parsowania ogłoszenia {i+1} z Otodom: {e}")
+                    logger.error(f"❌ Błąd parsowania ogłoszenia {i+1}: {e}")
             
             random_delay()
             
         except Exception as e:
-            logger.error(f"❌ Błąd pobierania strony {page} z Otodom.pl: {e}")
+            logger.error(f"❌ Błąd pobierania strony {page}: {e}")
             
-    logger.info(f"✅ Pobrano {len(listings)} ogłoszeń z Otodom.pl")
+    logger.info(f"✅ Pobrano ŁĄCZNIE {len(listings)} ogłoszeń z Otodom.pl")
     return listings
 
 def parse_otodom_listing(offer_element) -> Dict:
     """
-    Parsuje pojedyncze ogłoszenie z Otodom.pl (ZAKTUALIZOWANE SELEKTORY)
-    Na podstawie rzeczywistej struktury HTML ze strony listy
+    Parsuje pojedyncze ogłoszenie z Otodom.pl
+    Używa zaktualizowanych selektorów CSS
     
     Args:
         offer_element: Element BeautifulSoup z ogłoszeniem
@@ -76,28 +85,27 @@ def parse_otodom_listing(offer_element) -> Dict:
     Returns:
         Dict: Dane ogłoszenia
     """
-    # TYTUŁ - RZECZYWISTY SELEKTOR z HTML
+    # TYTUŁ
     title_elem = (offer_element.select_one("[data-cy='listing-item-title']") or
                   offer_element.select_one("p.css-u3orbr") or
                   offer_element.select_one("h3") or
                   offer_element.select_one("h2"))
     title = clean_text(title_elem.get_text()) if title_elem else ""
     
-    # CENA - RZECZYWISTY SELEKTOR z HTML
+    # CENA
     price_elem = (offer_element.select_one("span.css-2bt9f1") or
                   offer_element.select_one("[data-sentry-element='Content']") or
-                  offer_element.select_one("[data-cy='listing-item-price']") or
                   offer_element.select_one("[data-cy*='price']"))
     price_text = clean_text(price_elem.get_text()) if price_elem else ""
     price_data = extract_price(price_text)
     
-    # LOKALIZACJA - RZECZYWISTY SELEKTOR z HTML
+    # LOKALIZACJA
     location_elem = (offer_element.select_one("p.css-42r2ms") or
                      offer_element.select_one("[data-sentry-element='StyledParagraph']") or
                      offer_element.select_one("[data-cy='listing-item-location']"))
     location = clean_text(location_elem.get_text()) if location_elem else ""
     
-    # Link do pełnego ogłoszenia
+    # LINK
     link_elem = (offer_element.select_one("[data-cy='listing-item-link']") or
                  offer_element.select_one("a[href*='/oferta/']") or
                  offer_element.select_one("a"))
@@ -105,14 +113,12 @@ def parse_otodom_listing(offer_element) -> Dict:
     if url and not url.startswith("http"):
         url = f"https://www.otodom.pl{url}"
     
-    # POWIERZCHNIA I POKOJE - RZECZYWISTE SELEKTORY z <dl> struktury
+    # POWIERZCHNIA I POKOJE z <dl> struktury
     area_text = ""
     rooms_text = ""
     
-    # Szukaj w <dl> strukturze
     specs_list = offer_element.select_one("dl.css-9q2yy4")
     if specs_list:
-        # Znajdź wszystkie pary dt/dd
         dt_elements = specs_list.select("dt")
         dd_elements = specs_list.select("dd")
         
@@ -126,18 +132,10 @@ def parse_otodom_listing(offer_element) -> Dict:
                 elif "pokoi" in dt_text.lower() or "pokój" in dt_text.lower():
                     rooms_text = dd_text
     
-    # Fallback selektory
+    # Fallback dla powierzchni
     if not area_text:
-        area_elem = offer_element.select_one("[title*='m²']")
+        area_elem = offer_element.select_one("span:contains('m²')")
         area_text = clean_text(area_elem.get_text()) if area_elem else ""
-    
-    if not rooms_text:
-        rooms_elem = offer_element.select_one("[data-cy='listing-item-rooms']")
-        rooms_text = clean_text(rooms_elem.get_text()) if rooms_elem else ""
-    
-    # Opis (skrócony z listing page)
-    desc_elem = offer_element.select_one("[data-cy='listing-item-description']")
-    description = clean_text(desc_elem.get_text()) if desc_elem else ""
     
     # Sprawdź czy mamy podstawowe dane
     if not title and not url:
@@ -152,7 +150,8 @@ def parse_otodom_listing(offer_element) -> Dict:
         "url": url,
         "area": area_text,
         "rooms": rooms_text,
-        "description": description,
+        "description": "",
+        "source": "otodom.pl"
     }
     
     return listing
@@ -160,7 +159,7 @@ def parse_otodom_listing(offer_element) -> Dict:
 def get_detailed_otodom_listing(url: str) -> Dict:
     """
     Pobiera szczegółowe informacje z pojedynczej strony ogłoszenia Otodom
-    Używa NOWYCH SELEKTORÓW podanych przez użytkownika
+    Używa selektorów podanych przez użytkownika dla stron szczegółów
     
     Args:
         url: URL ogłoszenia
@@ -169,10 +168,10 @@ def get_detailed_otodom_listing(url: str) -> Dict:
         Dict: Szczegółowe dane ogłoszenia
     """
     try:
-        logger.info(f"🔍 Pobieranie szczegółów ogłoszenia: {url}")
+        logger.info(f"🔍 Pobieranie szczegółów: {url}")
         soup = get_soup(url, use_selenium=True)
         
-        # CENA - NOWY SELEKTOR
+        # CENA - selektory ze strony szczegółów
         price_elem = (soup.select_one("[data-cy='adPageHeaderPrice']") or
                       soup.select_one("[aria-label='Cena']") or
                       soup.select_one("[data-sentry-element='Price']") or
@@ -180,26 +179,21 @@ def get_detailed_otodom_listing(url: str) -> Dict:
         price_text = clean_text(price_elem.get_text()) if price_elem else ""
         price_data = extract_price(price_text)
         
-        # LOKALIZACJA - NOWY SELEKTOR  
+        # LOKALIZACJA - selektory ze strony szczegółów
         location_elem = (soup.select_one("[data-sentry-component='MapLink'] a") or
                         soup.select_one(".css-1jjm9oe") or
                         soup.select_one("[href='#map']"))
         location = clean_text(location_elem.get_text()) if location_elem else ""
         
-        # POKOJE - NOWY SELEKTOR
+        # POKOJE - selektory ze strony szczegółów
         rooms_elem = None
-        # Szukaj sekcji z "Liczba pokoi"
         for item in soup.select("[data-sentry-source-file='AdDetailItem.tsx']"):
             if "Liczba pokoi" in item.get_text():
                 rooms_elem = item.select_one("p:last-child")
                 break
-        
-        if not rooms_elem:
-            rooms_elem = soup.select_one(".esen0m92:contains('pokoi') + .esen0m92")
-        
         rooms_text = clean_text(rooms_elem.get_text()) if rooms_elem else ""
         
-        # OPIS - NOWY SELEKTOR
+        # OPIS - selektory ze strony szczegółów
         desc_elem = (soup.select_one("[data-cy='adPageAdDescription']") or
                      soup.select_one("[data-sentry-component='AdDescriptionBase']") or
                      soup.select_one(".css-i4vto6"))
@@ -209,22 +203,14 @@ def get_detailed_otodom_listing(url: str) -> Dict:
         title_elem = soup.select_one("h1")
         title = clean_text(title_elem.get_text()) if title_elem else ""
         
-        # POWIERZCHNIA - ZAKTUALIZOWANY SELEKTOR
+        # POWIERZCHNIA - selektory ze strony szczegółów
         area_text = ""
-        # Szukaj sekcji z "Powierzchnia" używając nowych selektorów
         for item in soup.select("[data-sentry-source-file='AdDetailItem.tsx']"):
             if "Powierzchnia" in item.get_text():
                 area_elem = item.select_one("p.esen0m92:last-child")
                 if area_elem:
                     area_text = clean_text(area_elem.get_text())
                 break
-        
-        # Fallback selektory
-        if not area_text:
-            area_elem = (soup.select_one(".esen0m92:contains('m²')") or
-                        soup.select_one("[title*='m²']"))
-            if area_elem:
-                area_text = clean_text(area_elem.get_text())
         
         return {
             "title": title,
@@ -241,4 +227,68 @@ def get_detailed_otodom_listing(url: str) -> Dict:
         
     except Exception as e:
         logger.error(f"❌ Błąd pobierania szczegółów z {url}: {e}")
-        return {} 
+        return {}
+
+if __name__ == "__main__":
+    """Testuj scraper bezpośrednio"""
+    print("="*80)
+    print("🏠 SCRAPER TYLKO DLA OTODOM.PL")
+    print("="*80)
+    
+    try:
+        # Test podstawowy
+        listings = get_otodom_listings(max_pages=2)
+        
+        if listings:
+            print(f"\n✅ Pobrano {len(listings)} ogłoszeń z Otodom.pl")
+            
+            # Statystyki
+            with_price = len([l for l in listings if l.get('price')])
+            with_location = len([l for l in listings if l.get('location')])
+            with_area = len([l for l in listings if l.get('area')])
+            with_rooms = len([l for l in listings if l.get('rooms')])
+            
+            print(f"\n📊 JAKOŚĆ DANYCH:")
+            print(f"   💰 Z cenami: {with_price}/{len(listings)} ({with_price/len(listings)*100:.1f}%)")
+            print(f"   📍 Z lokalizacją: {with_location}/{len(listings)} ({with_location/len(listings)*100:.1f}%)")
+            print(f"   📐 Z powierzchnią: {with_area}/{len(listings)} ({with_area/len(listings)*100:.1f}%)")
+            print(f"   🚪 Z pokojami: {with_rooms}/{len(listings)} ({with_rooms/len(listings)*100:.1f}%)")
+            
+            # Przykłady
+            print(f"\n📋 PRZYKŁADY OGŁOSZEŃ:")
+            for i, listing in enumerate(listings[:3], 1):
+                print(f"\n  {i}. {listing.get('title', 'Brak tytułu')[:60]}...")
+                if listing.get('price'):
+                    print(f"     💰 Cena: {listing['price']:,.0f} {listing.get('price_currency', 'zł')}")
+                if listing.get('location'):
+                    print(f"     📍 Lokalizacja: {listing.get('location')}")
+                if listing.get('area'):
+                    print(f"     📐 Powierzchnia: {listing.get('area')}")
+                if listing.get('rooms'):
+                    print(f"     🚪 Pokoje: {listing.get('rooms')}")
+                if listing.get('url'):
+                    print(f"     🔗 URL: {listing.get('url')[:60]}...")
+            
+            # Test szczegółów dla pierwszego ogłoszenia
+            if listings and listings[0].get('url'):
+                print(f"\n🔍 TEST SZCZEGÓŁÓW OGŁOSZENIA:")
+                detailed = get_detailed_otodom_listing(listings[0]['url'])
+                if detailed:
+                    print(f"   ✅ Pobrano szczegółowe dane")
+                    if detailed.get('description'):
+                        desc = detailed.get('description', '')[:100]
+                        print(f"   📖 Opis: {desc}...")
+                else:
+                    print(f"   ❌ Nie udało się pobrać szczegółów")
+        else:
+            print("❌ Nie pobrano żadnych ogłoszeń")
+            
+    except KeyboardInterrupt:
+        print("\n⚠️ Przerwano przez użytkownika")
+    except Exception as e:
+        print(f"\n❌ Błąd: {e}")
+        logger.error(f"Błąd w otodom_only_scraper: {e}", exc_info=True)
+        
+    print(f"\n{'='*80}")
+    print("🎉 TEST ZAKOŃCZONY!")
+    print("="*80) 
