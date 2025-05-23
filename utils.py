@@ -4,7 +4,15 @@ import time
 import random
 import logging
 from fake_useragent import UserAgent
-from config import DEFAULT_DELAY, MAX_RETRIES, TIMEOUT
+
+try:
+    from config import DEFAULT_DELAY, MAX_RETRIES, TIMEOUT, SELENIUM_HEADLESS, SELENIUM_TIMEOUT, SELENIUM_WAIT_TIME
+except ImportError:
+    # Fallback values jeśli nie ma wszystkich zmiennych w config
+    from config import DEFAULT_DELAY, MAX_RETRIES, TIMEOUT
+    SELENIUM_HEADLESS = True
+    SELENIUM_TIMEOUT = 20
+    SELENIUM_WAIT_TIME = 2
 
 logger = logging.getLogger(__name__)
 ua = UserAgent()
@@ -53,23 +61,48 @@ def get_soup_selenium(url: str) -> BeautifulSoup:
     try:
         from selenium import webdriver
         from selenium.webdriver.chrome.options import Options
+        from selenium.webdriver.chrome.service import Service
+        from selenium.webdriver.common.by import By
+        from selenium.webdriver.support.ui import WebDriverWait
+        from selenium.webdriver.support import expected_conditions as EC
         
         options = Options()
-        options.add_argument("--headless")
+        if SELENIUM_HEADLESS:
+            options.add_argument("--headless")
         options.add_argument("--no-sandbox")
         options.add_argument("--disable-dev-shm-usage")
+        options.add_argument("--disable-gpu")
+        options.add_argument("--window-size=1920,1080")
         options.add_argument(f"--user-agent={ua.random}")
+        options.add_argument("--disable-blink-features=AutomationControlled")
+        options.add_experimental_option("excludeSwitches", ["enable-automation"])
+        options.add_experimental_option('useAutomationExtension', False)
         
         driver = webdriver.Chrome(options=options)
+        driver.execute_script("Object.defineProperty(navigator, 'webdriver', {get: () => undefined})")
+        
         try:
+            driver.set_page_load_timeout(SELENIUM_TIMEOUT)
             driver.get(url)
-            time.sleep(2)  # Czekaj na załadowanie JS
+            
+            # Czekaj na załadowanie podstawowej zawartości
+            WebDriverWait(driver, SELENIUM_WAIT_TIME).until(
+                EC.presence_of_element_located((By.TAG_NAME, "body"))
+            )
+            
+            # Dodatkowe oczekiwanie na JavaScript
+            time.sleep(SELENIUM_WAIT_TIME)
+            
             html = driver.page_source
             return BeautifulSoup(html, "html.parser")
         finally:
             driver.quit()
     except ImportError:
         logger.warning("Selenium nie jest zainstalowany, używam requests")
+        return get_soup_requests(url)
+    except Exception as e:
+        logger.error(f"Błąd Selenium: {e}")
+        logger.warning("Przełączam na requests")
         return get_soup_requests(url)
 
 def random_delay():
