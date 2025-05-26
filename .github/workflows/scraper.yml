@@ -1,0 +1,36 @@
+name: Scraper nieruchomości - CRON
+
+on:
+  schedule:
+    # Każdy poniedziałek o 0:00 UTC
+    - cron: '0 0 * * 1'
+  workflow_dispatch:  # Pozwala uruchomić ręcznie z GitHub UI
+
+jobs:
+  run-scraper:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Ustaw Python 3.11
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Instaluj zależności
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Skopiuj plik .env z GitHub Secrets
+        run: |
+          echo "SUPABASE_URL=${{ secrets.SUPABASE_URL }}" >> .env
+          echo "SUPABASE_KEY=${{ secrets.SUPABASE_KEY }}" >> .env
+
+      - name: Uruchom scraper
+        run: |
+          python main.py --pages 5 --save_db
+
+      # (Opcjonalnie) Dodaj eksport wyników, powiadomienie, upload do artefaktów itp.
