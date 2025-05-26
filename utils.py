@@ -7,14 +7,13 @@ from fake_useragent import UserAgent
 import re
 from typing import List, Dict, Tuple, Optional
 
-try:
-    from config import DEFAULT_DELAY, MAX_RETRIES, TIMEOUT, SELENIUM_HEADLESS, SELENIUM_TIMEOUT, SELENIUM_WAIT_TIME
-except ImportError:
-    # Fallback values jeśli nie ma wszystkich zmiennych w config
-    from config import DEFAULT_DELAY, MAX_RETRIES, TIMEOUT
-    SELENIUM_HEADLESS = True
-    SELENIUM_TIMEOUT = 20
-    SELENIUM_WAIT_TIME = 2
+# Konfiguracja domyślna (zastąpienie config.py)
+DEFAULT_DELAY = (1, 3)  # Random delay między requestami (min, max)
+MAX_RETRIES = 3
+TIMEOUT = 10
+SELENIUM_HEADLESS = True
+SELENIUM_TIMEOUT = 20
+SELENIUM_WAIT_TIME = 2
 
 logger = logging.getLogger(__name__)
 ua = UserAgent()

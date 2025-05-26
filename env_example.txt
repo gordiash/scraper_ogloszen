@@ -1,0 +1,18 @@
+# Konfiguracja Supabase
+# Skopiuj ten plik jako .env i uzupełnij własnymi danymi
+
+SUPABASE_URL=https://twój-projekt.supabase.co
+SUPABASE_KEY=twój_anon_key_tutaj
+
+# Przykład:
+# SUPABASE_URL=https://xyzabc123.supabase.co
+# SUPABASE_KEY=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9...
+
+# INSTRUKCJE:
+# 1. Przejdź do https://app.supabase.com
+# 2. Stwórz nowy projekt
+# 3. W Settings → API znajdź:
+#    - Project URL (SUPABASE_URL)
+#    - anon/public key (SUPABASE_KEY)
+# 4. Skopiuj te wartości powyżej
+# 5. Zapisz ten plik jako .env (usuń .txt) 

@@ -7,15 +7,14 @@ from datetime import datetime
 from typing import List, Dict
 
 # Import scraperów
-from scrapers.freedom import get_freedom_listings
-from scrapers.otodom import get_otodom_listings
-from scrapers.metrohouse import get_metrohouse_listings
-from scrapers.domiporta import get_domiporta_listings
-from scrapers.gratka import get_gratka_listings
-from scrapers.olx import get_olx_listings
+from otodom_only_scraper import get_otodom_listings
+# from scrapers.freedom import get_freedom_listings  # USUNIĘTY
+# from scrapers.metrohouse import get_metrohouse_listings  # USUNIĘTY  
+# from scrapers.domiporta import get_domiporta_listings  # USUNIĘTY
+# from scrapers.gratka import get_gratka_listings  # USUNIĘTY
+# from scrapers.olx import get_olx_listings  # USUNIĘTY
 
 # Import utils
-from supabase_utils import save_batch_listings
 from utils import deduplicate_listings, generate_duplicate_report, find_duplicates
 
 # Konfiguracja logowania
@@ -30,14 +29,10 @@ logging.basicConfig(
 
 logger = logging.getLogger(__name__)
 
-# Konfiguracja scraperów
+# Konfiguracja scraperów - TYLKO DOSTĘPNE
 SCRAPERS = {
-    "freedom": get_freedom_listings,
     "otodom": get_otodom_listings,
-    "metrohouse": get_metrohouse_listings,
-    "domiporta": get_domiporta_listings,
-    "gratka": get_gratka_listings,
-    "olx": get_olx_listings,
+    # Inne scrapery usunięte - dodaj gdy będą gotowe
 }
 
 def run_scraper(scraper_name: str, max_pages: int = 2) -> List[Dict]:
@@ -153,12 +148,13 @@ def deduplicate_all_listings(results: Dict[str, List[Dict]],
     
     return deduplicated
 
-def save_all_to_supabase(unique_listings: List[Dict]) -> None:
+def save_all_to_supabase(unique_listings: List[Dict], require_complete: bool = True) -> None:
     """
     Zapisuje unikatowe ogłoszenia do Supabase
     
     Args:
         unique_listings: Lista unikatowych ogłoszeń
+        require_complete: Czy wymagać kompletnych danych
     """
     if not unique_listings:
         logger.warning("Brak ogłoszeń do zapisu")
@@ -167,11 +163,12 @@ def save_all_to_supabase(unique_listings: List[Dict]) -> None:
     logger.info(f"💾 Zapisuję {len(unique_listings)} unikatowych ogłoszeń do Supabase...")
     
     try:
-        saved_count = save_batch_listings(unique_listings)
+        from supabase_utils import save_listings_to_supabase
+        saved_count = save_listings_to_supabase(unique_listings, require_complete=require_complete)
         logger.info(f"✅ Zapisano {saved_count}/{len(unique_listings)} ogłoszeń")
         
         if saved_count < len(unique_listings):
-            logger.warning(f"⚠️ Nie zapisano {len(unique_listings) - saved_count} ogłoszeń (prawdopodobnie już istnieją)")
+            logger.warning(f"⚠️ Nie zapisano {len(unique_listings) - saved_count} ogłoszeń (prawdopodobnie już istnieją lub walidacja odrzuciła)")
         
     except Exception as e:
         logger.error(f"❌ Błąd zapisu do Supabase: {e}")
@@ -210,11 +207,26 @@ def print_summary(results: Dict[str, List[Dict]], unique_listings: List[Dict]) -
     print("="*60)
 
 def main():
-    """Główna funkcja programu z deduplikacją"""
+    """Główna funkcja programu z deduplikacją i argumentami wiersza poleceń"""
+    import argparse
+    
+    parser = argparse.ArgumentParser(description='Scraper nieruchomości - wszystkie portale')
+    parser.add_argument('--pages', type=int, default=2, help='Maksymalna liczba stron per portal (domyślnie: 2)')
+    parser.add_argument('--save_db', action='store_true', help='Zapisz do bazy danych Supabase')
+    parser.add_argument('--no-validation', action='store_true', help='Wyłącz walidację kompletności danych')
+    parser.add_argument('--quiet', action='store_true', help='Tryb cichy (mniej logów)')
+    
+    args = parser.parse_args()
+    
+    # Ustaw poziom logowania
+    if args.quiet:
+        logging.getLogger().setLevel(logging.WARNING)
+    
     logger.info("🚀 Rozpoczynam scraping portali nieruchomości z deduplikacją")
+    logger.info(f"📊 Parametry: pages={args.pages}, save_db={args.save_db}, validation={'off' if args.no_validation else 'on'}")
     
     # Uruchom wszystkie scrapery
-    results = run_all_scrapers(max_pages=2)
+    results = run_all_scrapers(max_pages=args.pages)
     
     # Deduplikacja ogłoszeń między portalami
     unique_listings = deduplicate_all_listings(results, similarity_threshold=75.0)
@@ -222,14 +234,16 @@ def main():
     # Wyświetl podsumowanie
     print_summary(results, unique_listings)
     
-    # Zapisz unikatowe ogłoszenia do Supabase
-    if unique_listings:
+    # Zapisz unikatowe ogłoszenia do Supabase (opcjonalnie)
+    if args.save_db and unique_listings:
         try:
-            save_all_to_supabase(unique_listings)
+            save_all_to_supabase(unique_listings, require_complete=not args.no_validation)
         except Exception as e:
             logger.error(f"❌ Błąd zapisu do Supabase: {e}")
-    else:
+    elif args.save_db:
         logger.warning("⚠️ Brak unikatowych ogłoszeń do zapisu")
+    else:
+        logger.info("ℹ️ Pominięto zapis do bazy (użyj --save_db aby zapisać)")
     
     logger.info("✅ Zakończono scraping z deduplikacją")
 

@@ -12,13 +12,14 @@ from utils import deduplicate_listings
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 logger = logging.getLogger(__name__)
 
-def scrape_otodom_only(max_pages: int = 5, save_to_db: bool = False) -> List[Dict]:
+def scrape_otodom_only(max_pages: int = 5, save_to_db: bool = False, require_complete: bool = True) -> List[Dict]:
     """
     Główna funkcja scrapowania tylko Otodom.pl
     
     Args:
         max_pages: Maksymalna liczba stron do przeskanowania
         save_to_db: Czy zapisać do bazy danych Supabase
+        require_complete: Czy wymagać kompletnych danych (domyślnie True)
     
     Returns:
         List[Dict]: Lista unikatowych ogłoszeń
@@ -87,7 +88,7 @@ def scrape_otodom_only(max_pages: int = 5, save_to_db: bool = False) -> List[Dic
             print("-" * 50)
             try:
                 from supabase_utils import save_listings_to_supabase
-                success_count = save_listings_to_supabase(deduplicated)
+                success_count = save_listings_to_supabase(deduplicated, require_complete=require_complete)
                 print(f"   ✅ Zapisano {success_count}/{len(deduplicated)} ogłoszeń do Supabase")
             except ImportError:
                 print("   ❌ Brak modułu supabase_utils - pomijam zapis do bazy")
@@ -130,6 +131,7 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser(description='Scraper Otodom.pl')
     parser.add_argument('--pages', type=int, default=5, help='Maksymalna liczba stron (domyślnie: 5)')
     parser.add_argument('--save-db', action='store_true', help='Zapisz do bazy danych Supabase')
+    parser.add_argument('--no-validation', action='store_true', help='Wyłącz walidację kompletności danych')
     parser.add_argument('--quiet', action='store_true', help='Tryb cichy (mniej logów)')
     
     args = parser.parse_args()
@@ -142,7 +144,8 @@ if __name__ == "__main__":
         # Uruchom scraping
         listings = scrape_otodom_only(
             max_pages=args.pages,
-            save_to_db=args.save_db
+            save_to_db=args.save_db,
+            require_complete=not args.no_validation
         )
         
         print(f"\n{'='*80}")

@@ -1,71 +1,56 @@
+#!/usr/bin/env python3
 """
-Test zapisu do Supabase z działającymi danymi
+TEST POŁĄCZENIA Z SUPABASE
+Sprawdza konfigurację i połączenie z bazą danych
 """
 import logging
-from datetime import datetime
-from working_demo import scrape_olx_simple, scrape_sample_portal
-from supabase_utils import save_batch_listings, get_supabase_client
+from supabase_utils import test_supabase_connection, create_table_if_not_exists
+from config import SUPABASE_URL, SUPABASE_KEY
 
 # Konfiguracja logowania
-logging.basicConfig(level=logging.INFO)
+logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 logger = logging.getLogger(__name__)
 
-def test_supabase_connection():
-    """Test połączenia z Supabase"""
-    try:
-        supabase = get_supabase_client()
-        # Sprawdź czy tabela istnieje
-        result = supabase.table("ogloszenia").select("count", count="exact").execute()
-        logger.info(f"✓ Połączenie z Supabase działa. Tabela ma {result.count} rekordów.")
-        return True
-    except Exception as e:
-        logger.error(f"✗ Błąd połączenia z Supabase: {e}")
-        return False
-
-def test_save_to_supabase():
-    """Test zapisu do Supabase"""
-    print("=== TEST ZAPISU DO SUPABASE ===")
+def main():
+    """Test konfiguracji Supabase"""
+    print("="*80)
+    print("🗄️ TEST POŁĄCZENIA Z SUPABASE")
+    print("="*80)
+    
+    # Sprawdź konfigurację
+    print("📋 KONFIGURACJA:")
+    print(f"   URL: {SUPABASE_URL}")
+    print(f"   Key: {SUPABASE_KEY[:20]}..." if len(SUPABASE_KEY) > 20 else f"   Key: {SUPABASE_KEY}")
     
     # Test połączenia
-    if not test_supabase_connection():
-        print("✗ Nie można połączyć się z Supabase. Sprawdź konfigurację.")
-        return False
+    print(f"\n🔌 TEST POŁĄCZENIA:")
+    if test_supabase_connection():
+        print("✅ Połączenie działa!")
+        print("\n💡 Możesz teraz używać:")
+        print("   python main_otodom_only.py --pages 3 --save-db")
+    else:
+        print("❌ Połączenie nie działa")
+        print("\n🛠️ INSTRUKCJE KONFIGURACJI:")
+        print("1. Stwórz konto na https://app.supabase.com")
+        print("2. Stwórz nowy projekt")
+        print("3. Przejdź do Settings → API")
+        print("4. Skopiuj URL i anon key")
+        print("5. Stwórz plik .env:")
+        print("   SUPABASE_URL=https://twój-projekt.supabase.co")
+        print("   SUPABASE_KEY=twój_anon_key")
+        
+        print(f"\n📊 TWORZENIE TABELI:")
+        create_table_if_not_exists()
     
-    # Pobierz dane
-    print("\n1. Pobieranie danych...")
-    olx_listings = scrape_olx_simple()
-    sample_listings = scrape_sample_portal()
-    all_listings = olx_listings + sample_listings
-    
-    if not all_listings:
-        print("✗ Brak danych do zapisu")
-        return False
-    
-    print(f"✓ Pobrano {len(all_listings)} ogłoszeń")
-    
-    # Zapisz do bazy
-    print("\n2. Zapisywanie do Supabase...")
-    saved_count = save_batch_listings(all_listings)
-    
-    print(f"\n=== WYNIKI ===")
-    print(f"Pobrano ogłoszeń: {len(all_listings)}")
-    print(f"Zapisano do bazy: {saved_count}")
-    print(f"Sukces: {saved_count > 0}")
-    
-    return saved_count > 0
+    print(f"\n{'='*80}")
+    print("🎉 TEST ZAKOŃCZONY!")
+    print("="*80)
 
 if __name__ == "__main__":
-    print("="*50)
-    print("TEST INTEGRACJI SCRAPER + SUPABASE")
-    print("="*50)
-    
-    success = test_save_to_supabase()
-    
-    if success:
-        print("\n🎉 SUKCES! Scraper zapisuje dane do Supabase!")
-    else:
-        print("\n❌ BŁĄD! Sprawdź konfigurację Supabase.")
-        print("\nSprawdź:")
-        print("1. Czy tabela 'ogloszenia' istnieje w Supabase")
-        print("2. Czy zmienne SUPABASE_URL i SUPABASE_KEY są ustawione")
-        print("3. Czy masz uprawnienia do zapisu") 
+    try:
+        main()
+    except KeyboardInterrupt:
+        print("\n⚠️ Test przerwany przez użytkownika")
+    except Exception as e:
+        print(f"\n❌ Błąd testu: {e}")
+        logger.error(f"Błąd w test_supabase: {e}", exc_info=True) 

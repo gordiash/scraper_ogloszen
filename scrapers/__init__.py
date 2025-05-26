@@ -1,1 +1,0 @@
-# Moduł scrapers - web scrapery dla portali nieruchomości 
