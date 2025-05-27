@@ -12,7 +12,9 @@ Zaawansowany system scrapowania ogłoszeń nieruchomości z największych polski
 ✅ **Selenium** dla nowoczesnych portali JavaScript  
 ✅ **Anti-detection** zabezpieczenia  
 ✅ **Supabase** integration  
-✅ **Automatyczne filtrowanie** danych
+✅ **Automatyczne filtrowanie** danych  
+✅ **🌍 GEOCODING** - automatyczne współrzędne geograficzne  
+✅ **Parser adresów** - rozdzielanie lokalizacji na komponenty
 
 ## 🎯 **OBSŁUGIWANE PORTALE**
 
@@ -185,8 +187,15 @@ python test_supabase.py             # Test bazy danych
 # Główne działanie
 python main.py                      # ⭐ Pełny scraper + Supabase + deduplikacja
 
+# Parser adresów i geocoding
+python address_parser.py --process  # 🏠 Parsowanie adresów
+python geocoding_updater.py --test  # 🌍 Test geocodingu
+python geocoding_updater.py --update # 🌍 Uzupełnianie współrzędnych
+python check_geocoding.py           # 📊 Sprawdzenie geocodingu
+
 # Debug
 python debug_selenium.py            # Debug portali z Selenium
+python test_geocoding_system.py     # 🧪 Test systemu geocodingu
 ```
 
 ## 🛡️ **ZABEZPIECZENIA I OPTYMALIZACJE**
@@ -269,10 +278,38 @@ MIT License - używaj zgodnie z regulaminami scraperowanych portali.
 
 ---
 
+## 🌍 **GEOCODING I PARSER ADRESÓW**
+
+### **Dodatkowe funkcjonalności:**
+✅ **Parser adresów** - rozdziela lokalizacje na komponenty (miasto, dzielnica, ulica)  
+✅ **Geocoding** - automatyczne współrzędne geograficzne (latitude, longitude)  
+✅ **API Nominatim** - darmowe geocoding bez limitów  
+✅ **Walidacja** - sprawdzanie czy współrzędne są w Polsce  
+
+### **Szybki start geocoding:**
+```bash
+# 1. Dodaj kolumny do tabeli addresses (SQL w Supabase)
+# 2. Test geocodingu
+python geocoding_updater.py --test
+
+# 3. Uzupełnij współrzędne
+python geocoding_updater.py --update --max-addresses 50
+
+# 4. Sprawdź wyniki
+python check_geocoding.py
+```
+
+### **Dokumentacja:**
+- `README_GEOCODING.md` - **Pełna dokumentacja geocodingu** 🌍
+- `README_ADDRESS_PARSER.md` - **Dokumentacja parsera adresów** 🏠
+
+---
+
 ## 🎉 **SUKCES!**
 
-System scrapuje **200+ ogłoszeń** z **6 największych polskich portali nieruchomości**, **automatycznie usuwa ~35% duplikatów** i jest gotowy do użycia produkcyjnego! 
+System scrapuje **200+ ogłoszeń** z **6 największych polskich portali nieruchomości**, **automatycznie usuwa ~35% duplikatów**, **parsuje adresy** i **dodaje współrzędne geograficzne**! 
 
 **Testuj**: `python complete_demo.py`  
 **Deduplikacja**: `python test_deduplicate.py`  
+**Geocoding**: `python test_geocoding_system.py`  
 **Dokumentacja**: `INSTRUKCJE_URUCHOMIENIA.md`
